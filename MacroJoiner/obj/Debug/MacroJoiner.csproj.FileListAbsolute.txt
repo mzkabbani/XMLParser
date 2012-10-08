@@ -1,0 +1,8 @@
+C:\Documents and Settings\mkabbani\My Documents\Visual Studio 2008\Projects\RFT-Replaces\MacroJoiner\obj\Debug\ResolveAssemblyReference.cache
+C:\Documents and Settings\mkabbani\My Documents\Visual Studio 2008\Projects\RFT-Replaces\MacroJoiner\obj\Debug\MacroJoiner.Form1.resources
+C:\Documents and Settings\mkabbani\My Documents\Visual Studio 2008\Projects\RFT-Replaces\MacroJoiner\obj\Debug\MacroJoiner.Properties.Resources.resources
+C:\Documents and Settings\mkabbani\My Documents\Visual Studio 2008\Projects\RFT-Replaces\MacroJoiner\obj\Debug\MacroJoiner.csproj.GenerateResource.Cache
+C:\Documents and Settings\mkabbani\My Documents\Visual Studio 2008\Projects\RFT-Replaces\MacroJoiner\bin\Debug\MacroJoiner.exe
+C:\Documents and Settings\mkabbani\My Documents\Visual Studio 2008\Projects\RFT-Replaces\MacroJoiner\bin\Debug\MacroJoiner.pdb
+C:\Documents and Settings\mkabbani\My Documents\Visual Studio 2008\Projects\RFT-Replaces\MacroJoiner\obj\Debug\MacroJoiner.exe
+C:\Documents and Settings\mkabbani\My Documents\Visual Studio 2008\Projects\RFT-Replaces\MacroJoiner\obj\Debug\MacroJoiner.pdb

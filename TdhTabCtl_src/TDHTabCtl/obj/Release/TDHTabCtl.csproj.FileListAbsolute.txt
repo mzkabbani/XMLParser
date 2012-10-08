@@ -1,0 +1,5 @@
+C:\Documents and Settings\mkabbani\My Documents\Visual Studio 2008\Projects\RFT-Replaces\TdhTabCtl_src\TDHTabCtl\bin\Release\TDHTabCtl.dll
+C:\Documents and Settings\mkabbani\My Documents\Visual Studio 2008\Projects\RFT-Replaces\TdhTabCtl_src\TDHTabCtl\obj\Release\ResolveAssemblyReference.cache
+C:\Documents and Settings\mkabbani\My Documents\Visual Studio 2008\Projects\RFT-Replaces\TdhTabCtl_src\TDHTabCtl\obj\Release\TDHControls.TDHTabCtl.TdhTabReorder.resources
+C:\Documents and Settings\mkabbani\My Documents\Visual Studio 2008\Projects\RFT-Replaces\TdhTabCtl_src\TDHTabCtl\obj\Release\TDHTabCtl.csproj.GenerateResource.Cache
+C:\Documents and Settings\mkabbani\My Documents\Visual Studio 2008\Projects\RFT-Replaces\TdhTabCtl_src\TDHTabCtl\obj\Release\TDHTabCtl.dll

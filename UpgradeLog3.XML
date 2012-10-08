@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type='text/xsl' href='_UpgradeReport_Files/UpgradeReport.xslt'?><UpgradeLog>
+<Properties><Property Name="Solution" Value="Misc">
+</Property><Property Name="Solution File" Value="C:\Documents and Settings\mkabbani\My Documents\Visual Studio 2008\Projects\RFT-Replaces\Misc.sln">
+</Property><Property Name="Date" Value="Friday, December 23, 2011">
+</Property><Property Name="Time" Value="10:19:59 AM">
+</Property><Property Name="Log Number" Value="3">
+</Property></Properties><Event ErrorLevel="1" Project="TimerTest" Source="..\Timer\TimerTest\TimerTest.csproj" Description="MSB2014: The project-to-project reference with GUID {A1087FDB-40E7-461C-8402-AF74AEFC3E51} cannot be converted because it is not listed in the file 'C:\Documents and Settings\mkabbani\My Documents\Visual Studio 2008\Projects\RFT-Replaces\Misc.sln'.">
+</Event><Event ErrorLevel="0" Project="TimerTest" Source="..\Timer\TimerTest\TimerTest.csproj" Description="Project file successfully backed up as C:\Documents and Settings\mkabbani\My Documents\Visual Studio 2008\Projects\RFT-Replaces\Backup2\TimerTest.csproj">
+</Event><Event ErrorLevel="0" Project="TimerTest" Source="..\Timer\TimerTest\AssemblyInfo.cs" Description="File successfully backed up as C:\Documents and Settings\mkabbani\My Documents\Visual Studio 2008\Projects\RFT-Replaces\Backup2\AssemblyInfo.cs">
+</Event><Event ErrorLevel="0" Project="TimerTest" Source="..\Timer\TimerTest\Class1.cs" Description="File successfully backed up as C:\Documents and Settings\mkabbani\My Documents\Visual Studio 2008\Projects\RFT-Replaces\Backup2\Class1.cs">
+</Event><Event ErrorLevel="0" Project="TimerTest" Source="..\Timer\TimerTest\App.ico" Description="File successfully backed up as C:\Documents and Settings\mkabbani\My Documents\Visual Studio 2008\Projects\RFT-Replaces\Backup2\App.ico">
+</Event><Event ErrorLevel="0" Project="TimerTest" Source="..\Timer\TimerTest\TimerTest.csproj" Description="Project converted successfully">
+</Event><Event ErrorLevel="3" Project="TimerTest" Source="..\Timer\TimerTest\TimerTest.csproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="TimerTest" Source="..\Timer\TimerTest\TimerTest.csproj" Description="Scan complete: Upgrade not required for project files.">
+</Event></UpgradeLog>

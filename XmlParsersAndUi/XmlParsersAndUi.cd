@@ -1,0 +1,656 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<ClassDiagram Zoom="1" MajorVersion="1" MinorVersion="1" MembersFormat="FullSignature">
+  <Class Name="XmlParsersAndUi.Controls.CustomizedReplacement" Collapsed="False">
+    <Position X="0.5" Y="13" Width="3.156315" />
+    <Compartments>
+      <Compartment Name="Properties" Collapsed="False" />
+      <Compartment Name="Methods" Collapsed="False" />
+      <Compartment Name="Fields" Collapsed="False" />
+    </Compartments>
+  </Class>
+  <Class Name="XmlParsersAndUi.BulkCustomsForm" Collapsed="False">
+    <Position X="0.5" Y="18.1" Width="2.664752" />
+    <Compartments>
+      <Compartment Name="Methods" Collapsed="False" />
+      <Compartment Name="Fields" Collapsed="False" />
+    </Compartments>
+  </Class>
+  <Class Name="XmlParsersAndUi.Properties.Resources" Collapsed="False">
+    <Position X="0.5" Y="23.2" Width="2.472174" />
+    <Compartments>
+      <Compartment Name="Properties" Collapsed="False" />
+      <Compartment Name="Methods" Collapsed="False" />
+      <Compartment Name="Fields" Collapsed="False" />
+    </Compartments>
+  </Class>
+  <Class Name="XmlParsersAndUi.Properties.Settings" Collapsed="False">
+    <Position X="0.5" Y="26.9" Width="1.828166" />
+    <Compartments>
+      <Compartment Name="Properties" Collapsed="False" />
+      <Compartment Name="Fields" Collapsed="False" />
+    </Compartments>
+  </Class>
+  <Class Name="XmlParsersAndUi.Results" Collapsed="False">
+    <Position X="0.5" Y="28.6" Width="2.678449" />
+    <Compartments>
+      <Compartment Name="Methods" Collapsed="False" />
+      <Compartment Name="Fields" Collapsed="False" />
+    </Compartments>
+  </Class>
+  <Class Name="XmlParsersAndUi.SessionKeyAndTitleForm" Collapsed="False">
+    <Position X="0.5" Y="32.9" Width="3.138805" />
+    <Compartments>
+      <Compartment Name="Methods" Collapsed="False" />
+      <Compartment Name="Fields" Collapsed="False" />
+    </Compartments>
+  </Class>
+  <Class Name="RatingControls.StarRatingControl" Collapsed="False">
+    <Position X="0.5" Y="38.3" Width="2.381696" />
+    <Compartments>
+      <Compartment Name="Properties" Collapsed="False" />
+      <Compartment Name="Methods" Collapsed="False" />
+      <Compartment Name="Fields" Collapsed="False" />
+    </Compartments>
+  </Class>
+  <Class Name="Dotnetrix.Examples.MyTabControl" Collapsed="False">
+    <Position X="0.5" Y="45.4" Width="3.692106" />
+    <Compartments>
+      <Compartment Name="Properties" Collapsed="False" />
+      <Compartment Name="Nested Types" Collapsed="False" />
+    </Compartments>
+  </Class>
+  <Class Name="Dotnetrix.Examples.TabPage" Collapsed="False">
+    <Position X="0.5" Y="0.5" Width="1.497936" />
+    <Compartments>
+      <Compartment Name="Methods" Collapsed="False" />
+    </Compartments>
+  </Class>
+  <Class Name="Dotnetrix.Examples.RandomColorTabPage" Collapsed="False">
+    <Position X="0.5" Y="1.9" Width="2.896999" />
+    <Compartments>
+      <Compartment Name="Methods" Collapsed="False" />
+      <Compartment Name="Fields" Collapsed="False" />
+    </Compartments>
+  </Class>
+  <Class Name="Dotnetrix.Examples.MyTabControlDesigner" Collapsed="False">
+    <Position X="0.5" Y="48.6" Width="3.156749" />
+    <Compartments>
+      <Compartment Name="Properties" Collapsed="False" />
+      <Compartment Name="Methods" Collapsed="False" />
+      <Compartment Name="Fields" Collapsed="False" />
+      <Compartment Name="Nested Types" Collapsed="False" />
+    </Compartments>
+  </Class>
+  <Class Name="XmlParsersAndUi.SetupAdvancedRecForm" Collapsed="False">
+    <Position X="0.5" Y="56" Width="3.470846" />
+    <Compartments>
+      <Compartment Name="Methods" Collapsed="False" />
+      <Compartment Name="Fields" Collapsed="False" />
+    </Compartments>
+  </Class>
+  <Class Name="XmlParsersAndUi.BulkMacroSplitterForm" Collapsed="False">
+    <Position X="0.5" Y="78" Width="3.112164" />
+    <Compartments>
+      <Compartment Name="Methods" Collapsed="False" />
+      <Compartment Name="Fields" Collapsed="False" />
+    </Compartments>
+  </Class>
+  <Class Name="XmlParsersAndUi.TDHEditBox.TdhEditBox" Collapsed="False">
+    <Position X="0.5" Y="87.2" Width="2.102194" />
+    <Compartments>
+      <Compartment Name="Properties" Collapsed="False" />
+      <Compartment Name="Methods" Collapsed="False" />
+      <Compartment Name="Fields" Collapsed="False" />
+      <Compartment Name="Events" Collapsed="False" />
+    </Compartments>
+  </Class>
+  <Class Name="XmlParsersAndUi.TDHEditBox.frmEditBox" Collapsed="False">
+    <Position X="0.5" Y="92.6" Width="2.102194" />
+    <Compartments>
+      <Compartment Name="Properties" Collapsed="False" />
+      <Compartment Name="Methods" Collapsed="False" />
+      <Compartment Name="Fields" Collapsed="False" />
+      <Compartment Name="Events" Collapsed="False" />
+    </Compartments>
+  </Class>
+  <Delegate Name="XmlParsersAndUi.TDHEditBox.EditComplete" Collapsed="False">
+    <Position X="0.5" Y="97.8" Width="1.763102" />
+    <Compartments />
+  </Delegate>
+  <Class Name="XmlParsersAndUi.TDHEditBox.EditEventArgs" Collapsed="False">
+    <Position X="0.5" Y="99.2" Width="2.015387" />
+    <Compartments>
+      <Compartment Name="Properties" Collapsed="False" />
+      <Compartment Name="Methods" Collapsed="False" />
+      <Compartment Name="Fields" Collapsed="False" />
+    </Compartments>
+  </Class>
+  <Class Name="XmlParsersAndUi.checkboxItems" Collapsed="False">
+    <Position X="0.5" Y="102.3" Width="1.41651" />
+    <Compartments>
+      <Compartment Name="Methods" Collapsed="False" />
+      <Compartment Name="Fields" Collapsed="False" />
+    </Compartments>
+  </Class>
+  <Class Name="XmlParsersAndUi.CleanupForm" Collapsed="False">
+    <Position X="0.5" Y="104.8" Width="3.366432" />
+    <Compartments>
+      <Compartment Name="Methods" Collapsed="False" />
+      <Compartment Name="Fields" Collapsed="False" />
+    </Compartments>
+  </Class>
+  <Class Name="XmlParsersAndUi.SetupSimpleRecForm" Collapsed="False">
+    <Position X="0.5" Y="113.9" Width="2.999587" />
+    <Compartments>
+      <Compartment Name="Methods" Collapsed="False" />
+      <Compartment Name="Fields" Collapsed="False" />
+    </Compartments>
+  </Class>
+  <Class Name="XmlParsersAndUi.SlashAdderToEventsFiles" Collapsed="False">
+    <Position X="0.5" Y="120.7" Width="3.189401" />
+    <Compartments>
+      <Compartment Name="Methods" Collapsed="False" />
+      <Compartment Name="Fields" Collapsed="False" />
+    </Compartments>
+  </Class>
+  <Class Name="XmlParsersAndUi.ConfigBuilder" Collapsed="False">
+    <Position X="0.5" Y="125.6" Width="2.556793" />
+    <Compartments>
+      <Compartment Name="Methods" Collapsed="False" />
+      <Compartment Name="Fields" Collapsed="False" />
+    </Compartments>
+  </Class>
+  <Class Name="Utilities.WinForms.ApplicationIdleTimer" Collapsed="False">
+    <Position X="0.5" Y="131.4" Width="3.402711" />
+    <Compartments>
+      <Compartment Name="Properties" Collapsed="False" />
+      <Compartment Name="Methods" Collapsed="False" />
+      <Compartment Name="Fields" Collapsed="False" />
+      <Compartment Name="Events" Collapsed="False" />
+      <Compartment Name="Nested Types" Collapsed="False" />
+    </Compartments>
+  </Class>
+  <Class Name="XmlParsersAndUi.Classes.BackGroundWorkerObject" Collapsed="False">
+    <Position X="0.5" Y="140.2" Width="4.284137" />
+    <Compartments>
+      <Compartment Name="Methods" Collapsed="False" />
+      <Compartment Name="Fields" Collapsed="False" />
+    </Compartments>
+  </Class>
+  <Class Name="XmlParsersAndUi.Classes.FileToParseObject" Collapsed="False">
+    <Position X="0.5" Y="142.4" Width="2.458717" />
+    <Compartments>
+      <Compartment Name="Methods" Collapsed="False" />
+      <Compartment Name="Fields" Collapsed="False" />
+    </Compartments>
+  </Class>
+  <Class Name="XmlParsersAndUi.DatabaseViewer" Collapsed="False">
+    <Position X="0.5" Y="144.2" Width="2.311979" />
+    <Compartments>
+      <Compartment Name="Methods" Collapsed="False" />
+      <Compartment Name="Fields" Collapsed="False" />
+    </Compartments>
+  </Class>
+  <Class Name="XmlParsersAndUi.BulkMacroTreeNode" Collapsed="False">
+    <Position X="0.5" Y="147.8" Width="3.464293" />
+    <Compartments>
+      <Compartment Name="Methods" Collapsed="False" />
+      <Compartment Name="Fields" Collapsed="False" />
+    </Compartments>
+  </Class>
+  <Class Name="XmlParsersAndUi.Classes.CustomizationFunction" Collapsed="False">
+    <Position X="0.5" Y="150.7" Width="3.548835" />
+    <Compartments>
+      <Compartment Name="Methods" Collapsed="False" />
+      <Compartment Name="Fields" Collapsed="False" />
+    </Compartments>
+  </Class>
+  <Class Name="XmlParsersAndUi.DtdElement" Collapsed="False">
+    <Position X="0.5" Y="153.1" Width="2.33862" />
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="False" />
+    </Compartments>
+  </Class>
+  <Class Name="XmlParsersAndUi.Classes.ComplexCaptureMatchObject" Collapsed="False">
+    <Position X="0.5" Y="155.3" Width="2.867887" />
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="False" />
+    </Compartments>
+  </Class>
+  <Class Name="XmlParsersAndUi.Classes.FileAndNumberOfMatches" Collapsed="False">
+    <Position X="0.5" Y="157" Width="1.995998" />
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="False" />
+    </Compartments>
+  </Class>
+  <Class Name="XmlParsersAndUi.Classes.EnvComparatorWorker" Collapsed="False">
+    <Position X="0.5" Y="158.5" Width="2.894958" />
+    <Compartments>
+      <Compartment Name="Methods" Collapsed="False" />
+      <Compartment Name="Fields" Collapsed="False" />
+    </Compartments>
+  </Class>
+  <Class Name="XmlParsersAndUi.TdhTabCtl" Collapsed="False">
+    <Position X="0.5" Y="160.7" Width="3.05755" />
+    <Compartments>
+      <Compartment Name="Properties" Collapsed="False" />
+      <Compartment Name="Methods" Collapsed="False" />
+      <Compartment Name="Fields" Collapsed="False" />
+      <Compartment Name="Events" Collapsed="False" />
+    </Compartments>
+  </Class>
+  <Class Name="XmlParsersAndUi.FindXpathForm" Collapsed="False">
+    <Position X="0.5" Y="176.5" Width="2.141178" />
+    <Compartments>
+      <Compartment Name="Methods" Collapsed="False" />
+      <Compartment Name="Fields" Collapsed="False" />
+    </Compartments>
+  </Class>
+  <Class Name="XmlParsersAndUi.Form1" Collapsed="False">
+    <Position X="0.5" Y="179.6" Width="2.488097" />
+    <Compartments>
+      <Compartment Name="Methods" Collapsed="False" />
+      <Compartment Name="Fields" Collapsed="False" />
+    </Compartments>
+  </Class>
+  <Class Name="XmlParsersAndUi.Form2" Collapsed="False">
+    <Position X="0.5" Y="188.7" Width="2.254884" />
+    <Compartments>
+      <Compartment Name="Methods" Collapsed="False" />
+      <Compartment Name="Fields" Collapsed="False" />
+    </Compartments>
+  </Class>
+  <Class Name="XmlParsersAndUi.Classes.EventsGroupNameAndID" Collapsed="False">
+    <Position X="0.5" Y="196.4" Width="3.134831" />
+    <Compartments>
+      <Compartment Name="Methods" Collapsed="False" />
+      <Compartment Name="Fields" Collapsed="False" />
+    </Compartments>
+  </Class>
+  <Class Name="XmlParsersAndUi.TdhTabCtl_Designer" Collapsed="False">
+    <Position X="0.5" Y="198.4" Width="3.156749" />
+    <Compartments>
+      <Compartment Name="Properties" Collapsed="False" />
+      <Compartment Name="Methods" Collapsed="False" />
+      <Compartment Name="Fields" Collapsed="False" />
+      <Compartment Name="Nested Types" Collapsed="False" />
+    </Compartments>
+  </Class>
+  <Delegate Name="XmlParsersAndUi.TabEventsDelegate" Collapsed="False">
+    <Position X="0.5" Y="206.8" Width="1.569904" />
+    <Compartments />
+  </Delegate>
+  <Delegate Name="XmlParsersAndUi.TabsReorderedEventDelegate" Collapsed="False">
+    <Position X="0.5" Y="208.2" Width="2.125114" />
+    <Compartments />
+  </Delegate>
+  <Class Name="XmlParsersAndUi.TabEventArgs" Collapsed="False">
+    <Position X="0.5" Y="3.8" Width="2.464523" />
+    <Compartments>
+      <Compartment Name="Properties" Collapsed="False" />
+      <Compartment Name="Methods" Collapsed="False" />
+      <Compartment Name="Fields" Collapsed="False" />
+      <Compartment Name="Nested Types" Collapsed="False" />
+    </Compartments>
+  </Class>
+  <Class Name="XmlParsersAndUi.TabsReorderedEventArgs" Collapsed="False">
+    <Position X="0.5" Y="10.5" Width="3.197887" />
+    <Compartments>
+      <Compartment Name="Properties" Collapsed="False" />
+      <Compartment Name="Methods" Collapsed="False" />
+      <Compartment Name="Fields" Collapsed="False" />
+    </Compartments>
+  </Class>
+  <Class Name="XmlParsersAndUi.Classes.ExportDatagridWorkerObject" Collapsed="False">
+    <Position X="0.5" Y="209.5" Width="3.477077" />
+    <Compartments>
+      <Compartment Name="Methods" Collapsed="False" />
+      <Compartment Name="Fields" Collapsed="False" />
+    </Compartments>
+  </Class>
+  <Class Name="XmlParsersAndUi.TdhTabPage" Collapsed="False">
+    <Position X="0.5" Y="211.7" Width="2.223517" />
+    <Compartments>
+      <Compartment Name="Properties" Collapsed="False" />
+      <Compartment Name="Methods" Collapsed="False" />
+      <Compartment Name="Fields" Collapsed="False" />
+    </Compartments>
+  </Class>
+  <Class Name="XmlParsersAndUi.TdhTabPageCollection" Collapsed="False">
+    <Position X="0.5" Y="216.4" Width="2.887331" />
+    <Compartments>
+      <Compartment Name="Properties" Collapsed="False" />
+      <Compartment Name="Methods" Collapsed="False" />
+      <Compartment Name="Fields" Collapsed="False" />
+    </Compartments>
+  </Class>
+  <Class Name="XmlParsersAndUi.TdhTabPageCollectionEditor" Collapsed="False">
+    <Position X="0.5" Y="222" Width="3.480514" />
+    <Compartments>
+      <Compartment Name="Methods" Collapsed="False" />
+    </Compartments>
+  </Class>
+  <Class Name="XmlParsersAndUi.TabPageCollectionEditor" Collapsed="False">
+    <Position X="0.5" Y="223.9" Width="3.090036" />
+    <Compartments>
+      <Compartment Name="Methods" Collapsed="False" />
+    </Compartments>
+  </Class>
+  <Class Name="XmlParsersAndUi.ListViewItem" Collapsed="False">
+    <Position X="0.5" Y="225.7" Width="1.530968" />
+    <Compartments>
+      <Compartment Name="Methods" Collapsed="False" />
+      <Compartment Name="Fields" Collapsed="False" />
+    </Compartments>
+  </Class>
+  <Class Name="XmlParsersAndUi.TdhTabPageControls" Collapsed="False">
+    <Position X="0.5" Y="227.6" Width="2.733395" />
+    <Compartments>
+      <Compartment Name="Properties" Collapsed="False" />
+      <Compartment Name="Methods" Collapsed="False" />
+      <Compartment Name="Fields" Collapsed="False" />
+    </Compartments>
+  </Class>
+  <Class Name="XmlParsersAndUi.MacroEvent" Collapsed="False">
+    <Position X="0.5" Y="230.9" Width="2.45673" />
+    <Compartments>
+      <Compartment Name="Methods" Collapsed="False" />
+    </Compartments>
+  </Class>
+  <Class Name="XmlParsersAndUi.MainForm" Collapsed="False">
+    <Position X="0.5" Y="232.3" Width="3.931579" />
+    <Compartments>
+      <Compartment Name="Properties" Collapsed="False" />
+      <Compartment Name="Methods" Collapsed="False" />
+      <Compartment Name="Fields" Collapsed="False" />
+    </Compartments>
+  </Class>
+  <Class Name="XmlParsersAndUi.Forms.FastExportingMethod" Collapsed="False">
+    <Position X="0.5" Y="253.9" Width="2.266876" />
+    <Compartments>
+      <Compartment Name="Methods" Collapsed="False" />
+    </Compartments>
+  </Class>
+  <Class Name="XmlParsersAndUi.TdhTabReorder" Collapsed="False">
+    <Position X="0.5" Y="255.3" Width="2.367409" />
+    <Compartments>
+      <Compartment Name="Properties" Collapsed="False" />
+      <Compartment Name="Methods" Collapsed="False" />
+      <Compartment Name="Fields" Collapsed="False" />
+    </Compartments>
+  </Class>
+  <Class Name="XmlParsersAndUi.StringIs" Collapsed="False">
+    <Position X="0.5" Y="263.1" Width="1.215524" />
+    <Compartments>
+      <Compartment Name="Methods" Collapsed="False" />
+    </Compartments>
+  </Class>
+  <Class Name="XmlParsersAndUi.Forms.EnvComparisonCategoryForm" Collapsed="False">
+    <Position X="0.5" Y="264.5" Width="3.639499" />
+    <Compartments>
+      <Compartment Name="Methods" Collapsed="False" />
+      <Compartment Name="Fields" Collapsed="False" />
+    </Compartments>
+  </Class>
+  <Class Name="XmlParsersAndUi.Forms.AddPropertyForm" Collapsed="False">
+    <Position X="0.5" Y="269.2" Width="2.863376" />
+    <Compartments>
+      <Compartment Name="Methods" Collapsed="False" />
+      <Compartment Name="Fields" Collapsed="False" />
+    </Compartments>
+  </Class>
+  <Class Name="XmlParsersAndUi.Classes.InstallerProp" Collapsed="False">
+    <Position X="0.5" Y="272" Width="2.414035" />
+    <Compartments>
+      <Compartment Name="Methods" Collapsed="False" />
+      <Compartment Name="Fields" Collapsed="False" />
+      <Compartment Name="Nested Types" Collapsed="False" />
+    </Compartments>
+  </Class>
+  <Class Name="XmlParsersAndUi.Program" Collapsed="False">
+    <Position X="0.5" Y="275.7" Width="2.266876" />
+    <Compartments>
+      <Compartment Name="Methods" Collapsed="False" />
+    </Compartments>
+  </Class>
+  <Class Name="XmlParsersAndUi.Classes.MainAppVariables" Collapsed="False">
+    <Position X="0.5" Y="277.1" Width="2.198288" />
+    <Compartments>
+      <Compartment Name="Properties" Collapsed="False" />
+    </Compartments>
+  </Class>
+  <Class Name="XmlParsersAndUi.Classes.NodeAndAttributeCouple" Collapsed="False">
+    <Position X="0.5" Y="278.5" Width="1.839855" />
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="False" />
+    </Compartments>
+  </Class>
+  <Class Name="XmlParsersAndUi.Forms.EditFolderNameForm" Collapsed="False">
+    <Position X="0.5" Y="280.3" Width="2.746608" />
+    <Compartments>
+      <Compartment Name="Methods" Collapsed="False" />
+      <Compartment Name="Fields" Collapsed="False" />
+    </Compartments>
+  </Class>
+  <Class Name="XmlParsersAndUi.Forms.AdvancedReplacementsForm" Collapsed="False">
+    <Position X="0.5" Y="283.5" Width="3.564411" />
+    <Compartments>
+      <Compartment Name="Methods" Collapsed="False" />
+      <Compartment Name="Fields" Collapsed="False" />
+    </Compartments>
+  </Class>
+  <Class Name="XmlParsersAndUi.Forms.ApplicationPreferencesForm" Collapsed="False">
+    <Position X="0.5" Y="286" Width="3.440983" />
+    <Compartments>
+      <Compartment Name="Methods" Collapsed="False" />
+      <Compartment Name="Fields" Collapsed="False" />
+    </Compartments>
+  </Class>
+  <Class Name="XmlParsersAndUi.Forms.BulkFolderNamesInsertion" Collapsed="False">
+    <Position X="0.5" Y="293.1" Width="3.252028" />
+    <Compartments>
+      <Compartment Name="Methods" Collapsed="False" />
+      <Compartment Name="Fields" Collapsed="False" />
+    </Compartments>
+  </Class>
+  <Class Name="XmlParsersAndUi.Forms.EnvironmentComparisonForm" Collapsed="False">
+    <Position X="0.5" Y="295.5" Width="3.636115" />
+    <Compartments>
+      <Compartment Name="Methods" Collapsed="False" />
+      <Compartment Name="Fields" Collapsed="False" />
+    </Compartments>
+  </Class>
+  <Class Name="XmlParsersAndUi.Classes.ListViewEx" Collapsed="False">
+    <Position X="0.5" Y="320.5" Width="3.276256" />
+    <Compartments>
+      <Compartment Name="Properties" Collapsed="False" />
+      <Compartment Name="Methods" Collapsed="False" />
+      <Compartment Name="Fields" Collapsed="False" />
+      <Compartment Name="Events" Collapsed="False" />
+      <Compartment Name="Nested Types" Collapsed="False" />
+    </Compartments>
+  </Class>
+  <Class Name="XmlParsersAndUi.Forms.FindForm" Collapsed="False">
+    <Position X="0.5" Y="331.4" Width="2.059108" />
+    <Compartments>
+      <Compartment Name="Methods" Collapsed="False" />
+      <Compartment Name="Fields" Collapsed="False" />
+    </Compartments>
+  </Class>
+  <Class Name="AppControl.ApplicationControl" Collapsed="False">
+    <Position X="0.5" Y="335.7" Width="2.422409" />
+    <Compartments>
+      <Compartment Name="Properties" Collapsed="False" />
+      <Compartment Name="Methods" Collapsed="False" />
+      <Compartment Name="Fields" Collapsed="False" />
+    </Compartments>
+  </Class>
+  <Class Name="XmlParsersAndUi.Forms.FTPDownloaderForm" Collapsed="False">
+    <Position X="0.5" Y="342.3" Width="2.745319" />
+    <Compartments>
+      <Compartment Name="Methods" Collapsed="False" />
+      <Compartment Name="Fields" Collapsed="False" />
+    </Compartments>
+  </Class>
+  <Class Name="XmlParsersAndUi.Forms.BulkMacroBuildXmlForm" Collapsed="False">
+    <Position X="0.5" Y="347.8" Width="3.076608" />
+    <Compartments>
+      <Compartment Name="Methods" Collapsed="False" />
+      <Compartment Name="Fields" Collapsed="False" />
+    </Compartments>
+  </Class>
+  <Class Name="XmlParsersAndUi.Forms.ConfigureFolderNamesForm" Collapsed="False">
+    <Position X="0.5" Y="350.3" Width="3.451833" />
+    <Compartments>
+      <Compartment Name="Methods" Collapsed="False" />
+      <Compartment Name="Fields" Collapsed="False" />
+    </Compartments>
+  </Class>
+  <Class Name="XmlParsersAndUi.Forms.PackageGenerator" Collapsed="False">
+    <Position X="0.5" Y="355.8" Width="3.112164" />
+    <Compartments>
+      <Compartment Name="Methods" Collapsed="False" />
+      <Compartment Name="Fields" Collapsed="False" />
+    </Compartments>
+  </Class>
+  <Class Name="XmlParsersAndUi.Forms.ConvertToEnumForm" Collapsed="False">
+    <Position X="0.5" Y="372.4" Width="2.756598" />
+    <Compartments>
+      <Compartment Name="Methods" Collapsed="False" />
+      <Compartment Name="Fields" Collapsed="False" />
+    </Compartments>
+  </Class>
+  <Class Name="XmlParsersAndUi.Forms.MacroConverterConfForm" Collapsed="False">
+    <Position X="0.5" Y="375.8" Width="3.470846" />
+    <Compartments>
+      <Compartment Name="Methods" Collapsed="False" />
+      <Compartment Name="Fields" Collapsed="False" />
+    </Compartments>
+  </Class>
+  <Class Name="XmlParsersAndUi.Forms.PushAutomationJobForm" Collapsed="False">
+    <Position X="0.5" Y="390.8" Width="3.136227" />
+    <Compartments>
+      <Compartment Name="Methods" Collapsed="False" />
+      <Compartment Name="Fields" Collapsed="False" />
+    </Compartments>
+  </Class>
+  <Class Name="XmlParsersAndUi.Forms.JobParameter" Collapsed="False">
+    <Position X="0.5" Y="396.3" Width="2.001315" />
+    <Compartments>
+      <Compartment Name="Methods" Collapsed="False" />
+      <Compartment Name="Fields" Collapsed="False" />
+    </Compartments>
+  </Class>
+  <Class Name="XmlParsersAndUi.Forms.Multi_TestCaseForm" Collapsed="False">
+    <Position X="0.5" Y="398.5" Width="2.682692" />
+    <Compartments>
+      <Compartment Name="Methods" Collapsed="False" />
+      <Compartment Name="Fields" Collapsed="False" />
+    </Compartments>
+  </Class>
+  <Class Name="XmlParsersAndUi.Forms.SDDGeneratorForm" Collapsed="False">
+    <Position X="0.5" Y="402.8" Width="4.13321" />
+    <Compartments>
+      <Compartment Name="Methods" Collapsed="False" />
+      <Compartment Name="Fields" Collapsed="False" />
+    </Compartments>
+  </Class>
+  <Class Name="XmlParsersAndUi.Forms.RemoteServer" Collapsed="False">
+    <Position X="0.5" Y="410.7" Width="2.449694" />
+    <Compartments>
+      <Compartment Name="Methods" Collapsed="False" />
+      <Compartment Name="Fields" Collapsed="False" />
+    </Compartments>
+  </Class>
+  <Class Name="XmlParsersAndUi.BulkMacroSplitterTreeForm" Collapsed="False">
+    <Position X="0.5" Y="416.5" Width="3.434" />
+    <Compartments>
+      <Compartment Name="Methods" Collapsed="False" />
+      <Compartment Name="Fields" Collapsed="False" />
+    </Compartments>
+  </Class>
+  <Class Name="XmlParsersAndUi.Forms.ShowSearchDetailsForm" Collapsed="False">
+    <Position X="0.5" Y="427.6" Width="3.086813" />
+    <Compartments>
+      <Compartment Name="Methods" Collapsed="False" />
+      <Compartment Name="Fields" Collapsed="False" />
+    </Compartments>
+  </Class>
+  <Class Name="XmlParsersAndUi.Forms.OracleUpdaterForm" Collapsed="False">
+    <Position X="0.5" Y="430.7" Width="2.581608" />
+    <Compartments>
+      <Compartment Name="Methods" Collapsed="False" />
+      <Compartment Name="Fields" Collapsed="False" />
+      <Compartment Name="Nested Types" Collapsed="False" />
+    </Compartments>
+  </Class>
+  <Class Name="XmlParsersAndUi.Forms.TestingTabs" Collapsed="False">
+    <Position X="0.5" Y="439.4" Width="2.104386" />
+    <Compartments>
+      <Compartment Name="Methods" Collapsed="False" />
+      <Compartment Name="Fields" Collapsed="False" />
+    </Compartments>
+  </Class>
+  <Class Name="XmlParsersAndUi.Forms.testReplacements" Collapsed="False">
+    <Position X="0.5" Y="445.8" Width="2.898019" />
+    <Compartments>
+      <Compartment Name="Methods" Collapsed="False" />
+      <Compartment Name="Fields" Collapsed="False" />
+    </Compartments>
+  </Class>
+  <Class Name="XmlParsersAndUi.Forms.RenameStepForm" Collapsed="False">
+    <Position X="0.5" Y="450.2" Width="2.429391" />
+    <Compartments>
+      <Compartment Name="Methods" Collapsed="False" />
+      <Compartment Name="Fields" Collapsed="False" />
+    </Compartments>
+  </Class>
+  <Class Name="XmlParsersAndUi.Forms.UsersStatus" Collapsed="False">
+    <Position X="0.5" Y="453.3" Width="2.332282" />
+    <Compartments>
+      <Compartment Name="Methods" Collapsed="False" />
+      <Compartment Name="Fields" Collapsed="False" />
+    </Compartments>
+  </Class>
+  <Class Name="XmlParsersAndUi.RftReplacementForm" Collapsed="False">
+    <Position X="0.5" Y="457.4" Width="2.732751" />
+    <Compartments>
+      <Compartment Name="Methods" Collapsed="False" />
+      <Compartment Name="Fields" Collapsed="False" />
+    </Compartments>
+  </Class>
+  <Struct Name="XmlParsersAndUi.LASTINPUTINFO" Collapsed="False">
+    <Position X="0.5" Y="463.8" Width="1.459367" />
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="False" />
+    </Compartments>
+  </Struct>
+  <Class Name="XmlParsersAndUi.Win32" Collapsed="False">
+    <Position X="0.5" Y="465.3" Width="1.694303" />
+    <Compartments>
+      <Compartment Name="Methods" Collapsed="False" />
+    </Compartments>
+  </Class>
+  <Class Name="Tamir.SharpSsh.SshStream" Collapsed="False">
+    <Position X="0.5" Y="467.4" Width="2.7461" />
+    <Compartments>
+      <Compartment Name="Properties" Collapsed="False" />
+      <Compartment Name="Methods" Collapsed="False" />
+      <Compartment Name="Fields" Collapsed="False" />
+    </Compartments>
+  </Class>
+  <Class Name="XmlParsersAndUi.Forms.SecondLevelCleanupForm" Collapsed="False">
+    <Position X="0.5" Y="474.5" Width="4.13321" />
+    <Compartments>
+      <Compartment Name="Methods" Collapsed="False" />
+      <Compartment Name="Fields" Collapsed="False" />
+    </Compartments>
+  </Class>
+  <Class Name="XmlParsersAndUi.Forms.SelectFolderNameForm" Collapsed="False">
+    <Position X="0.5" Y="492.8" Width="2.985944" />
+    <Compartments>
+      <Compartment Name="Methods" Collapsed="False" />
+      <Compartment Name="Fields" Collapsed="False" />
+    </Compartments>
+  </Class>
+</ClassDiagram>

@@ -1,0 +1,8 @@
+C:\Documents and Settings\mkabbani\My Documents\Visual Studio 2008\Projects\RFT-Replaces\CustomsRefactoring\bin\Release\CustomsRefactoring.exe
+C:\Documents and Settings\mkabbani\My Documents\Visual Studio 2008\Projects\RFT-Replaces\CustomsRefactoring\bin\Release\CustomsRefactoring.pdb
+C:\Documents and Settings\mkabbani\My Documents\Visual Studio 2008\Projects\RFT-Replaces\CustomsRefactoring\obj\Release\ResolveAssemblyReference.cache
+C:\Documents and Settings\mkabbani\My Documents\Visual Studio 2008\Projects\RFT-Replaces\CustomsRefactoring\obj\Release\CustomsRefactoring.Form1.resources
+C:\Documents and Settings\mkabbani\My Documents\Visual Studio 2008\Projects\RFT-Replaces\CustomsRefactoring\obj\Release\CustomsRefactoring.Properties.Resources.resources
+C:\Documents and Settings\mkabbani\My Documents\Visual Studio 2008\Projects\RFT-Replaces\CustomsRefactoring\obj\Release\CustomsRefactoring.csproj.GenerateResource.Cache
+C:\Documents and Settings\mkabbani\My Documents\Visual Studio 2008\Projects\RFT-Replaces\CustomsRefactoring\obj\Release\CustomsRefactoring.exe
+C:\Documents and Settings\mkabbani\My Documents\Visual Studio 2008\Projects\RFT-Replaces\CustomsRefactoring\obj\Release\CustomsRefactoring.pdb

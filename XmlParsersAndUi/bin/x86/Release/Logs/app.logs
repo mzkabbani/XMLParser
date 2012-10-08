@@ -1,0 +1,164 @@
+
+
+
+
+
+10/1/2012 4:41:34 PM
+
+
+Index was out of range. Must be non-negative and less than the size of the collection.
+Parameter name: index
+
+
+System.ArgumentOutOfRangeException: Index was out of range. Must be non-negative and less than the size of the collection.
+Parameter name: index
+   at System.Collections.ArrayList.get_Item(Int32 index)
+   at System.Windows.Forms.DataGridViewRowCollection.SharedRow(Int32 rowIndex)
+   at System.Windows.Forms.DataGridViewRowCollection.get_Item(Int32 index)
+   at System.Windows.Forms.DataGridView.get_Item(Int32 columnIndex, Int32 rowIndex)
+   at XmlParsersAndUi.Forms.SecondLevelCleanupForm.dgvResults_CellClick(Object sender, DataGridViewCellEventArgs e) in c:\Documents and Settings\mkabbani\My Documents\Visual Studio 2008\Projects\RFT-Replaces\XmlParsersAndUi\Forms\SecondLevelCleanupForm.cs:line 855
+
+
+
+
+10/1/2012 4:41:46 PM
+
+
+Index was out of range. Must be non-negative and less than the size of the collection.
+Parameter name: index
+
+
+System.ArgumentOutOfRangeException: Index was out of range. Must be non-negative and less than the size of the collection.
+Parameter name: index
+   at System.Collections.ArrayList.get_Item(Int32 index)
+   at System.Windows.Forms.DataGridViewRowCollection.SharedRow(Int32 rowIndex)
+   at System.Windows.Forms.DataGridViewRowCollection.get_Item(Int32 index)
+   at System.Windows.Forms.DataGridView.get_Item(Int32 columnIndex, Int32 rowIndex)
+   at XmlParsersAndUi.Forms.SecondLevelCleanupForm.dgvResults_CellClick(Object sender, DataGridViewCellEventArgs e) in c:\Documents and Settings\mkabbani\My Documents\Visual Studio 2008\Projects\RFT-Replaces\XmlParsersAndUi\Forms\SecondLevelCleanupForm.cs:line 855
+
+
+
+
+10/1/2012 5:20:16 PM
+
+
+Could not find a part of the path 'C:\Documents and Settings\mkabbani\My Documents\Visual Studio 2008\Projects\RFT-Replaces\XmlParsersAndUi\bin\x86\Release\MIGRATION\FIRSTPACKAGE\trunk\.ci\package\murex\Migration\installMain.groovy'.
+
+
+System.IO.DirectoryNotFoundException: Could not find a part of the path 'C:\Documents and Settings\mkabbani\My Documents\Visual Studio 2008\Projects\RFT-Replaces\XmlParsersAndUi\bin\x86\Release\MIGRATION\FIRSTPACKAGE\trunk\.ci\package\murex\Migration\installMain.groovy'.
+   at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options)
+   at System.IO.StreamReader..ctor(String path, Encoding encoding, Boolean detectEncodingFromByteOrderMarks, Int32 bufferSize)
+   at System.IO.StreamReader..ctor(String path)
+   at Automation.Common.Utils.FrontendUtils.ReadFile(String filePath) in c:\Documents and Settings\mkabbani\My Documents\Visual Studio 2008\Projects\RFT-Replaces\Automation.Common\Utils\FrontendUtils.cs:line 265
+   at XmlParsersAndUi.Forms.PackageGenerator.PopulateAllAvailableProperties(String pathToInstallerFile) in c:\Documents and Settings\mkabbani\My Documents\Visual Studio 2008\Projects\RFT-Replaces\XmlParsersAndUi\Forms\PackageGenerator.cs:line 459
+   at XmlParsersAndUi.Forms.PackageGenerator.PackageGenerator_Load(Object sender, EventArgs e) in c:\Documents and Settings\mkabbani\My Documents\Visual Studio 2008\Projects\RFT-Replaces\XmlParsersAndUi\Forms\PackageGenerator.cs:line 38
+
+
+
+
+10/1/2012 5:20:50 PM
+
+
+The SqlCeParameter with this name is already contained by this SqlCeParameterCollection.
+
+
+System.ArgumentException: The SqlCeParameter with this name is already contained by this SqlCeParameterCollection.
+   at System.Data.SqlServerCe.SqlCeParameterCollection.ThrowParamterExistsException()
+   at System.Data.SqlServerCe.SqlCeParameterCollection.AddWithoutEvents(Int32 index, SqlCeParameter value)
+   at System.Data.SqlServerCe.SqlCeParameterCollection.Add(String parameterName, Object value)
+   at Automation.Backend.Advanced_Replacements.IncrementReplacementsListUsageById(List`1 capturesAndReplacements) in c:\Documents and Settings\mkabbani\My Documents\Visual Studio 2008\Projects\RFT-Replaces\Automation.Backend\Classes\Advanced_Replacements.cs:line 117
+
+
+
+
+10/1/2012 6:09:23 PM
+
+
+The column name is not valid. [ Node name (if any) = ,Column name = isKicked ]
+
+
+The column name is not valid. [ Node name (if any) = ,Column name = isKicked ]
+
+
+
+
+10/1/2012 6:13:40 PM
+
+
+The column name is not valid. [ Node name (if any) = ,Column name = mkabbani ]
+
+
+The column name is not valid. [ Node name (if any) = ,Column name = mkabbani ]
+
+
+
+
+10/1/2012 6:13:49 PM
+
+
+The column name is not valid. [ Node name (if any) = ,Column name = mkabbani ]
+
+
+The column name is not valid. [ Node name (if any) = ,Column name = mkabbani ]
+
+
+
+
+10/1/2012 6:14:02 PM
+
+
+1
+
+
+
+
+
+
+
+10/1/2012 6:14:52 PM
+
+
+1
+
+
+
+
+
+
+
+10/1/2012 6:21:24 PM
+
+
+1
+
+
+
+
+
+
+
+10/2/2012 10:36:10 AM
+
+
+An overflow occurred while converting to datetime.
+
+
+An overflow occurred while converting to datetime.
+
+
+
+
+10/2/2012 10:36:10 AM
+
+
+Collection was modified; enumeration operation may not execute.
+
+
+System.InvalidOperationException: Collection was modified; enumeration operation may not execute.
+   at System.Collections.ArrayList.ArrayListEnumeratorSimple.MoveNext()
+   at System.Windows.Forms.Application.ExitInternal()
+   at System.Windows.Forms.Application.Exit(CancelEventArgs e)
+   at System.Windows.Forms.Application.Exit()
+   at XmlParsersAndUi.MainForm.MainForm_Load(Object sender, EventArgs e) in c:\Documents and Settings\mkabbani\My Documents\Visual Studio 2008\Projects\RFT-Replaces\XmlParsersAndUi\MainForm.cs:line 316

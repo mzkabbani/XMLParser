@@ -1,0 +1,12 @@
+C:\Documents and Settings\mkabbani\My Documents\Visual Studio 2008\Projects\RFT-Replaces\Automation.Backend\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Documents and Settings\mkabbani\My Documents\Visual Studio 2008\Projects\RFT-Replaces\Automation.Backend\obj\x86\Debug\Automation.Backend.Properties.Resources.resources
+C:\Documents and Settings\mkabbani\My Documents\Visual Studio 2008\Projects\RFT-Replaces\Automation.Backend\obj\x86\Debug\Automation.Backend.csproj.GenerateResource.Cache
+C:\Documents and Settings\mkabbani\My Documents\Visual Studio 2008\Projects\RFT-Replaces\Automation.Backend\bin\x86\Debug\Automation.Backend.dll
+C:\Documents and Settings\mkabbani\My Documents\Visual Studio 2008\Projects\RFT-Replaces\Automation.Backend\bin\x86\Debug\Automation.Backend.pdb
+C:\Documents and Settings\mkabbani\My Documents\Visual Studio 2008\Projects\RFT-Replaces\Automation.Backend\bin\x86\Debug\Automation.Common.dll
+C:\Documents and Settings\mkabbani\My Documents\Visual Studio 2008\Projects\RFT-Replaces\Automation.Backend\bin\x86\Debug\Microsoft.Office.Interop.Excel.dll
+C:\Documents and Settings\mkabbani\My Documents\Visual Studio 2008\Projects\RFT-Replaces\Automation.Backend\bin\x86\Debug\Office.dll
+C:\Documents and Settings\mkabbani\My Documents\Visual Studio 2008\Projects\RFT-Replaces\Automation.Backend\bin\x86\Debug\Microsoft.Vbe.Interop.dll
+C:\Documents and Settings\mkabbani\My Documents\Visual Studio 2008\Projects\RFT-Replaces\Automation.Backend\bin\x86\Debug\Automation.Common.pdb
+C:\Documents and Settings\mkabbani\My Documents\Visual Studio 2008\Projects\RFT-Replaces\Automation.Backend\obj\x86\Debug\Automation.Backend.dll
+C:\Documents and Settings\mkabbani\My Documents\Visual Studio 2008\Projects\RFT-Replaces\Automation.Backend\obj\x86\Debug\Automation.Backend.pdb

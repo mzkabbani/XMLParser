@@ -1,0 +1,198 @@
+<AvailableTests>
+	<AvailableTest>
+		<NickName>DEFAULT</NickName>
+		<Import>
+			<Code>AUTOMATION</Code>
+			<RefNickName>DEFAULT_CONFIG</RefNickName>
+		</Import>
+		<Customize>
+			<Include Anchor="doc/description.xml#TitleDEFAULT"></Include>
+			<Version>v3.1.build</Version>
+
+			<JvmOptions>-Xms256M -Xmx512M</JvmOptions>
+			
+			<TestParameters append="after">-Dskip.gim.downgrade=true</TestParameters>
+			<DeployParameters append="after"></DeployParameters>
+			<JvmOptions>-Xms256M -Xmx512M</JvmOptions>
+		</Customize>
+	</AvailableTest>
+	
+		<AvailableTest>
+		<NickName>DEFAULT_ORA11</NickName>
+				<Import>
+			<Code>AUTOMATION</Code>
+			<RefNickName>DEFAULT_CONFIG</RefNickName>
+		</Import>
+		<Customize>
+			<Include Anchor="doc/description.xml#TitleDEFAULT"></Include>
+			<Version>v3.1.build</Version>
+
+			<JvmOptions>-Xms256M -Xmx512M</JvmOptions>
+			
+			<TestParameters append="after">-Dskip.gim.downgrade=true</TestParameters>
+			<DeployParameters append="after"></DeployParameters>
+			<JvmOptions>-Xms256M -Xmx512M</JvmOptions>
+			<Databases>
+				<Oracle>true</Oracle>
+				<Database>
+					<CreateTablespace>false</CreateTablespace> 
+					<Rman>true</Rman> 
+					<DbSize>5000</DbSize>
+					<DoCopyDump>true</DoCopyDump> 
+					<Dump>${Ora11_DumpID}</Dump> 
+				    <ReferenceDbName>TPK0000326_281479</ReferenceDbName> 
+				    <DbUser>INSTAL</DbUser> 
+                    <DbPassword>005000910051005600870057</DbPassword> 
+					<Bcps>
+						<Bcp table="QARPDTRF_DBF" type="resource">PAR.OBJR.0094862</Bcp>
+						<Bcp table="QARPPLRF_DBF" type="resource">PAR.OBJR.0110372</Bcp>
+						<Bcp table="QARPCSRF_DBF" type="resource">PAR.OBJR.0110373</Bcp>
+						<Bcp table="QARPMVRF_DBF" type="resource">PAR.OBJR.0094861</Bcp>
+						<Bcp table="REF_GREEKS_REP" type="resource">PAR.OBJR.0104781</Bcp>
+						<Bcp table="REF_QA_PL_REG_REP" type="resource">PAR.OBJR.0093537</Bcp>
+						<Bcp table="QARPSVRF_DBF" type="resource">PAR.OBJR.0018966</Bcp>
+					</Bcps>
+				</Database>
+			</Databases>
+			<AdditionalOperations>
+				<File>build.xml</File>
+				<Target>run</Target>
+			</AdditionalOperations>
+		</Customize>
+	</AvailableTest>
+	
+	<AvailableTest>
+		<NickName>DEFAULT_ORA11_MIG</NickName>
+		<Import>
+			<Code>AUTOMATION</Code>
+			<RefNickName>DEFAULT_CONFIG</RefNickName>
+		</Import>
+		<Customize>
+			<Include Anchor="doc/description.xml#TitleDEFAULT"></Include>
+			<Version>v3.1.build</Version>
+
+			<JvmOptions>-Xms256M -Xmx512M</JvmOptions>
+			
+			<TestParameters append="after">-Dskip.gim.downgrade=true</TestParameters>
+			<DeployParameters append="after"></DeployParameters>
+			<JvmOptions>-Xms256M -Xmx512M</JvmOptions>
+		</Customize>
+	</AvailableTest>
+
+	<AvailableTest>
+		<NickName>IMPORTMDCS1.0</NickName>
+		<Import>
+			<Code>AUTOMATION</Code>
+			<RefNickName>IMPORTMDCS</RefNickName>
+		</Import>
+		<Customize>
+			<Include Anchor="doc/description.xml#TitleIMPORT"></Include>
+			<Version>v3.1.build</Version>
+			<JvmOptions>-Xms256M -Xmx512M</JvmOptions>
+			
+
+				<JvmOptions>-Xms256M -Xmx512M</JvmOptions>
+		</Customize>
+	</AvailableTest>
+	
+	
+	<AvailableTest>
+		<NickName>IMPORTMDCS1.0_ORA11_MIG</NickName>
+		<Import>
+			<Code>AUTOMATION</Code>
+			<RefNickName>IMPORTMDCS</RefNickName>
+		</Import>
+		<Customize>
+			<Include Anchor="doc/description.xml#TitleIMPORT"></Include>
+			<Version>v3.1.build</Version>
+			<JvmOptions>-Xms256M -Xmx512M</JvmOptions>
+			
+
+			<TestParameters append="after">-Dactivate.gim.toolbar=false</TestParameters>
+			<DeployParameters append="after">-Dactivate.gim.toolbar=false</DeployParameters>
+			<JvmOptions>-Xms256M -Xmx512M</JvmOptions>
+		</Customize>
+	</AvailableTest>
+	
+	
+	<AvailableTest>
+		<NickName>IMPORTMDCS1.0_ORA11</NickName>
+		<Import>
+			<Code>AUTOMATION</Code>
+			<RefNickName>IMPORTMDCS</RefNickName>
+		</Import>
+		<Customize>
+			<Include Anchor="doc/description.xml#TitleIMPORT"></Include>
+			<Version>v3.1.build</Version>
+			<JvmOptions>-Xms256M -Xmx512M</JvmOptions>
+			
+
+			<TestParameters append="after">-Dskip.gim.downgrade=true</TestParameters>
+			<DeployParameters append="after"></DeployParameters>
+			<JvmOptions>-Xms256M -Xmx512M</JvmOptions>
+						<Databases>
+				<Oracle>true</Oracle>
+				<Database>
+					<CreateTablespace>false</CreateTablespace> 
+					<Rman>true</Rman> 
+					<DbSize>5000</DbSize> 
+					<DoCopyDump>true</DoCopyDump>
+					<Dump>${Ora11_DumpID}</Dump>
+				    <ReferenceDbName>TPK0000326_281479</ReferenceDbName> 
+				    <DbUser>INSTAL</DbUser> 
+                    <DbPassword>005000910051005600870057</DbPassword> 
+				</Database>
+			</Databases>
+		</Customize>
+	</AvailableTest>
+	
+	
+	<AvailableTest>
+		<NickName>NEWDUMP</NickName>
+		<Import>
+			<Code>AUTOMATION</Code>
+			<RefNickName>DEFAULT</RefNickName>
+		</Import>
+		<Customize>
+			<Databases>
+				<Database>
+					<Dump>PAR.DMP.0020391</Dump>
+					<ReferenceDbName>TPK0000326_119558</ReferenceDbName>
+				</Database>
+			</Databases>
+			<Title>Electrabel Tests - New Dump Test</Title>
+			<Version>v3.1.build</Version>
+			<OperatingSystem>SunOS-sparc-5.10</OperatingSystem>
+			<TestParameters append="after">-Dactivate.gim.toolbar=false</TestParameters>
+			<DeployParameters append="after">-Dactivate.gim.toolbar=false</DeployParameters>
+		</Customize>
+	</AvailableTest>
+	<AvailableTest>
+		<NickName>DEFAULT_31_DEV_STB7</NickName>
+		<Import>
+			<Code>AUTOMATION</Code>
+			<RefNickName>DEFAULT_31_DEV_STB7_CONFIG</RefNickName>
+		</Import>
+		<Customize>
+			<Title>Electrabel Tests</Title>
+			<Version>v3.1.build.dev.stb7</Version>
+			<OperatingSystem>SunOS-sparc-5.10</OperatingSystem>
+			<TestParameters append="after">-Dactivate.gim.toolbar=false</TestParameters>
+			<DeployParameters append="after">-Dactivate.gim.toolbar=false</DeployParameters>
+		</Customize>
+	</AvailableTest>
+	<AvailableTest>
+		<NickName>DEFAULT_31_DEV_PAC_HSBC</NickName>
+		<Import>
+			<Code>AUTOMATION</Code>
+			<RefNickName>DEFAULT_31_DEV_PAC_HSBC_CONFIG</RefNickName>
+		</Import>
+		<Customize>
+			<Title>Electrabel Tests</Title>
+			<Version>v3.1.build.dev.pac.hsbc</Version>
+			<OperatingSystem>SunOS-sparc-5.10</OperatingSystem>
+			<TestParameters append="after">-Dactivate.gim.toolbar=false</TestParameters>
+			<DeployParameters append="after">-Dactivate.gim.toolbar=false</DeployParameters>
+		</Customize>
+	</AvailableTest>
+</AvailableTests>

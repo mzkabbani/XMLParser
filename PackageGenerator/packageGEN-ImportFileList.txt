@@ -1,0 +1,2 @@
+http://globalqa/svn/PAR/TPK/0001592/trunk/tpk/apps/fs/public/mxres/common/launcherall.mxres;fs/public/mxres/common
+http://globalqa/svn/PAR/TPK/0001592/trunk/tpk/apps/fs/quality/murex/conf/codes.xml;fs/quality/murex/conf

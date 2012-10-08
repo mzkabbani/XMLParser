@@ -1,0 +1,523 @@
+
+
+
+
+
+9/26/2012 3:01:16 PM
+
+
+Illegal characters in path.
+
+
+System.ArgumentException: Illegal characters in path.
+   at System.IO.Path.CheckInvalidPathChars(String path)
+   at System.IO.Path.GetFileName(String path)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options)
+   at System.IO.StreamReader..ctor(String path, Encoding encoding, Boolean detectEncodingFromByteOrderMarks, Int32 bufferSize)
+   at System.IO.StreamReader..ctor(String path)
+   at XmlParsersAndUi.MainForm.testExceptionToolStripMenuItem_Click(Object sender, EventArgs e) in c:\Documents and Settings\mkabbani\My Documents\Visual Studio 2008\Projects\RFT-Replaces\XmlParsersAndUi\MainForm.cs:line 421
+
+
+
+
+9/26/2012 3:01:17 PM
+
+
+wow
+
+
+
+
+
+
+
+9/27/2012 3:01:18 PM
+
+
+Object reference not set to an instance of an object.
+
+
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at XmlParsersAndUi.Forms.SecondLevelCleanupForm.SetPopularity(AdvancedRecomendation capture) in c:\Documents and Settings\mkabbani\My Documents\Visual Studio 2008\Projects\RFT-Replaces\XmlParsersAndUi\Forms\SecondLevelCleanupForm.cs:line 89
+   at XmlParsersAndUi.Forms.SecondLevelCleanupForm.SetupUiFromCapturePoint(AdvancedRecomendation capture) in c:\Documents and Settings\mkabbani\My Documents\Visual Studio 2008\Projects\RFT-Replaces\XmlParsersAndUi\Forms\SecondLevelCleanupForm.cs:line 85
+   at XmlParsersAndUi.Forms.SecondLevelCleanupForm.lvAdvancedRules_ItemSelectionChanged(Object sender, ListViewItemSelectionChangedEventArgs e) in c:\Documents and Settings\mkabbani\My Documents\Visual Studio 2008\Projects\RFT-Replaces\XmlParsersAndUi\Forms\SecondLevelCleanupForm.cs:line 639
+
+
+
+
+9/27/2012 3:02:22 PM
+
+
+Object reference not set to an instance of an object.
+
+
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at XmlParsersAndUi.Forms.SecondLevelCleanupForm.SetPopularity(AdvancedRecomendation capture) in c:\Documents and Settings\mkabbani\My Documents\Visual Studio 2008\Projects\RFT-Replaces\XmlParsersAndUi\Forms\SecondLevelCleanupForm.cs:line 89
+   at XmlParsersAndUi.Forms.SecondLevelCleanupForm.SetupUiFromCapturePoint(AdvancedRecomendation capture) in c:\Documents and Settings\mkabbani\My Documents\Visual Studio 2008\Projects\RFT-Replaces\XmlParsersAndUi\Forms\SecondLevelCleanupForm.cs:line 85
+   at XmlParsersAndUi.Forms.SecondLevelCleanupForm.lvAdvancedRules_ItemSelectionChanged(Object sender, ListViewItemSelectionChangedEventArgs e) in c:\Documents and Settings\mkabbani\My Documents\Visual Studio 2008\Projects\RFT-Replaces\XmlParsersAndUi\Forms\SecondLevelCleanupForm.cs:line 639
+
+
+
+
+9/27/2012 3:24:56 PM
+
+
+Index was out of range. Must be non-negative and less than the size of the collection.
+Parameter name: index
+
+
+System.ArgumentOutOfRangeException: Index was out of range. Must be non-negative and less than the size of the collection.
+Parameter name: index
+   at System.ThrowHelper.ThrowArgumentOutOfRangeException(ExceptionArgument argument, ExceptionResource resource)
+   at System.ThrowHelper.ThrowArgumentOutOfRangeException()
+   at System.Collections.Generic.List`1.get_Item(Int32 index)
+   at XmlParsersAndUi.SetupAdvancedRecForm.populateTreeviewSingleEventFromDatabase(String document, AdvancedRecomendation captureEvent) in c:\Documents and Settings\mkabbani\My Documents\Visual Studio 2008\Projects\RFT-Replaces\XmlParsersAndUi\Forms\SetupAdvancedRecForm.cs:line 68
+
+
+
+
+9/27/2012 3:24:59 PM
+
+
+Index was out of range. Must be non-negative and less than the size of the collection.
+Parameter name: index
+
+
+System.ArgumentOutOfRangeException: Index was out of range. Must be non-negative and less than the size of the collection.
+Parameter name: index
+   at System.ThrowHelper.ThrowArgumentOutOfRangeException(ExceptionArgument argument, ExceptionResource resource)
+   at System.ThrowHelper.ThrowArgumentOutOfRangeException()
+   at System.Collections.Generic.List`1.get_Item(Int32 index)
+   at XmlParsersAndUi.SetupAdvancedRecForm.populateTreeviewSingleEventFromDatabase(String document, AdvancedRecomendation captureEvent) in c:\Documents and Settings\mkabbani\My Documents\Visual Studio 2008\Projects\RFT-Replaces\XmlParsersAndUi\Forms\SetupAdvancedRecForm.cs:line 68
+
+
+
+
+9/27/2012 3:37:21 PM
+
+
+Index was out of range. Must be non-negative and less than the size of the collection.
+Parameter name: index
+
+
+System.ArgumentOutOfRangeException: Index was out of range. Must be non-negative and less than the size of the collection.
+Parameter name: index
+   at System.ThrowHelper.ThrowArgumentOutOfRangeException(ExceptionArgument argument, ExceptionResource resource)
+   at System.ThrowHelper.ThrowArgumentOutOfRangeException()
+   at System.Collections.Generic.List`1.get_Item(Int32 index)
+   at XmlParsersAndUi.SetupAdvancedRecForm.populateTreeviewSingleEventFromDatabase(String document, AdvancedRecomendation captureEvent) in c:\Documents and Settings\mkabbani\My Documents\Visual Studio 2008\Projects\RFT-Replaces\XmlParsersAndUi\Forms\SetupAdvancedRecForm.cs:line 68
+
+
+
+
+9/27/2012 3:41:19 PM
+
+
+Index was out of range. Must be non-negative and less than the size of the collection.
+Parameter name: index
+
+
+System.ArgumentOutOfRangeException: Index was out of range. Must be non-negative and less than the size of the collection.
+Parameter name: index
+   at System.ThrowHelper.ThrowArgumentOutOfRangeException(ExceptionArgument argument, ExceptionResource resource)
+   at System.ThrowHelper.ThrowArgumentOutOfRangeException()
+   at System.Collections.Generic.List`1.get_Item(Int32 index)
+   at XmlParsersAndUi.SetupAdvancedRecForm.populateTreeviewSingleEventFromDatabase(String document, AdvancedRecomendation captureEvent) in c:\Documents and Settings\mkabbani\My Documents\Visual Studio 2008\Projects\RFT-Replaces\XmlParsersAndUi\Forms\SetupAdvancedRecForm.cs:line 68
+
+
+
+
+9/27/2012 3:42:26 PM
+
+
+An SqlCeParameter with ParameterName 'parentlevel' is not contained by this SqlCeParameterCollection.
+
+
+System.IndexOutOfRangeException: An SqlCeParameter with ParameterName 'parentlevel' is not contained by this SqlCeParameterCollection.
+   at System.Data.SqlServerCe.SqlCeCommand.CompileQueryPlan()
+   at System.Data.SqlServerCe.SqlCeCommand.ExecuteCommand(CommandBehavior behavior, String method, ResultSetOptions options)
+   at System.Data.SqlServerCe.SqlCeCommand.ExecuteNonQuery()
+   at Automation.Backend.Rec_CapturePoints.InsertCapturePointsAsTransaction(Int32 RecommendationId, List`1 customNodesList, SqlCeConnection conn, SqlCeTransaction transaction) in c:\Documents and Settings\mkabbani\My Documents\Visual Studio 2008\Projects\RFT-Replaces\Automation.Backend\Classes\Rec_CapturePoints.cs:line 26
+   at Automation.Backend.Advanced_Recommendations.SaveAdvancedRecomendationById(Int32 captureEventId, AdvancedRecomendation advancedRecomendation) in c:\Documents and Settings\mkabbani\My Documents\Visual Studio 2008\Projects\RFT-Replaces\Automation.Backend\Classes\Advanced_Recommendations.cs:line 56
+
+
+
+
+9/27/2012 3:42:30 PM
+
+
+Index was out of range. Must be non-negative and less than the size of the collection.
+Parameter name: index
+
+
+System.ArgumentOutOfRangeException: Index was out of range. Must be non-negative and less than the size of the collection.
+Parameter name: index
+   at System.ThrowHelper.ThrowArgumentOutOfRangeException(ExceptionArgument argument, ExceptionResource resource)
+   at System.ThrowHelper.ThrowArgumentOutOfRangeException()
+   at System.Collections.Generic.List`1.get_Item(Int32 index)
+   at XmlParsersAndUi.SetupAdvancedRecForm.populateTreeviewSingleEventFromDatabase(String document, AdvancedRecomendation captureEvent) in c:\Documents and Settings\mkabbani\My Documents\Visual Studio 2008\Projects\RFT-Replaces\XmlParsersAndUi\Forms\SetupAdvancedRecForm.cs:line 68
+
+
+
+
+9/27/2012 3:42:39 PM
+
+
+Object reference not set to an instance of an object.
+
+
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at XmlParsersAndUi.SetupAdvancedRecForm.SaveUpdatedAttributes() in c:\Documents and Settings\mkabbani\My Documents\Visual Studio 2008\Projects\RFT-Replaces\XmlParsersAndUi\Forms\SetupAdvancedRecForm.cs:line 263
+   at XmlParsersAndUi.SetupAdvancedRecForm.btnSaveCaptureEvent_Click(Object sender, EventArgs e) in c:\Documents and Settings\mkabbani\My Documents\Visual Studio 2008\Projects\RFT-Replaces\XmlParsersAndUi\Forms\SetupAdvancedRecForm.cs:line 1031
+
+
+
+
+9/27/2012 4:22:43 PM
+
+
+Index was out of range. Must be non-negative and less than the size of the collection.
+Parameter name: index
+
+
+System.ArgumentOutOfRangeException: Index was out of range. Must be non-negative and less than the size of the collection.
+Parameter name: index
+   at System.ThrowHelper.ThrowArgumentOutOfRangeException(ExceptionArgument argument, ExceptionResource resource)
+   at System.ThrowHelper.ThrowArgumentOutOfRangeException()
+   at System.Collections.Generic.List`1.get_Item(Int32 index)
+   at XmlParsersAndUi.SetupAdvancedRecForm.populateTreeviewSingleEventFromDatabase(String document, AdvancedRecomendation captureEvent) in c:\Documents and Settings\mkabbani\My Documents\Visual Studio 2008\Projects\RFT-Replaces\XmlParsersAndUi\Forms\SetupAdvancedRecForm.cs:line 68
+
+
+
+
+9/27/2012 4:22:52 PM
+
+
+Index was out of range. Must be non-negative and less than the size of the collection.
+Parameter name: index
+
+
+System.ArgumentOutOfRangeException: Index was out of range. Must be non-negative and less than the size of the collection.
+Parameter name: index
+   at System.ThrowHelper.ThrowArgumentOutOfRangeException(ExceptionArgument argument, ExceptionResource resource)
+   at System.ThrowHelper.ThrowArgumentOutOfRangeException()
+   at System.Collections.Generic.List`1.get_Item(Int32 index)
+   at XmlParsersAndUi.SetupAdvancedRecForm.populateTreeviewSingleEventFromDatabase(String document, AdvancedRecomendation captureEvent) in c:\Documents and Settings\mkabbani\My Documents\Visual Studio 2008\Projects\RFT-Replaces\XmlParsersAndUi\Forms\SetupAdvancedRecForm.cs:line 68
+
+
+
+
+9/27/2012 4:23:13 PM
+
+
+Index was out of range. Must be non-negative and less than the size of the collection.
+Parameter name: index
+
+
+System.ArgumentOutOfRangeException: Index was out of range. Must be non-negative and less than the size of the collection.
+Parameter name: index
+   at System.ThrowHelper.ThrowArgumentOutOfRangeException(ExceptionArgument argument, ExceptionResource resource)
+   at System.ThrowHelper.ThrowArgumentOutOfRangeException()
+   at System.Collections.Generic.List`1.get_Item(Int32 index)
+   at XmlParsersAndUi.SetupAdvancedRecForm.populateTreeviewSingleEventFromDatabase(String document, AdvancedRecomendation captureEvent) in c:\Documents and Settings\mkabbani\My Documents\Visual Studio 2008\Projects\RFT-Replaces\XmlParsersAndUi\Forms\SetupAdvancedRecForm.cs:line 68
+
+
+
+
+9/27/2012 4:26:12 PM
+
+
+Index was out of range. Must be non-negative and less than the size of the collection.
+Parameter name: index
+
+
+System.ArgumentOutOfRangeException: Index was out of range. Must be non-negative and less than the size of the collection.
+Parameter name: index
+   at System.ThrowHelper.ThrowArgumentOutOfRangeException(ExceptionArgument argument, ExceptionResource resource)
+   at System.ThrowHelper.ThrowArgumentOutOfRangeException()
+   at System.Collections.Generic.List`1.get_Item(Int32 index)
+   at XmlParsersAndUi.SetupAdvancedRecForm.populateTreeviewSingleEventFromDatabase(String document, AdvancedRecomendation captureEvent) in c:\Documents and Settings\mkabbani\My Documents\Visual Studio 2008\Projects\RFT-Replaces\XmlParsersAndUi\Forms\SetupAdvancedRecForm.cs:line 68
+
+
+
+
+9/27/2012 4:28:42 PM
+
+
+Index was out of range. Must be non-negative and less than the size of the collection.
+Parameter name: index
+
+
+System.ArgumentOutOfRangeException: Index was out of range. Must be non-negative and less than the size of the collection.
+Parameter name: index
+   at System.ThrowHelper.ThrowArgumentOutOfRangeException(ExceptionArgument argument, ExceptionResource resource)
+   at System.ThrowHelper.ThrowArgumentOutOfRangeException()
+   at System.Collections.Generic.List`1.get_Item(Int32 index)
+   at XmlParsersAndUi.SetupAdvancedRecForm.populateTreeviewSingleEventFromDatabase(String document, AdvancedRecomendation captureEvent) in c:\Documents and Settings\mkabbani\My Documents\Visual Studio 2008\Projects\RFT-Replaces\XmlParsersAndUi\Forms\SetupAdvancedRecForm.cs:line 68
+
+
+
+
+9/27/2012 4:43:39 PM
+
+
+Index was out of range. Must be non-negative and less than the size of the collection.
+Parameter name: index
+
+
+System.ArgumentOutOfRangeException: Index was out of range. Must be non-negative and less than the size of the collection.
+Parameter name: index
+   at System.ThrowHelper.ThrowArgumentOutOfRangeException(ExceptionArgument argument, ExceptionResource resource)
+   at System.ThrowHelper.ThrowArgumentOutOfRangeException()
+   at System.Collections.Generic.List`1.get_Item(Int32 index)
+   at XmlParsersAndUi.SetupAdvancedRecForm.populateTreeviewSingleEventFromDatabase(String document, AdvancedRecomendation captureEvent) in c:\Documents and Settings\mkabbani\My Documents\Visual Studio 2008\Projects\RFT-Replaces\XmlParsersAndUi\Forms\SetupAdvancedRecForm.cs:line 68
+
+
+
+
+9/27/2012 4:44:34 PM
+
+
+The specified table does not exist. [ Advanced_Recomendations ]
+
+
+The specified table does not exist. [ Advanced_Recomendations ]
+
+
+
+
+9/27/2012 4:46:17 PM
+
+
+An SqlCeParameter with ParameterName 'parentlevel' is not contained by this SqlCeParameterCollection.
+
+
+System.IndexOutOfRangeException: An SqlCeParameter with ParameterName 'parentlevel' is not contained by this SqlCeParameterCollection.
+   at System.Data.SqlServerCe.SqlCeCommand.CompileQueryPlan()
+   at System.Data.SqlServerCe.SqlCeCommand.ExecuteCommand(CommandBehavior behavior, String method, ResultSetOptions options)
+   at System.Data.SqlServerCe.SqlCeCommand.ExecuteNonQuery()
+   at Automation.Backend.Rec_CapturePoints.InsertCapturePointsAsTransaction(Int32 RecommendationId, List`1 customNodesList, SqlCeConnection conn, SqlCeTransaction transaction) in c:\Documents and Settings\mkabbani\My Documents\Visual Studio 2008\Projects\RFT-Replaces\Automation.Backend\Classes\Rec_CapturePoints.cs:line 26
+   at Automation.Backend.Advanced_Recommendations.SaveAdvancedRecomendationById(Int32 captureEventId, AdvancedRecomendation advancedRecomendation) in c:\Documents and Settings\mkabbani\My Documents\Visual Studio 2008\Projects\RFT-Replaces\Automation.Backend\Classes\Advanced_Recommendations.cs:line 56
+
+
+
+
+9/27/2012 4:51:03 PM
+
+
+Index was out of range. Must be non-negative and less than the size of the collection.
+Parameter name: index
+
+
+System.ArgumentOutOfRangeException: Index was out of range. Must be non-negative and less than the size of the collection.
+Parameter name: index
+   at System.ThrowHelper.ThrowArgumentOutOfRangeException(ExceptionArgument argument, ExceptionResource resource)
+   at System.ThrowHelper.ThrowArgumentOutOfRangeException()
+   at System.Collections.Generic.List`1.get_Item(Int32 index)
+   at XmlParsersAndUi.SetupAdvancedRecForm.populateTreeviewSingleEventFromDatabase(String document, AdvancedRecomendation captureEvent) in c:\Documents and Settings\mkabbani\My Documents\Visual Studio 2008\Projects\RFT-Replaces\XmlParsersAndUi\Forms\SetupAdvancedRecForm.cs:line 68
+
+
+
+
+9/27/2012 4:51:07 PM
+
+
+Index was out of range. Must be non-negative and less than the size of the collection.
+Parameter name: index
+
+
+System.ArgumentOutOfRangeException: Index was out of range. Must be non-negative and less than the size of the collection.
+Parameter name: index
+   at System.ThrowHelper.ThrowArgumentOutOfRangeException(ExceptionArgument argument, ExceptionResource resource)
+   at System.ThrowHelper.ThrowArgumentOutOfRangeException()
+   at System.Collections.Generic.List`1.get_Item(Int32 index)
+   at XmlParsersAndUi.SetupAdvancedRecForm.GetRespectiveCapturePoint(CustomTreeNode customTreeNode, AdvancedRecomendation captureEvent, XmlNode xNode, Int32 index, Int32 level, Int32 parentIndex) in c:\Documents and Settings\mkabbani\My Documents\Visual Studio 2008\Projects\RFT-Replaces\XmlParsersAndUi\Forms\SetupAdvancedRecForm.cs:line 128
+   at XmlParsersAndUi.SetupAdvancedRecForm.addTreeNodeForSingleEventFromDatabase(XmlNode xmlNode, TreeNode treeNode, AdvancedRecomendation captureEvent, Int32 level, Int32 parentIndex) in c:\Documents and Settings\mkabbani\My Documents\Visual Studio 2008\Projects\RFT-Replaces\XmlParsersAndUi\Forms\SetupAdvancedRecForm.cs:line 104
+   at XmlParsersAndUi.SetupAdvancedRecForm.addTreeNodeForSingleEventFromDatabase(XmlNode xmlNode, TreeNode treeNode, AdvancedRecomendation captureEvent, Int32 level, Int32 parentIndex) in c:\Documents and Settings\mkabbani\My Documents\Visual Studio 2008\Projects\RFT-Replaces\XmlParsersAndUi\Forms\SetupAdvancedRecForm.cs:line 108
+   at XmlParsersAndUi.SetupAdvancedRecForm.populateTreeviewSingleEventFromDatabase(String document, AdvancedRecomendation captureEvent) in c:\Documents and Settings\mkabbani\My Documents\Visual Studio 2008\Projects\RFT-Replaces\XmlParsersAndUi\Forms\SetupAdvancedRecForm.cs:line 74
+
+
+
+
+9/27/2012 4:51:12 PM
+
+
+Index was out of range. Must be non-negative and less than the size of the collection.
+Parameter name: index
+
+
+System.ArgumentOutOfRangeException: Index was out of range. Must be non-negative and less than the size of the collection.
+Parameter name: index
+   at System.ThrowHelper.ThrowArgumentOutOfRangeException(ExceptionArgument argument, ExceptionResource resource)
+   at System.ThrowHelper.ThrowArgumentOutOfRangeException()
+   at System.Collections.Generic.List`1.get_Item(Int32 index)
+   at XmlParsersAndUi.SetupAdvancedRecForm.GetRespectiveCapturePoint(CustomTreeNode customTreeNode, AdvancedRecomendation captureEvent, XmlNode xNode, Int32 index, Int32 level, Int32 parentIndex) in c:\Documents and Settings\mkabbani\My Documents\Visual Studio 2008\Projects\RFT-Replaces\XmlParsersAndUi\Forms\SetupAdvancedRecForm.cs:line 128
+   at XmlParsersAndUi.SetupAdvancedRecForm.addTreeNodeForSingleEventFromDatabase(XmlNode xmlNode, TreeNode treeNode, AdvancedRecomendation captureEvent, Int32 level, Int32 parentIndex) in c:\Documents and Settings\mkabbani\My Documents\Visual Studio 2008\Projects\RFT-Replaces\XmlParsersAndUi\Forms\SetupAdvancedRecForm.cs:line 104
+   at XmlParsersAndUi.SetupAdvancedRecForm.addTreeNodeForSingleEventFromDatabase(XmlNode xmlNode, TreeNode treeNode, AdvancedRecomendation captureEvent, Int32 level, Int32 parentIndex) in c:\Documents and Settings\mkabbani\My Documents\Visual Studio 2008\Projects\RFT-Replaces\XmlParsersAndUi\Forms\SetupAdvancedRecForm.cs:line 108
+   at XmlParsersAndUi.SetupAdvancedRecForm.populateTreeviewSingleEventFromDatabase(String document, AdvancedRecomendation captureEvent) in c:\Documents and Settings\mkabbani\My Documents\Visual Studio 2008\Projects\RFT-Replaces\XmlParsersAndUi\Forms\SetupAdvancedRecForm.cs:line 74
+
+
+
+
+9/27/2012 4:51:44 PM
+
+
+Index was out of range. Must be non-negative and less than the size of the collection.
+Parameter name: index
+
+
+System.ArgumentOutOfRangeException: Index was out of range. Must be non-negative and less than the size of the collection.
+Parameter name: index
+   at System.ThrowHelper.ThrowArgumentOutOfRangeException(ExceptionArgument argument, ExceptionResource resource)
+   at System.ThrowHelper.ThrowArgumentOutOfRangeException()
+   at System.Collections.Generic.List`1.get_Item(Int32 index)
+   at XmlParsersAndUi.SetupAdvancedRecForm.GetRespectiveCapturePoint(CustomTreeNode customTreeNode, AdvancedRecomendation captureEvent, XmlNode xNode, Int32 index, Int32 level, Int32 parentIndex) in c:\Documents and Settings\mkabbani\My Documents\Visual Studio 2008\Projects\RFT-Replaces\XmlParsersAndUi\Forms\SetupAdvancedRecForm.cs:line 128
+   at XmlParsersAndUi.SetupAdvancedRecForm.addTreeNodeForSingleEventFromDatabase(XmlNode xmlNode, TreeNode treeNode, AdvancedRecomendation captureEvent, Int32 level, Int32 parentIndex) in c:\Documents and Settings\mkabbani\My Documents\Visual Studio 2008\Projects\RFT-Replaces\XmlParsersAndUi\Forms\SetupAdvancedRecForm.cs:line 104
+   at XmlParsersAndUi.SetupAdvancedRecForm.addTreeNodeForSingleEventFromDatabase(XmlNode xmlNode, TreeNode treeNode, AdvancedRecomendation captureEvent, Int32 level, Int32 parentIndex) in c:\Documents and Settings\mkabbani\My Documents\Visual Studio 2008\Projects\RFT-Replaces\XmlParsersAndUi\Forms\SetupAdvancedRecForm.cs:line 108
+   at XmlParsersAndUi.SetupAdvancedRecForm.populateTreeviewSingleEventFromDatabase(String document, AdvancedRecomendation captureEvent) in c:\Documents and Settings\mkabbani\My Documents\Visual Studio 2008\Projects\RFT-Replaces\XmlParsersAndUi\Forms\SetupAdvancedRecForm.cs:line 74
+
+
+
+
+9/27/2012 4:52:19 PM
+
+
+Index was out of range. Must be non-negative and less than the size of the collection.
+Parameter name: index
+
+
+System.ArgumentOutOfRangeException: Index was out of range. Must be non-negative and less than the size of the collection.
+Parameter name: index
+   at System.ThrowHelper.ThrowArgumentOutOfRangeException(ExceptionArgument argument, ExceptionResource resource)
+   at System.ThrowHelper.ThrowArgumentOutOfRangeException()
+   at System.Collections.Generic.List`1.get_Item(Int32 index)
+   at XmlParsersAndUi.SetupAdvancedRecForm.GetRespectiveCapturePoint(CustomTreeNode customTreeNode, AdvancedRecomendation captureEvent, XmlNode xNode, Int32 index, Int32 level, Int32 parentIndex) in c:\Documents and Settings\mkabbani\My Documents\Visual Studio 2008\Projects\RFT-Replaces\XmlParsersAndUi\Forms\SetupAdvancedRecForm.cs:line 128
+   at XmlParsersAndUi.SetupAdvancedRecForm.addTreeNodeForSingleEventFromDatabase(XmlNode xmlNode, TreeNode treeNode, AdvancedRecomendation captureEvent, Int32 level, Int32 parentIndex) in c:\Documents and Settings\mkabbani\My Documents\Visual Studio 2008\Projects\RFT-Replaces\XmlParsersAndUi\Forms\SetupAdvancedRecForm.cs:line 104
+   at XmlParsersAndUi.SetupAdvancedRecForm.addTreeNodeForSingleEventFromDatabase(XmlNode xmlNode, TreeNode treeNode, AdvancedRecomendation captureEvent, Int32 level, Int32 parentIndex) in c:\Documents and Settings\mkabbani\My Documents\Visual Studio 2008\Projects\RFT-Replaces\XmlParsersAndUi\Forms\SetupAdvancedRecForm.cs:line 108
+   at XmlParsersAndUi.SetupAdvancedRecForm.populateTreeviewSingleEventFromDatabase(String document, AdvancedRecomendation captureEvent) in c:\Documents and Settings\mkabbani\My Documents\Visual Studio 2008\Projects\RFT-Replaces\XmlParsersAndUi\Forms\SetupAdvancedRecForm.cs:line 74
+
+
+
+
+9/27/2012 4:52:47 PM
+
+
+Index was out of range. Must be non-negative and less than the size of the collection.
+Parameter name: index
+
+
+System.ArgumentOutOfRangeException: Index was out of range. Must be non-negative and less than the size of the collection.
+Parameter name: index
+   at System.ThrowHelper.ThrowArgumentOutOfRangeException(ExceptionArgument argument, ExceptionResource resource)
+   at System.ThrowHelper.ThrowArgumentOutOfRangeException()
+   at System.Collections.Generic.List`1.get_Item(Int32 index)
+   at XmlParsersAndUi.SetupAdvancedRecForm.GetRespectiveCapturePoint(CustomTreeNode customTreeNode, AdvancedRecomendation captureEvent, XmlNode xNode, Int32 index, Int32 level, Int32 parentIndex) in c:\Documents and Settings\mkabbani\My Documents\Visual Studio 2008\Projects\RFT-Replaces\XmlParsersAndUi\Forms\SetupAdvancedRecForm.cs:line 128
+   at XmlParsersAndUi.SetupAdvancedRecForm.addTreeNodeForSingleEventFromDatabase(XmlNode xmlNode, TreeNode treeNode, AdvancedRecomendation captureEvent, Int32 level, Int32 parentIndex) in c:\Documents and Settings\mkabbani\My Documents\Visual Studio 2008\Projects\RFT-Replaces\XmlParsersAndUi\Forms\SetupAdvancedRecForm.cs:line 104
+   at XmlParsersAndUi.SetupAdvancedRecForm.addTreeNodeForSingleEventFromDatabase(XmlNode xmlNode, TreeNode treeNode, AdvancedRecomendation captureEvent, Int32 level, Int32 parentIndex) in c:\Documents and Settings\mkabbani\My Documents\Visual Studio 2008\Projects\RFT-Replaces\XmlParsersAndUi\Forms\SetupAdvancedRecForm.cs:line 108
+   at XmlParsersAndUi.SetupAdvancedRecForm.populateTreeviewSingleEventFromDatabase(String document, AdvancedRecomendation captureEvent) in c:\Documents and Settings\mkabbani\My Documents\Visual Studio 2008\Projects\RFT-Replaces\XmlParsersAndUi\Forms\SetupAdvancedRecForm.cs:line 74
+
+
+
+
+9/27/2012 5:26:06 PM
+
+
+Object reference not set to an instance of an object.
+
+
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at XmlParsersAndUi.SetupAdvancedRecForm.TvOutputAfterCheck(Object sender, TreeViewEventArgs e) in c:\Documents and Settings\mkabbani\My Documents\Visual Studio 2008\Projects\RFT-Replaces\XmlParsersAndUi\Forms\SetupAdvancedRecForm.cs:line 1116
+
+
+
+
+9/27/2012 5:28:56 PM
+
+
+Object reference not set to an instance of an object.
+
+
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at XmlParsersAndUi.SetupAdvancedRecForm.TvOutputAfterCheck(Object sender, TreeViewEventArgs e) in c:\Documents and Settings\mkabbani\My Documents\Visual Studio 2008\Projects\RFT-Replaces\XmlParsersAndUi\Forms\SetupAdvancedRecForm.cs:line 1119
+
+
+
+
+9/27/2012 5:28:59 PM
+
+
+Object reference not set to an instance of an object.
+
+
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at XmlParsersAndUi.SetupAdvancedRecForm.TvOutputAfterCheck(Object sender, TreeViewEventArgs e) in c:\Documents and Settings\mkabbani\My Documents\Visual Studio 2008\Projects\RFT-Replaces\XmlParsersAndUi\Forms\SetupAdvancedRecForm.cs:line 1119
+
+
+
+
+10/8/2012 10:59:30 AM
+
+
+The count of column names and source expressions do not match. [ Column name count = 9,Source expression count = 8 ]
+
+
+The count of column names and source expressions do not match. [ Column name count = 9,Source expression count = 8 ]
+
+
+
+
+10/8/2012 11:15:58 AM
+
+
+InvalidArgument=Value of '0' is not valid for 'SelectedIndex'.
+Parameter name: SelectedIndex
+
+
+System.ArgumentOutOfRangeException: InvalidArgument=Value of '0' is not valid for 'SelectedIndex'.
+Parameter name: SelectedIndex
+   at System.Windows.Forms.ComboBox.set_SelectedIndex(Int32 value)
+   at XmlParsersAndUi.Forms.EnvironmentComparisonForm.ResetForm() in c:\Documents and Settings\mkabbani\My Documents\Visual Studio 2008\Projects\RFT-Replaces\XmlParsersAndUi\Forms\EnvironmentComparisonForm.cs:line 1199
+   at XmlParsersAndUi.Forms.EnvironmentComparisonForm.tcComparisonTabs_SelectedIndexChanged(Object sender, EventArgs e) in c:\Documents and Settings\mkabbani\My Documents\Visual Studio 2008\Projects\RFT-Replaces\XmlParsersAndUi\Forms\EnvironmentComparisonForm.cs:line 1323
+
+
+
+
+10/8/2012 11:25:41 AM
+
+
+Object reference not set to an instance of an object.
+
+
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at XmlParsersAndUi.Forms.EnvironmentComparisonForm.ReloadAllFiltersFromDatabase() in c:\Documents and Settings\mkabbani\My Documents\Visual Studio 2008\Projects\RFT-Replaces\XmlParsersAndUi\Forms\EnvironmentComparisonForm.cs:line 1175
+   at XmlParsersAndUi.Forms.EnvironmentComparisonForm.tcComparisonTabs_SelectedIndexChanged(Object sender, EventArgs e) in c:\Documents and Settings\mkabbani\My Documents\Visual Studio 2008\Projects\RFT-Replaces\XmlParsersAndUi\Forms\EnvironmentComparisonForm.cs:line 1331
+
+
+
+
+10/8/2012 11:50:02 AM
+
+
+InvalidArgument=Value of '0' is not valid for 'index'.
+Parameter name: index
+
+
+System.ArgumentOutOfRangeException: InvalidArgument=Value of '0' is not valid for 'index'.
+Parameter name: index
+   at System.Windows.Forms.ListView.SelectedListViewItemCollection.get_Item(Int32 index)
+   at XmlParsersAndUi.Forms.EnvironmentComparisonForm.LvAvailableFiltersSelectedIndexChanged(Object sender, EventArgs e) in c:\Documents and Settings\mkabbani\My Documents\Visual Studio 2008\Projects\RFT-Replaces\XmlParsersAndUi\Forms\EnvironmentComparisonForm.cs:line 1804
+
+
+
+
+10/8/2012 11:50:19 AM
+
+
+InvalidArgument=Value of '0' is not valid for 'index'.
+Parameter name: index
+
+
+System.ArgumentOutOfRangeException: InvalidArgument=Value of '0' is not valid for 'index'.
+Parameter name: index
+   at System.Windows.Forms.ListView.SelectedListViewItemCollection.get_Item(Int32 index)
+   at XmlParsersAndUi.Forms.EnvironmentComparisonForm.LvAvailableFiltersSelectedIndexChanged(Object sender, EventArgs e) in c:\Documents and Settings\mkabbani\My Documents\Visual Studio 2008\Projects\RFT-Replaces\XmlParsersAndUi\Forms\EnvironmentComparisonForm.cs:line 1804

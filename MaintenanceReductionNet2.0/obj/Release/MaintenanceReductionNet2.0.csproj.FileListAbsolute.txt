@@ -1,0 +1,5 @@
+C:\Documents and Settings\mkabbani\My Documents\Visual Studio 2008\Projects\RFT-Replaces\MaintenanceReductionNet2.0\obj\Release\XmlParsersAndUi.BulkMacroSplitterForm.resources
+C:\Documents and Settings\mkabbani\My Documents\Visual Studio 2008\Projects\RFT-Replaces\MaintenanceReductionNet2.0\obj\Release\XmlParsersAndUi.MainForm.resources
+C:\Documents and Settings\mkabbani\My Documents\Visual Studio 2008\Projects\RFT-Replaces\MaintenanceReductionNet2.0\obj\Release\XmlParsersAndUi.Results.resources
+C:\Documents and Settings\mkabbani\My Documents\Visual Studio 2008\Projects\RFT-Replaces\MaintenanceReductionNet2.0\obj\Release\XmlParsersAndUi.SetupRecForm.resources
+C:\Documents and Settings\mkabbani\My Documents\Visual Studio 2008\Projects\RFT-Replaces\MaintenanceReductionNet2.0\obj\Release\MaintenanceReductionNet2.0.csproj.GenerateResource.Cache

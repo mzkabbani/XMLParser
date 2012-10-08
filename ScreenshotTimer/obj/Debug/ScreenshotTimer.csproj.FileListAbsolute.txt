@@ -1,0 +1,8 @@
+C:\Documents and Settings\mkabbani\My Documents\Visual Studio 2008\Projects\RFT-Replaces\ScreenshotTimer\bin\Debug\ScreenshotTimer.exe
+C:\Documents and Settings\mkabbani\My Documents\Visual Studio 2008\Projects\RFT-Replaces\ScreenshotTimer\bin\Debug\ScreenshotTimer.pdb
+C:\Documents and Settings\mkabbani\My Documents\Visual Studio 2008\Projects\RFT-Replaces\ScreenshotTimer\obj\Debug\ResolveAssemblyReference.cache
+C:\Documents and Settings\mkabbani\My Documents\Visual Studio 2008\Projects\RFT-Replaces\ScreenshotTimer\obj\Debug\ScreenshotTimer.Form1.resources
+C:\Documents and Settings\mkabbani\My Documents\Visual Studio 2008\Projects\RFT-Replaces\ScreenshotTimer\obj\Debug\ScreenshotTimer.Properties.Resources.resources
+C:\Documents and Settings\mkabbani\My Documents\Visual Studio 2008\Projects\RFT-Replaces\ScreenshotTimer\obj\Debug\ScreenshotTimer.csproj.GenerateResource.Cache
+C:\Documents and Settings\mkabbani\My Documents\Visual Studio 2008\Projects\RFT-Replaces\ScreenshotTimer\obj\Debug\ScreenshotTimer.exe
+C:\Documents and Settings\mkabbani\My Documents\Visual Studio 2008\Projects\RFT-Replaces\ScreenshotTimer\obj\Debug\ScreenshotTimer.pdb

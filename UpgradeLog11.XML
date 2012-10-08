@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type='text/xsl' href='_UpgradeReport_Files/UpgradeReport.xslt'?><UpgradeLog>
+<Properties><Property Name="Solution" Value="Misc">
+</Property><Property Name="Solution File" Value="C:\Documents and Settings\mkabbani\My Documents\Visual Studio 2008\Projects\RFT-Replaces\Misc.sln">
+</Property><Property Name="Date" Value="Tuesday, May 15, 2012">
+</Property><Property Name="Time" Value="10:39:06 AM">
+</Property><Property Name="Log Number" Value="11">
+</Property></Properties><Event ErrorLevel="0" Project="AppControl" Source="..\AppControl\AppControl.csproj" Description="Project file successfully backed up as C:\Documents and Settings\mkabbani\My Documents\Visual Studio 2008\Projects\RFT-Replaces\Backup10\AppControl.csproj">
+</Event><Event ErrorLevel="0" Project="AppControl" Source="..\AppControl\AppControl.csproj.user" Description="Project user file successfully backed up as C:\Documents and Settings\mkabbani\My Documents\Visual Studio 2008\Projects\RFT-Replaces\Backup10\AppControl.csproj.user">
+</Event><Event ErrorLevel="0" Project="AppControl" Source="..\AppControl\AppControl.cs" Description="File successfully backed up as C:\Documents and Settings\mkabbani\My Documents\Visual Studio 2008\Projects\RFT-Replaces\Backup10\AppControl.cs">
+</Event><Event ErrorLevel="0" Project="AppControl" Source="..\AppControl\AssemblyInfo.cs" Description="File successfully backed up as C:\Documents and Settings\mkabbani\My Documents\Visual Studio 2008\Projects\RFT-Replaces\Backup10\AssemblyInfo.cs">
+</Event><Event ErrorLevel="0" Project="AppControl" Source="..\AppControl\AppControl.bmp" Description="File successfully backed up as C:\Documents and Settings\mkabbani\My Documents\Visual Studio 2008\Projects\RFT-Replaces\Backup10\AppControl.bmp">
+</Event><Event ErrorLevel="0" Project="AppControl" Source="..\AppControl\AppControl.resx" Description="File successfully backed up as C:\Documents and Settings\mkabbani\My Documents\Visual Studio 2008\Projects\RFT-Replaces\Backup10\AppControl.resx">
+</Event><Event ErrorLevel="0" Project="AppControl" Source="..\AppControl\AppControl.csproj" Description="Project converted successfully">
+</Event><Event ErrorLevel="3" Project="AppControl" Source="..\AppControl\AppControl.csproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="AppControl" Source="..\AppControl\AppControl.csproj" Description="Scan complete: Upgrade not required for project files.">
+</Event></UpgradeLog>

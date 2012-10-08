@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type='text/xsl' href='_UpgradeReport_Files/UpgradeReport.xslt'?><UpgradeLog>
+<Properties><Property Name="Solution" Value="Misc">
+</Property><Property Name="Solution File" Value="C:\Documents and Settings\mkabbani\My Documents\Visual Studio 2008\Projects\RFT-Replaces\Misc.sln">
+</Property><Property Name="Date" Value="Wednesday, February 22, 2012">
+</Property><Property Name="Time" Value="9:52:02 AM">
+</Property><Property Name="Log Number" Value="5">
+</Property></Properties><Event ErrorLevel="0" Project="DifferenceEngine" Source="..\TextDiff\DifferenceEngine\DifferenceEngine.csproj" Description="Project file successfully backed up as C:\Documents and Settings\mkabbani\My Documents\Visual Studio 2008\Projects\RFT-Replaces\Backup4\DifferenceEngine.csproj">
+</Event><Event ErrorLevel="0" Project="DifferenceEngine" Source="..\TextDiff\DifferenceEngine\DifferenceEngine.csproj.user" Description="Project user file successfully backed up as C:\Documents and Settings\mkabbani\My Documents\Visual Studio 2008\Projects\RFT-Replaces\Backup4\DifferenceEngine.csproj.user">
+</Event><Event ErrorLevel="0" Project="DifferenceEngine" Source="..\TextDiff\DifferenceEngine\AssemblyInfo.cs" Description="File successfully backed up as C:\Documents and Settings\mkabbani\My Documents\Visual Studio 2008\Projects\RFT-Replaces\Backup4\AssemblyInfo.cs">
+</Event><Event ErrorLevel="0" Project="DifferenceEngine" Source="..\TextDiff\DifferenceEngine\BinaryFile.cs" Description="File successfully backed up as C:\Documents and Settings\mkabbani\My Documents\Visual Studio 2008\Projects\RFT-Replaces\Backup4\BinaryFile.cs">
+</Event><Event ErrorLevel="0" Project="DifferenceEngine" Source="..\TextDiff\DifferenceEngine\CharData.cs" Description="File successfully backed up as C:\Documents and Settings\mkabbani\My Documents\Visual Studio 2008\Projects\RFT-Replaces\Backup4\CharData.cs">
+</Event><Event ErrorLevel="0" Project="DifferenceEngine" Source="..\TextDiff\DifferenceEngine\Engine.cs" Description="File successfully backed up as C:\Documents and Settings\mkabbani\My Documents\Visual Studio 2008\Projects\RFT-Replaces\Backup4\Engine.cs">
+</Event><Event ErrorLevel="0" Project="DifferenceEngine" Source="..\TextDiff\DifferenceEngine\Structures.cs" Description="File successfully backed up as C:\Documents and Settings\mkabbani\My Documents\Visual Studio 2008\Projects\RFT-Replaces\Backup4\Structures.cs">
+</Event><Event ErrorLevel="0" Project="DifferenceEngine" Source="..\TextDiff\DifferenceEngine\TextFile.cs" Description="File successfully backed up as C:\Documents and Settings\mkabbani\My Documents\Visual Studio 2008\Projects\RFT-Replaces\Backup4\TextFile.cs">
+</Event><Event ErrorLevel="0" Project="DifferenceEngine" Source="..\TextDiff\DifferenceEngine\DifferenceEngine.csproj" Description="Project converted successfully">
+</Event><Event ErrorLevel="3" Project="DifferenceEngine" Source="..\TextDiff\DifferenceEngine\DifferenceEngine.csproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="DifferenceEngine" Source="..\TextDiff\DifferenceEngine\DifferenceEngine.csproj" Description="Scan complete: Upgrade not required for project files.">
+</Event></UpgradeLog>

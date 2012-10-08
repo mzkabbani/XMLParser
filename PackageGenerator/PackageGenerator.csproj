@@ -1,0 +1,267 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="3.5" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{0641C6DB-46CF-48F2-BA91-80A07084890F}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>PackageGenerator</RootNamespace>
+    <AssemblyName>PackageGenerator</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <ApplicationIcon>main.ico</ApplicationIcon>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x86\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <OutputPath>bin\x86\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="log4net, Version=1.2.11.0, Culture=neutral, PublicKeyToken=669e0ddf0bb1aa2a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>.\log4net.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Office.Interop.Excel, Version=10.0.4504.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>D:\DOwnloads\interopDlls\Microsoft.Office.Interop.Excel.dll</HintPath>
+    </Reference>
+    <Reference Include="SharpSvn, Version=1.7002.1998.12257, Culture=neutral, PublicKeyToken=d729672594885a28, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>.\SharpSvn.dll</HintPath>
+    </Reference>
+    <Reference Include="SharpSvn.UI, Version=1.7002.1998.12257, Culture=neutral, PublicKeyToken=33789aa53ca44aa9, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>.\SharpSvn.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Classes\CustomizationFunction.cs" />
+    <Compile Include="Classes\ExportExcelObject.cs" />
+    <Compile Include="Classes\InstallerPropertyObject.cs" />
+    <Compile Include="Controls\CheckboxGridView.cs">
+    </Compile>
+    <Compile Include="Controls\CheckboxGridView.Designer.cs">
+      <DependentUpon>CheckboxGridView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\AddPropertyForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\AddPropertyForm.Designer.cs">
+      <DependentUpon>AddPropertyForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\ExcelComparisonForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\ExcelComparisonForm.Designer.cs">
+      <DependentUpon>ExcelComparisonForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\PackageBeingGeneratredForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\PackageBeingGeneratredForm.Designer.cs">
+      <DependentUpon>PackageBeingGeneratredForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\PackageNameForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\PackageNameForm.Designer.cs">
+      <DependentUpon>PackageNameForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\SelectPackageNameAndStorageForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\SelectPackageNameAndStorageForm.Designer.cs">
+      <DependentUpon>SelectPackageNameAndStorageForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Mainform.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Mainform.Designer.cs">
+      <DependentUpon>Mainform.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\AddPropertyForm.resx">
+      <DependentUpon>AddPropertyForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ExcelComparisonForm.resx">
+      <DependentUpon>ExcelComparisonForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\PackageBeingGeneratredForm.resx">
+      <DependentUpon>PackageBeingGeneratredForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\PackageNameForm.resx">
+      <DependentUpon>PackageNameForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\SelectPackageNameAndStorageForm.resx">
+      <DependentUpon>SelectPackageNameAndStorageForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Mainform.resx">
+      <DependentUpon>Mainform.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <None Include="MIGRATION\FIRSTPACKAGE\trunk\.ci\package\images\Thumbs.db" />
+    <None Include="MIGRATION\FIRSTPACKAGE\trunk\.ci\package\murex\Migration\FrontendUtilities.groovy" />
+    <None Include="MIGRATION\FIRSTPACKAGE\trunk\.ci\package\murex\Migration\Installer.groovy" />
+    <None Include="MIGRATION\FIRSTPACKAGE\trunk\.ci\package\murex\Migration\installMain.groovy" />
+    <None Include="MIGRATION\FIRSTPACKAGE\trunk\.ci\package\murex\Migration\main.groovy" />
+    <None Include="MIGRATION\FIRSTPACKAGE\trunk\.ci\package\murex\Migration\Operations.groovy" />
+    <None Include="MIGRATION\FIRSTPACKAGE\trunk\.ci\package\murex\Migration\Orchestrator.groovy" />
+    <None Include="MIGRATION\FIRSTPACKAGE\trunk\.ci\package\murex\Migration\Packager.groovy" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="IconsLandVistaMultimediaIconsDemo-ICO-VCR-CircleBlue-PlayModeRepeatAllHot %281%29.ico" />
+    <Content Include="main.ico" />
+    <Content Include="MIGRATION\FIRSTPACKAGE\cis-mxpack-1.0-full.jar" />
+    <Content Include="MIGRATION\FIRSTPACKAGE\trunk\.ci\ci.xml" />
+    <Content Include="MIGRATION\FIRSTPACKAGE\trunk\.ci\package\files\approvalMXpress.txt" />
+    <Content Include="MIGRATION\FIRSTPACKAGE\trunk\.ci\package\images\MXpress_logo_final.jpg" />
+    <Content Include="MIGRATION\FIRSTPACKAGE\trunk\.ci\package\images\MXpress_logo_mini.jpg" />
+    <Content Include="MIGRATION\FIRSTPACKAGE\trunk\.ci\package\scripts\addChildXsl.xsl" />
+    <Content Include="MIGRATION\FIRSTPACKAGE\trunk\.ci\package\scripts\AppendToXpath.xsl" />
+    <Content Include="MIGRATION\FIRSTPACKAGE\trunk\.ci\package\scripts\RemoveXsl.xsl" />
+    <Content Include="MIGRATION\FIRSTPACKAGE\trunk\.ci\package\scripts\RemoveXslKeepContent.xsl" />
+    <Content Include="MIGRATION\FIRSTPACKAGE\trunk\.ci\package\scripts\RemoveXslWithContent.xsl" />
+    <Content Include="MIGRATION\FIRSTPACKAGE\trunk\.ci\package\scripts\ReplaceXSL.xsl" />
+    <Content Include="MIGRATION\FIRSTPACKAGE\trunk\.ci\package\scripts\SetTagTextValueXsl.xsl" />
+    <Content Include="MIGRATION\FIRSTPACKAGE\trunk\.ci\package\scripts\SetTagValueXsl.xsl" />
+    <Content Include="MIGRATION\FIRSTPACKAGE\trunk\.ci\package\scripts\UncommentByPattern.xsl" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.2.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 2.0 %28x86%29</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.0 %28x86%29</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\ProgressCircle\ProgressCircle\ProgressCircle.csproj">
+      <Project>{279C7A4A-F932-4D73-8A4E-E3D7E2E50357}</Project>
+      <Name>ProgressCircle</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Automation.Common\Automation.Common.csproj">
+      <Project>{F2CA3F3F-B7AE-4378-B4B6-B0BA9903C67D}</Project>
+      <Name>Automation.Common</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

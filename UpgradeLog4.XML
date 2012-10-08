@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type='text/xsl' href='_UpgradeReport_Files/UpgradeReport.xslt'?><UpgradeLog>
+<Properties><Property Name="Solution" Value="Misc">
+</Property><Property Name="Solution File" Value="C:\Documents and Settings\mkabbani\My Documents\Visual Studio 2008\Projects\RFT-Replaces\Misc.sln">
+</Property><Property Name="Date" Value="Tuesday, February 14, 2012">
+</Property><Property Name="Time" Value="11:11:04 AM">
+</Property><Property Name="Log Number" Value="4">
+</Property></Properties><Event ErrorLevel="0" Project="Sax" Source="..\SAX\SAX\Sax.csproj" Description="Project file successfully backed up as C:\Documents and Settings\mkabbani\My Documents\Visual Studio 2008\Projects\RFT-Replaces\Backup3\Sax.csproj">
+</Event><Event ErrorLevel="0" Project="Sax" Source="..\SAX\SAX\AssemblyInfo.cs" Description="File successfully backed up as C:\Documents and Settings\mkabbani\My Documents\Visual Studio 2008\Projects\RFT-Replaces\Backup3\AssemblyInfo.cs">
+</Event><Event ErrorLevel="0" Project="Sax" Source="..\SAX\SAX\Sax.cs" Description="File successfully backed up as C:\Documents and Settings\mkabbani\My Documents\Visual Studio 2008\Projects\RFT-Replaces\Backup3\Sax.cs">
+</Event><Event ErrorLevel="0" Project="Sax" Source="..\SAX\SAX\SaxHelpers.cs" Description="File successfully backed up as C:\Documents and Settings\mkabbani\My Documents\Visual Studio 2008\Projects\RFT-Replaces\Backup3\SaxHelpers.cs">
+</Event><Event ErrorLevel="0" Project="Sax" Source="..\SAX\SAX\SaxRes.cs" Description="File successfully backed up as C:\Documents and Settings\mkabbani\My Documents\Visual Studio 2008\Projects\RFT-Replaces\Backup3\SaxRes.cs">
+</Event><Event ErrorLevel="0" Project="Sax" Source="..\SAX\SAX\SaxKey.snk" Description="File successfully backed up as C:\Documents and Settings\mkabbani\My Documents\Visual Studio 2008\Projects\RFT-Replaces\Backup3\SaxKey.snk">
+</Event><Event ErrorLevel="0" Project="Sax" Source="..\SAX\SAX\Sax.resx" Description="File successfully backed up as C:\Documents and Settings\mkabbani\My Documents\Visual Studio 2008\Projects\RFT-Replaces\Backup3\Sax.resx">
+</Event><Event ErrorLevel="0" Project="Sax" Source="..\SAX\SAX\Sax.csproj" Description="Project converted successfully">
+</Event><Event ErrorLevel="3" Project="Sax" Source="..\SAX\SAX\Sax.csproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="Sax" Source="..\SAX\SAX\Sax.csproj" Description="Scan complete: Upgrade not required for project files.">
+</Event></UpgradeLog>

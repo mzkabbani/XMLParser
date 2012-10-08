@@ -1,0 +1,8 @@
+C:\Documents and Settings\mkabbani\My Documents\Visual Studio 2008\Projects\RFT-Replaces\TabControl_Demo\TabCtrl\bin\Debug\TabCtrl.dll
+C:\Documents and Settings\mkabbani\My Documents\Visual Studio 2008\Projects\RFT-Replaces\TabControl_Demo\TabCtrl\bin\Debug\TabCtrl.pdb
+C:\Documents and Settings\mkabbani\My Documents\Visual Studio 2008\Projects\RFT-Replaces\TabControl_Demo\TabCtrl\obj\Debug\ResolveAssemblyReference.cache
+C:\Documents and Settings\mkabbani\My Documents\Visual Studio 2008\Projects\RFT-Replaces\TabControl_Demo\TabCtrl\obj\Debug\MyControlLibrary.TabCtlEx.resources
+C:\Documents and Settings\mkabbani\My Documents\Visual Studio 2008\Projects\RFT-Replaces\TabControl_Demo\TabCtrl\obj\Debug\MyControlLibrary.TabPageEx.resources
+C:\Documents and Settings\mkabbani\My Documents\Visual Studio 2008\Projects\RFT-Replaces\TabControl_Demo\TabCtrl\obj\Debug\TabCtrl.csproj.GenerateResource.Cache
+C:\Documents and Settings\mkabbani\My Documents\Visual Studio 2008\Projects\RFT-Replaces\TabControl_Demo\TabCtrl\obj\Debug\TabCtrl.dll
+C:\Documents and Settings\mkabbani\My Documents\Visual Studio 2008\Projects\RFT-Replaces\TabControl_Demo\TabCtrl\obj\Debug\TabCtrl.pdb

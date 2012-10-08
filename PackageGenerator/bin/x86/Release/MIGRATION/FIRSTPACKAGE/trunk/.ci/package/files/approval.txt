@@ -1,0 +1,1 @@
+This will install a migration package to the selected application directory. The logs can be found in CustomizationsLog.log

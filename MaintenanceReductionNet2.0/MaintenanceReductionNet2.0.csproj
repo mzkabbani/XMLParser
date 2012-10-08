@@ -1,0 +1,93 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="3.5" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{0C0713FB-4F6D-4832-A2E7-44EC141315E0}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>MaintenanceReductionNet2._0</RootNamespace>
+    <AssemblyName>MaintenanceReductionNet2.0</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <ItemGroup>
+    <Compile Include="BulkMacroSplitterForm.cs">
+    </Compile>
+    <Compile Include="BulkMacroSplitterForm.Designer.cs">
+      <DependentUpon>BulkMacroSplitterForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="checkboxItems.cs" />
+    <Compile Include="ListViewItem.cs" />
+    <Compile Include="MainForm.cs">
+    </Compile>
+    <Compile Include="MainForm.Designer.cs">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Results.cs">
+    </Compile>
+    <Compile Include="SetupRecForm.cs">
+    </Compile>
+    <Compile Include="SetupRecForm.Designer.cs">
+      <DependentUpon>SetupRecForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SimpleOperationParser.cs">
+    </Compile>
+    <Compile Include="SimpleOperationParser.Designer.cs">
+      <DependentUpon>SimpleOperationParser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SimpleRecommendationObject.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="BulkMacroSplitterForm.resx">
+      <DependentUpon>BulkMacroSplitterForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainForm.resx">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Results.resx">
+      <DependentUpon>Results.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SetupRecForm.resx">
+      <DependentUpon>SetupRecForm.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\TextDiff\DifferenceEngine\DifferenceEngine.csproj">
+      <Project>{8AE4897A-EA74-49B1-BA55-D892C27AF9C9}</Project>
+      <Name>DifferenceEngine</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+  </ItemGroup>
+</Project>

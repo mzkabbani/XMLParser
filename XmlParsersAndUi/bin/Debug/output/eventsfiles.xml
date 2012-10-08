@@ -1,0 +1,13 @@
+<Steps label="Automatically Generated">
+ <Step id="1" sessionKey="8553" label="Settlement date= Spot" events="step1_events.xml" gui="step1_gui.xml" customs="step1_customs.xml"></Step>
+ <Step id="2" sessionKey="8553" label="View PL" events="step2_events.xml" gui="step2_gui.xml" customs="step2_customs.xml"></Step>
+ <Step id="3" sessionKey="8553" label="Premium Settlement = Forward" events="step3_events.xml" gui="step3_gui.xml" customs="step3_customs.xml"></Step>
+ <Step id="4" sessionKey="8553" label="View PL" events="step4_events.xml" gui="step4_gui.xml" customs="step4_customs.xml"></Step>
+ <Step id="5" sessionKey="8553" label="Premium Settlement = Specific" events="step5_events.xml" gui="step5_gui.xml" customs="step5_customs.xml"></Step>
+ <Step id="6" sessionKey="8553" label="Configuration Settings: Spot date" events="step6_events.xml" gui="step6_gui.xml" customs="step6_customs.xml"></Step>
+ <Step id="7" sessionKey="8553" label="Settlement date= Spot" events="step7_events.xml" gui="step7_gui.xml" customs="step7_customs.xml"></Step>
+ <Step id="8" sessionKey="8553" label="View PL" events="step8_events.xml" gui="step8_gui.xml" customs="step8_customs.xml"></Step>
+ <Step id="9" sessionKey="8553" label="Premium Settlement = Forward" events="step9_events.xml" gui="step9_gui.xml" customs="step9_customs.xml"></Step>
+ <Step id="10" sessionKey="8553" label="View PL" events="step10_events.xml" gui="step10_gui.xml" customs="step10_customs.xml"></Step>
+ <Step id="11" sessionKey="8553" label="Premium Settlement = Specific" events="step11_events.xml" gui="step11_gui.xml" customs="step11_customs.xml"></Step>
+ <Step id="12" sessionKey="8553" label="Exit" events="step12_events.xml"></Step></Steps>

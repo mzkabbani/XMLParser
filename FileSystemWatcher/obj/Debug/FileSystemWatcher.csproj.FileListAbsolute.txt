@@ -1,0 +1,8 @@
+C:\Documents and Settings\mkabbani\My Documents\Visual Studio 2008\Projects\RFT-Replaces\FileSystemWatcher\bin\Debug\FileSystemWatcher.exe
+C:\Documents and Settings\mkabbani\My Documents\Visual Studio 2008\Projects\RFT-Replaces\FileSystemWatcher\bin\Debug\FileSystemWatcher.pdb
+C:\Documents and Settings\mkabbani\My Documents\Visual Studio 2008\Projects\RFT-Replaces\FileSystemWatcher\obj\Debug\ResolveAssemblyReference.cache
+C:\Documents and Settings\mkabbani\My Documents\Visual Studio 2008\Projects\RFT-Replaces\FileSystemWatcher\obj\Debug\FileSystemWatcher.Form1.resources
+C:\Documents and Settings\mkabbani\My Documents\Visual Studio 2008\Projects\RFT-Replaces\FileSystemWatcher\obj\Debug\FileSystemWatcher.Properties.Resources.resources
+C:\Documents and Settings\mkabbani\My Documents\Visual Studio 2008\Projects\RFT-Replaces\FileSystemWatcher\obj\Debug\FileSystemWatcher.csproj.GenerateResource.Cache
+C:\Documents and Settings\mkabbani\My Documents\Visual Studio 2008\Projects\RFT-Replaces\FileSystemWatcher\obj\Debug\FileSystemWatcher.exe
+C:\Documents and Settings\mkabbani\My Documents\Visual Studio 2008\Projects\RFT-Replaces\FileSystemWatcher\obj\Debug\FileSystemWatcher.pdb

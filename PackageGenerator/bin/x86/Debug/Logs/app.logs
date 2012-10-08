@@ -1,0 +1,50 @@
+
+
+
+
+
+9/12/2012 4:12:04 PM
+
+
+A DataTable named 'ResultDataTable' already belongs to this DataSet.
+
+
+System.Data.DuplicateNameException: A DataTable named 'ResultDataTable' already belongs to this DataSet.
+   at System.Data.DataTableCollection.RegisterName(String name, String tbNamespace)
+   at System.Data.DataTableCollection.BaseAdd(DataTable table)
+   at System.Data.DataTableCollection.Add(DataTable table)
+   at PackageGenerator.Mainform.StartComparison(String filename1, String filename2) in C:\Documents and Settings\mkabbani\My Documents\Visual Studio 2008\Projects\RFT-Replaces\PackageGenerator\Mainform.cs:line 997
+   at PackageGenerator.Mainform.compareCustomizationsToolStripMenuItem_Click(Object sender, EventArgs e) in C:\Documents and Settings\mkabbani\My Documents\Visual Studio 2008\Projects\RFT-Replaces\PackageGenerator\Mainform.cs:line 1755
+
+
+
+
+9/12/2012 4:12:56 PM
+
+
+A DataTable named 'ResultDataTable' already belongs to this DataSet.
+
+
+System.Data.DuplicateNameException: A DataTable named 'ResultDataTable' already belongs to this DataSet.
+   at System.Data.DataTableCollection.RegisterName(String name, String tbNamespace)
+   at System.Data.DataTableCollection.BaseAdd(DataTable table)
+   at System.Data.DataTableCollection.Add(DataTable table)
+   at PackageGenerator.Mainform.StartComparison(String filename1, String filename2) in C:\Documents and Settings\mkabbani\My Documents\Visual Studio 2008\Projects\RFT-Replaces\PackageGenerator\Mainform.cs:line 997
+   at PackageGenerator.Mainform.compareCustomizationsToolStripMenuItem_Click(Object sender, EventArgs e) in C:\Documents and Settings\mkabbani\My Documents\Visual Studio 2008\Projects\RFT-Replaces\PackageGenerator\Mainform.cs:line 1755
+
+
+
+
+9/12/2012 4:13:47 PM
+
+
+Cannot have 0 columns.
+
+
+System.Data.InvalidConstraintException: Cannot have 0 columns.
+   at System.Data.DataKey..ctor(DataColumn[] columns, Boolean copyColumns)
+   at System.Data.DataRelation.Create(String relationName, DataColumn[] parentColumns, DataColumn[] childColumns, Boolean createConstraints)
+   at System.Data.DataRelation..ctor(String relationName, DataColumn[] parentColumns, DataColumn[] childColumns, Boolean createConstraints)
+   at PackageGenerator.Mainform.getDifferentRecords(DataTable FirstDataTable, DataTable SecondDataTable) in C:\Documents and Settings\mkabbani\My Documents\Visual Studio 2008\Projects\RFT-Replaces\PackageGenerator\Mainform.cs:line 870
+   at PackageGenerator.Mainform.StartComparison(String filename1, String filename2) in C:\Documents and Settings\mkabbani\My Documents\Visual Studio 2008\Projects\RFT-Replaces\PackageGenerator\Mainform.cs:line 996
+   at PackageGenerator.Mainform.compareCustomizationsToolStripMenuItem_Click(Object sender, EventArgs e) in C:\Documents and Settings\mkabbani\My Documents\Visual Studio 2008\Projects\RFT-Replaces\PackageGenerator\Mainform.cs:line 1755

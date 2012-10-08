@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type='text/xsl' href='_UpgradeReport_Files/UpgradeReport.xslt'?><UpgradeLog>
+<Properties><Property Name="Solution" Value="Misc">
+</Property><Property Name="Solution File" Value="C:\Documents and Settings\mkabbani\My Documents\Visual Studio 2008\Projects\RFT-Replaces\Misc.sln">
+</Property><Property Name="Date" Value="Tuesday, May 22, 2012">
+</Property><Property Name="Time" Value="12:45:34 PM">
+</Property><Property Name="Log Number" Value="13">
+</Property></Properties><Event ErrorLevel="0" Project="StarRatingControl" Source="..\StarRatingControl\StarRatingControl.csproj" Description="Project file successfully backed up as C:\Documents and Settings\mkabbani\My Documents\Visual Studio 2008\Projects\RFT-Replaces\Backup12\StarRatingControl.csproj">
+</Event><Event ErrorLevel="0" Project="StarRatingControl" Source="..\StarRatingControl\StarRatingControl.csproj.user" Description="Project user file successfully backed up as C:\Documents and Settings\mkabbani\My Documents\Visual Studio 2008\Projects\RFT-Replaces\Backup12\StarRatingControl.csproj.user">
+</Event><Event ErrorLevel="0" Project="StarRatingControl" Source="..\StarRatingControl\AssemblyInfo.cs" Description="File successfully backed up as C:\Documents and Settings\mkabbani\My Documents\Visual Studio 2008\Projects\RFT-Replaces\Backup12\AssemblyInfo.cs">
+</Event><Event ErrorLevel="0" Project="StarRatingControl" Source="..\StarRatingControl\StarRatingControl.cs" Description="File successfully backed up as C:\Documents and Settings\mkabbani\My Documents\Visual Studio 2008\Projects\RFT-Replaces\Backup12\StarRatingControl.cs">
+</Event><Event ErrorLevel="0" Project="StarRatingControl" Source="..\StarRatingControl\StarRatingControl.resx" Description="File successfully backed up as C:\Documents and Settings\mkabbani\My Documents\Visual Studio 2008\Projects\RFT-Replaces\Backup12\StarRatingControl.resx">
+</Event><Event ErrorLevel="0" Project="StarRatingControl" Source="..\StarRatingControl\StarRatingControl.csproj" Description="Project converted successfully">
+</Event><Event ErrorLevel="3" Project="StarRatingControl" Source="..\StarRatingControl\StarRatingControl.csproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="StarRatingControl" Source="..\StarRatingControl\StarRatingControl.csproj" Description="Scan complete: Upgrade not required for project files.">
+</Event></UpgradeLog>

@@ -1,0 +1,459 @@
+<!--------------------------------------------------------------------------->  
+<!--                           INTRODUCTION                                
+
+ The Code Project article submission template (HTML version)
+
+Using this template will help us post your article sooner. To use, just 
+follow the 3 easy steps below:
+ 
+     1. Fill in the article description details
+     2. Add links to your images and downloads
+     3. Include the main article text
+
+That's all there is to it! All formatting will be done by our submission
+scripts and style sheets. 
+
+-->  
+<!--------------------------------------------------------------------------->  
+<!--                        IGNORE THIS SECTION                            -->
+<html>
+<head>
+<title>The Code Project</title>
+<Style>
+BODY, P, TD { font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 10pt }
+H2,H3,H4,H5 { color: #ff9900; font-weight: bold; }
+H2 { font-size: 13pt; }
+H3 { font-size: 12pt; }
+H4 { font-size: 10pt; color: black; }
+PRE { BACKGROUND-COLOR: #FBEDBB; FONT-FAMILY: "Courier New", Courier, mono; WHITE-SPACE: pre; }
+CODE { COLOR: #990000; FONT-FAMILY: "Courier New", Courier, mono; }
+</style>
+<link rel="stylesheet" type=text/css href="http://www.codeproject.com/styles/global.css">
+</head>
+<body bgcolor="#FFFFFF" color=#000000>
+<!--------------------------------------------------------------------------->  
+
+
+<!-------------------------------     STEP 1      --------------------------->
+<!--  Fill in the details (CodeProject will reformat this section for you) -->
+
+<pre>
+Title:       TdhTabCtl - FireFox-like subclassed TabControl and TabPage controls.
+Author:      Troy Hailey 
+Email:       ilion7@hotmail.com
+Environment: VS.NET, Windows
+Keywords:    Control, .NET, C#, 
+Level:       Beginner
+Description: This article describes .NET subclassed TabControl and TabPage controls with FireFox-like tab-buttons and other enhancements.
+Section      Tab Controls 
+SubSection   Owner Drawn
+</pre>
+
+<!-------------------------------     STEP 2      --------------------------->
+<!--  Include download and sample image information.                       --> 
+
+<ul class=download>
+<li><a href="TdhTabCtl_src.zip">Download code example - 132 Kb</a></li>
+<li><a href="TdhTabCtl_demo.zip">Download demo example - 72 Kb</a></li>
+</ul>
+
+<p><img src="TdhTabCtl.gif" alt="Sample Image - maximum width is 600 pixels" width=447 height=415></p>
+
+<!-------------------------------     STEP 3      --------------------------->
+<!--  Add the article text. Please use simple formatting (<h2>, <p> etc)   --> 
+
+
+<h2>Introduction and Features</h2>
+
+<p>
+A previous article I'd submitted to The CodeProject (<a href="http://www.codeproject.com/KB/edit/TdhEditBox.aspx">TdhEditBox</a>) grew out of the project described in this article: <code>TDHTabCtl</code>, which contains the subclassed controls <code>TdhTabCtl</code> (inheriting from <code>System.Windows.Forms.TabControl</code>) and <code>TdhTabPage</code> (inheriting from <code>System.Windows.Forms.TabPage</code>).
+<br><br> 
+The <code>TDHTabCtl</code> project is based on the interesting subclassed <code>TabControl</code> and <code>TabPage</code> controls originally written by "vijayaprasen" (see: "<a href="http://www.codeproject.com/KB/tabs/firefoxtabcontrol.aspx">FireFox-like Tab Control</a>"), and from which I learned quite a bit in studying the code.  When I started working on this project, I had intended only to convert "vijayaprasen's" .Net 2.0 code into .Net 1.1 code, and then to make a relatively simple, though important, change (i.e. adding a subclassed <code>TabPageCollection</code> class to the project).  In the event, I ended up completely rewriting the original project and adding functionality which differentiates my version from the original.
+</p>
+
+<p>
+Some features of the <code>TDHControls.TDHTabCtl.TdhTabCtl</code> and <code>TDHControls.TDHTabCtl.TdhTabPage</code> controls are: <ul> 
+    <li><code>TdhTabCtl</code> - Allow or disallow any <code>TdhTabPage</code> to be closed.  This action raises an event.
+    </li> 
+    <li><code>TdhTabCtl</code> - Require or not confirmation before closing any <code>TdhTabPage</code>
+    </li> 
+    <li><code>TdhTabCtl</code> - Allow or disallow new <code>TdhTabPage</code>s to be opened.  This action raises an event.
+    </li> 
+    <li><code>TdhTabCtl</code> - Allow or disallow any <code>TdhTabPage</code> to be "renamed" (change text on Tab).  This action raises an event.
+    </li> 
+    <li><code>TdhTabCtl</code> - Allow or disallow <code>TdhTabPage</code>s to be reordered.  This action raises an event.
+    </li> 
+    <li><code>TdhTabCtl</code> - Allow or disallow right-click <code>ContextMenu</code>s on any <code>TdhTabPage</code> tabs/headers
+    </li> 
+<br><br> 
+    <li><code>TdhTabPage</code> - Allow or disallow individual <code>TdhTabPage</code> to be closed.  This action raises an event.
+    </li> 
+    <li><code>TdhTabPage</code> - Require or not confirmation before closing individual <code>TdhTabPage</code>.
+    </li> 
+    <li><code>TdhTabPage</code> - Allow or disallow right-click <code>ContextMenu</code>s on individual <code>TdhTabPage</code>.
+    </li> 
+    <li><code>TdhTabPage</code> - Show on not the Close Button on individual <code>TdhTabPage</code>.
+    </li> 
+    <li><code>TdhTabPage</code> - Show on not the Menu Button on individual <code>TdhTabPage</code>.
+    </li> 
+    <li><code>TdhTabPage</code> - Default Menu does not have to be individually assigned to each <code>TdhTabPage</code>;
+    </li> 
+    <li><code>TdhTabPage</code> - <code>ContextMenu</code> (optionally) assigned to individual <code>TdhTabPage</code> is merged into default Menu when the Menu is displayed for that <code>TdhTabPage</code>.
+    </li> 
+<br><br> 
+    <li>Events - The <code>TdhTabCtl</code> and <code>TdhTabPage</code> controls raise events to notify the client code when these "enhanced" functions (Add, Remove, Rename, Reorder) are performed (for instance, when the user closes a <code>TdhTabPage</code>).
+    </li> 
+<br><br> 
+    <li>Custom Context Menu - Any <code>TdhTabPage</code> control may optionally be assigned a unique <code>ContextMenu</code>.  In the demo screenshot, we see that "Page3" has been assigned such a unique/individual <code>ContextMenu</code>.
+    </li> 
+</ul> 
+</p>
+
+
+<h2>Using The TdhTabCtl And TdhTabPage Controls With Your Application</h2>
+
+<p>
+The <code>TDHTabCtl</code> project was written (and compiled) using VS2002 (.NET 1.0) with the intention that the source code be readily available to other developers regardless of the .NET version they are using.
+</p>
+
+<p>
+To use the <code>TdhTabCtl</code> and <code>TdhTabPage</code> and classes as is, add a reference in your project to the class library '<i>TDHTabCtl.dll</i>.' 
+</p>
+<pre lang=cs>
+// The namespace used in the 'TDHTabCtl.dll' library is:
+
+<span class='cs-keyword'>using</span> TDHControls.TDHTabCtl;
+
+
+// Sample code using the TdhTabCtl and TdhTabPage controls:
+
+private void InitializeComponent()
+{
+// 
+// tdhTabCtl1
+// 
+this.tdhTabCtl1.Anchor = ((System.Windows.Forms.AnchorStyles.Top 
+    | System.Windows.Forms.AnchorStyles.Left) 
+    | System.Windows.Forms.AnchorStyles.Right);
+this.tdhTabCtl1.Controls.AddRange(
+    new System.Windows.Forms.Control[] 
+    {
+        this.tdhTabPage1, 
+        this.tdhTabPage2, 
+        this.tdhTabPage3, 
+        this.tdhTabPage4
+    });
+this.tdhTabCtl1.DrawMode = System.Windows.Forms.TabDrawMode.OwnerDrawFixed;
+this.tdhTabCtl1.ItemSize = new System.Drawing.Size(230, 24);
+this.tdhTabCtl1.Name = "tdhTabCtl1";
+this.tdhTabCtl1.SelectedIndex = 0;
+this.tdhTabCtl1.Size = new System.Drawing.Size(800, 216);
+this.tdhTabCtl1.TabIndex = 2;
+this.tdhTabCtl1.TabStop = false;
+// optionally assign EventHandler
+this.tdhTabCtl1.OnTabEvents 
+    += new TDHControls.TDHTabCtl.TabEventsDelegate(this.tdhTabCtl1_OnTabEvents);
+// optionally assign EventHandler
+this.tdhTabCtl1.OnTabsReordered 
+    += new TDHControls.TDHTabCtl.TabsReorderedEventDelegate(this.tdhTabCtl1_OnTabsReordered);
+}
+
+
+
+private void tdhTabCtl1_OnTabEvents(object sender, TDHControls.TDHTabCtl.TabEventArgs e)
+{
+    switch (e.TabEvent)
+    {
+        case TDHControls.TDHTabCtl.TabEventArgs.TabEvents.TabAdded:
+            // optionally do something
+            break;
+        case TDHControls.TDHTabCtl.TabEventArgs.TabEvents.TabAddRejected:
+            // optionally do something
+
+            // For instance:
+            // Add the [TdhTabPage] to the TabPageCollection of a standard TabControl
+            //this.tabControl1.Controls.Add(e.TabPage);
+            this.tabControl1.TabPages.Add(e.TabPage);
+            break;
+        case TDHControls.TDHTabCtl.TabEventArgs.TabEvents.TabRemoved:
+            // optionally do something
+
+            // For instance:
+            // Add the [TdhTabPage] to the TabPageCollection of a standard TabControl
+            //this.tabControl1.Controls.Add(e.TabPage);
+            this.tabControl1.TabPages.Add(e.TabPage);
+            break;
+        case TDHControls.TDHTabCtl.TabEventArgs.TabEvents.TabRenamed:
+            // optionally do something
+            break;
+        case TDHControls.TDHTabCtl.TabEventArgs.TabEvents.TabsReordered:
+            // This "subevent" is not raised 
+            // if the [tdhTabCtl1.OnTabsReordered] eventhandler is assigned
+            // It is raised for each TdhTabPage affected by the reorder
+
+            // optionally do something
+
+Console.WriteLine("TdhTabPage reordered."      // TEST
+    +"    OldInd="+ e.TabIndexOld.ToString()   // TEST
+    +"    NewInd="+ e.TabIndexNew.ToString()); // TEST
+            break;
+        default:
+            break;
+    }
+}
+
+private void tdhTabCtl1_OnTabsReordered(object sender, TDHControls.TDHTabCtl.TabsReorderedEventArgs e)
+{
+    // do something
+
+    // For instance:
+    for (int idx = 0; idx < e.TabOrder_int.Length; idx++)
+    {
+Console.WriteLine("TdhTabPage reordered."          // TEST
+    +"    OldInd="+ e.TabOrder_int[idx].ToString() // TEST
+    +"    NewInd="+ idx.ToString() );              // TEST
+    }
+}
+</pre>
+
+
+<h2>The TdhTabCtl And TdhTabPage End-User Experience</h2>
+
+<p>
+As the <code>TdhTabCtl</code> and <code>TdhTabPage</code> controls inherit from the standard <code>System.Windows.Forms.TabControl</code> and <code>System.Windows.Forms.TabPage</code> controls, the typical end-user can be expected to understand them without difficulty.  The added functionality ought to be self-explanatory.
+</p>
+
+<h4>"Renaming" A TdhTabPage Control</h4>
+<p>
+When enabled, this function, accessed via the built-in context menu of the <code>TdhTabCtl</code> control, allows the end-user to change the <code>.Text</code> value displayed on the tab of the <code>TdhTabPage</code> control(s).
+
+<br><br> 
+The intention of the functionality for "renaming" the <code>TdhTabPage</code> controls is that user interaction with it be intuitive and easy.  Thus, no special user actions nor secondary controls are necessary to dismiss the editbox, whether to accept or reject the rename-action.  Rather, the editbox is dismissed by keyboard or mouse behavior.
+
+<br><br> 
+Specifically: <ul> 
+    <li>Clicking anywhere outside the editbox dismisses it and rejects the action.
+    </li> 
+    <li>Use of the [Escape] key dismisses the editbox and rejects the action.
+    </li> 
+    <li>Use of the [Return] key dismisses the editbox and accepts the action.
+    </li> 
+    <li>Use of the [Tab] key dismisses the editbox and accepts the action.
+    </li> 
+</ul> 
+</p>
+
+<h4>Reordering The TdhTabPages of a TdhTabCtl</h4>
+<p>
+When enabled, this function is accessed via the built-in context menu of the <code>TdhTabCtl</code> control.  The following screenshot shows this function in use:
+</p>
+
+<p><img src="TdhTabCtl_Reorder.gif" alt="Sample Image - maximum width is 600 pixels" width=419 height=296></p>
+
+<p>
+Reordering the <code>TdhTabPage</code>s collection of a <code>TdhTabCtl</code> isn't as straightforward as a simple drag-and-drop operation.  On the other hand, the code for this action allows the end-user to preview the end-result and accept or reject the action.
+</p>
+
+
+<h2>The TdhTabCtl And TdhTabPage Programming Interface</h2>
+
+<i>Novel</i> properties and methods (in addition to the inherited members) of the <code>TDHTabCtl.TdhTabCtl</code> control's interface are:
+
+<ul class="property">
+    <li><code>public TDHTabCtl.TdhTabPageCollection TdhTabPages</code> - This property extends the standard .<code>TabPages</code> property; it knows about both the <code>System.Windows.Forms.TabPage</code> and <code>TDHTabCtl.TdhTabPage</code> classes, and provides added methods and properties (for instance, an 'Insert()' method). </li> 
+    <li><code>public new System.Windows.Forms.TabControl.TabPageCollection TabPages</code> - This is the standard .<code>TabPages</code> property for a <code>System.Windows.Forms.TabControl</code>; it knows only about the <code>System.Windows.Forms.TabPage</code> class. </li> 
+
+    <br><br> 
+    The following properties are used for any Tab object which is not a <code>TDHTabCtl.TdhTabPage</code> (or inherited).  They correspond to certain of the <i>novel</i> properties of the <code>TDHTabCtl.TdhTabPage</code> class.  As the standard <code>System.Windows.Forms.TabPage</code> control does have these properties, the <code>TDHTabCtl.TdhTabCtl</code> class uses the set value for any non-<code>TDHTabCtl.TdhTabPage</code> Tab object.
+    <li><code>public bool TabsBase_AllowClose</code> - This property indicates whether the Tab object may be removed/closed. </li> 
+    <li><code>public bool TabsBase_ConfirmOnClose</code> - This property indicates whether confirmation is required before removing/closing the Tab object. </li> 
+    <li><code>public bool TabsBase_ContextMenuAllowOpen</code> - This property indicates whether the "Open New Tab (Basic TabPage)" <code>MenuItem</code> of the <code>TDHTabCtl.TdhTabCtl</code> control's built-in context menu is enabled/available. </li> 
+  
+    <br><br> 
+    <li><code>public bool TabsAllowClose</code> - This property indicates whether any Tab object of the <code>TDHTabCtl.TdhTabCtl</code> control's .<code>TabPageCollection</code> may be removed/closed.</li> 
+    <li><code>public bool TabsAllowContextMenu</code> - This property indicates whether the <code>TDHTabCtl.TdhTabCtl</code> control's built-in context menu is to be enabled/available for any Tab object of the control's .<code>TabPageCollection</code>.</li> 
+    <li><code>public bool TabsConfirmOnClose</code> - This property indicates whether confirmation is generally required before removing/closing any Tab object of the <code>TDHTabCtl.TdhTabCtl</code> control's .<code>TabPageCollection</code>.</li> 
+    <li><code>public bool TabsContextMenuAllowClose</code> - This property indicates whether the "Close Tab" <code>MenuItem</code>s of the <code>TDHTabCtl.TdhTabCtl</code> control's built-in context menu are to be enabled/available.</li> 
+    <li><code>public bool TabsContextMenuAllowOpen</code> - This property indicates whether the "Open New Tab" <code>MenuItem</code> of the <code>TDHTabCtl.TdhTabCtl</code> control's built-in context menu is to be enabled/available.</li> 
+    <li><code>public bool TabsContextMenuAllowRename</code> - This property indicates whether the "Rename Tab" <code>MenuItem</code> of the <code>TDHTabCtl.TdhTabCtl</code> control's built-in context menu is to be enabled/available.</li> 
+    <li><code>public bool TabsContextMenuAllowReorder</code> - This property indicates whether the "Reorder Tab Pages" <code>MenuItem</code> of the <code>TDHTabCtl.TdhTabCtl</code> control's built-in context menu is to be enabled/available.</li> 
+    <li><code>public bool TabsShowCloseButton</code> - This This property indicates whether the "close button" may be drawn/shown on any <code>TDHTabCtl.TdhTabPage</code> object of the <code>TDHTabCtl.TdhTabCtl</code> control's .<code>TabPageCollection</code>.</li> 
+    <li><code>public bool TabsShowMenuButton</code> - This property indicates whether the "menu button" may be drawn/shown on any <code>TDHTabCtl.TdhTabPage</code> object of the <code>TDHTabCtl.TdhTabCtl</code> control's .<code>TabPageCollection</code>.</li> 
+</ul>
+
+<ul class="method"> 
+    With all the following methods: 
+<br>
+    1) If an <code>OnTabEvents</code> EventHandler is attached to the <code>TDHTabCtl.TdhTabCtl</code> control, the event will fire as though the user had manually removed/closed the Tab object.
+<br>
+    2) A 'true' value of the '<code>overridePermission</code>' argument over-rides any .<code>TabsAllowClose</code> or .<code>TabsBase_AllowClose</code> or .<code>TabAllowClose</code> which would normally apply for the given object were the user attempt to manually remove/close the Tab object.
+<br>
+    3) The return value indicates whether the given object was found in the .<code>TabPageCollection</code> and removed, or whether the given index values were valid and the objects with those values removed.
+    <li><code>public bool TabPages_Remove(bool overridePermission, TDHTabCtl.TdhTabPage theTabPage)</code> - This method removes from the <code>TDHTabCtl.TdhTabCtl</code> control's .<code>TabPageCollection</code> the given <code>TDHTabCtl.TdhTabPage</code> object.</li> 
+    <li><code>public bool TabPages_Remove(bool overridePermission, System.Windows.Forms.TabPage theTabPage)</code> - This method removes from the <code>TDHTabCtl.TdhTabCtl</code> control's .<code>TabPageCollection</code> the given (boxed) <code>System.Windows.Forms.TabPage</code> object.</li> 
+    <li><code>public bool TabPages_RemoveAt(bool overridePermission, int index)</code> - This method removes from the <code>TDHTabCtl.TdhTabCtl</code> control's .<code>TabPageCollection</code> the Tab object with the given index value.</li> 
+    <li><code>public bool TabPages_RemoveRange(bool overridePermission, int indexStart, int indexEnd)</code> - This method removes from the <code>TDHTabCtl.TdhTabCtl</code> control's .<code>TabPageCollection</code> the Tab objects with the given range of index values.</li> 
+</ul> 
+
+
+<i>Novel</i> properties (in addition to the inherited members) of the <code>TDHTabCtl.TdhTabPage</code> control's interface are:
+
+<ul class="property">
+    <li><code>public bool TabAllowClose</code> - This property indicates whether the specific <code>TDHTabCtl.TdhTabPage</code> control may be removed/closed.</li> 
+    <li><code>public bool TabAllowContextMenu</code> - This property indicates whether the <code>TDHTabCtl.TdhTabCtl</code> control's built-in context menu is to be enabled/available for the the specific <code>TdhTabPage</code> control.</li> 
+    <li><code>public bool TabConfirmOnClose</code> - This property indicates whether confirmation is required before removing/closing the specific <code>TDHTabCtl.TdhTabPage</code> control.</li> 
+    <li><code>public bool TabShowCloseButton</code> - This property indicates whether the "close button" is to be drawn/shown on the specific <code>TDHTabCtl.TdhTabPage</code> control.</li> 
+    <li><code>public bool TabShowMenuButton</code> - This property indicates whether the "menu button" is to be drawn/shown on the specific <code>TDHTabCtl.TdhTabPage</code> control.</li> 
+</ul> 
+
+
+<i>Novel</i> properties and methods (in addition to the inherited members) of the <code>TDHTabCtl.TdhTabCtl.TdhTabPages</code> property's interface are: 
+
+<ul class="property"> 
+    <li><code>public new TDHTabCtl.TdhTabPage this[int index]</code> - This is the main Indexer for the <code>TDHTabCtl.TdhTabCtl.TdhTabPages</code> property.  If the Tab object at the given index in the parent <code>TDHTabCtl.TdhTabCtl</code> control's .<code>TabPageCollection</code> is not an instance of <code>TDHTabCtl.TdhTabPage</code> (or inherited from it), the returned object is a null object -- thus, if one's project allows both <code>TdhTabCtl.TdhTabPage</code>s and <code>System.Windows.Forms.TabPage</code>s to be added to the <code>TdhTabCtl.TdhTabCtl</code>, it would be better to use next Indexer.  Example use: [ <code>this.tdhTabCtl1.TabPages[0].Text = "A TdhTabPage";</code> ]  </li> 
+    <li><code>public System.Windows.Forms.TabPage this[bool alwaysAsBase, int index]</code> - This Indexer returns the Tab object at the given index in the parent <code>TDHTabCtl.TdhTabCtl</code> control's .<code>TabPageCollection</code> (boxed) as a standard <code>System.Windows.Forms.TabPage</code>.  The bool value '<code>alwaysAsBase</code>' is not used in the code; it's there only to differentiate the signature.  Example use: [ <code>this.tdhTabCtl1.TabPages[true, 0].Text = "A TdhTabPage";</code> ] </li> 
+    <li><code>public TDHTabCtl.TdhTabPage this[string text]</code> - This Indexer tries to return the <code>TDHTabCtl.TdhTabPage</code> object in the parent <code>TDHTabCtl.TdhTabCtl</code> control's .<code>TabPageCollection</code> having a <code>.Text</code> value matching '<code>text</code>;' else it returns a null object.</li> 
+    <li><code>public System.Windows.Forms.TabPage this[bool alwaysAsBase, string text]</code> - This Indexer tries to return the (boxed) <code>System.Windows.Forms.TabPage</code> object in the parent <code>TDHTabCtl.TdhTabCtl</code> control's .<code>TabPageCollection</code> having a <code>.Text</code> value matching '<code>text</code>;' else it returns a null object.</li> 
+</ul> 
+
+<ul class="method"> 
+    <li><code>public bool IsTdhTabPage(int index)</code> - This method indicates whether the indexed Tab object in the parent <code>TDHTabCtl.TdhTabCtl</code> control's .<code>TabPageCollection</code> is a <code>TDHTabCtl.TdhTabPage</code> (or inherited from it).</li> 
+    <li><code>public new void Clear()</code> - This method straightforwardly clears the parent <code>TDHTabCtl.TdhTabCtl</code> control's .<code>TabPageCollection</code>.</li> 
+    <li><code>public bool Contains(TDHTabCtl.TdhTabPage theTabPage)</code> - This method indicates whether the parent <code>TDHTabCtl.TdhTabCtl</code> control's .<code>TabPageCollection</code> contains the given <code>TDHTabCtl.TdhTabPage</code> object.</li> 
+    <li><code>public new bool Contains(System.Windows.Forms.TabPage theTabPage)</code> - This method indicates whether the parent <code>TDHTabCtl.TdhTabCtl</code> control's .<code>TabPageCollection</code> contains the given <code>System.Windows.Forms.TabPage</code> object.</li> 
+    <li><code>public void Add(TDHTabCtl.TdhTabPage theTabPage)</code> - This method adds the given <code>TDHTabCtl.TdhTabPage</code> object to the parent <code>TDHTabCtl.TdhTabCtl</code> control's .<code>TabPageCollection</code>.</li> 
+    <li><code>public void Add(System.Windows.Forms.TabPage theTabPage)</code> - This method adds the given <code>System.Windows.Forms.TabPage</code> object to the parent <code>TDHTabCtl.TdhTabCtl</code> control's .<code>TabPageCollection</code>.</li> 
+    <li><code>public void AddRange(params TDHTabCtl.TdhTabPage[] theTabPages)</code> - This method adds the given <code>TDHTabCtl.TdhTabPage</code> object array to the parent <code>TDHTabCtl.TdhTabCtl</code> control's .<code>TabPageCollection</code>.</li> 
+    <li><code>public void AddRange(params System.Windows.Forms.TabPage[] theTabPages)</code> - This method adds the given <code>System.Windows.Forms.TabPage</code> object array to the parent <code>TDHTabCtl.TdhTabCtl</code> control's .<code>TabPageCollection</code>.</li> 
+    <li><code>public void Insert(int index, TDHTabCtl.TdhTabPage theTabPage)</code> - This method inserts the given <code>TDHTabCtl.TdhTabPage</code> object into the parent <code>TDHTabCtl.TdhTabCtl</code> control's .<code>TabPageCollection</code>.
+    <li><code>public void Insert(int index, System.Windows.Forms.TabPage theTabPage)</code> - This method inserts the given <code>System.Windows.Forms.TabPage</code> object into the parent <code>TDHTabCtl.TdhTabCtl</code> control's .<code>TabPageCollection</code>.</li> 
+    <li><code>public void InsertRange(int index, params TDHTabCtl.TdhTabPage[] theTabPages)</code> - This method inserts the given <code>TDHTabCtl.TdhTabPage</code> object array into the parent <code>TDHTabCtl.TdhTabCtl</code> control's .<code>TabPageCollection</code>.</li> 
+    <li><code>public void InsertRange(int index, params System.Windows.Forms.TabPage[] theTabPages)</code> - This method inserts the given <code>System.Windows.Forms.TabPage</code> object array into the parent <code>TDHTabCtl.TdhTabCtl</code> control's .<code>TabPageCollection</code>.</li> 
+    <li><code>public bool RemoveRange(int indexStart, int indexEnd)</code> - This method removes the Tab objects of the parent <code>TDHTabCtl.TdhTabCtl</code> control's .<code>TabPageCollection</code> with index values between '<code>indexStart</code>' and '<code>indexEnd</code>' inclusive.</li> 
+</ul> 
+
+
+Event handlers and delegates of the <code>TdhTabCtl</code> control:
+
+<ul class="event"> 
+    <li><code>public event TDHControls.TDHTabCtl.TabEventsDelegate OnTabEvents</code> - The <code>OnTabEvents</code> event fires when any of various actions are performed on the <code>TdhTabCtl</code> control's <code>TdhTabPage</code> collection:
+</ul> 
+<ul> 
+    <ul> 
+        <li> Adding a <code>TdhTabPage</code>
+        <li> Initiating but then rejecting the addition of a <code>TdhTabPage</code>
+        <li> Removing/closing a <code>TdhTabPage</code>
+        <li> "Renaming" a <code>TdhTabPage</code>
+        <li> Reordering the <code>TdhTabPage</code> collection 
+             <br> 
+             (NOTE: If a <code>OnTabsReordered</code> EventHandler has been assigned for the <code>TdhTabCtl</code> control, the <code>OnTabEvents</code> event does not fire for this action; otherwise, it fires individually for each <code>TdhTabPage</code> affected.)
+    </ul> 
+The various properties of the <code>TabEventArgs</code> argument supply specific information about the event, including a reference to the affected <code>TdhTabPage</code> instance.
+</ul> 
+
+<ul class="event"> 
+    <li><code>public delegate void TabEventsDelegate(object sender, TDHControls.TDHTabCtl.TabEventArgs e)</code> - This event delegate defines the signature of the <code>OnTabEvents</code> EventHandler.
+    </li> 
+
+    <br><br> 
+    <li><code>public event TDHControls.TDHTabCtl.TabsReorderedEventDelegate OnTabsReordered</code> - The <code>OnTabsReordered</code> event fires when the <code>TdhTabCtl</code> control's <code>TdhTabPage</code> collection is reordered.  Among the properties of the <code>TabsReorderedEventArgs</code> argument is an <code>ArrayList</code> of integer values (also accessible as an integer array) which may be used to determine the new taborder as compared to the old.
+    </li> 
+
+    <br><br> 
+    <li><code>public delegate void TabsReorderedEventDelegate(object sender, TDHControls.TDHTabCtl.TabsReorderedEventArgs e)</code> - This event delegate defines the signature of the <code>OnTabsReordered</code> EventHandler.
+    </li> 
+</ul>
+
+
+<h2>History</h2>
+
+<ul>
+<li>2008 July 29: Submission of <code>TdhTabCtl</code> ver 1.0.004 to The Code Project.
+</li>
+
+<li>2008 August 1: <code>TdhTabCtl</code> ver 1.0.005:
+    <ul> 
+    <li>Fixed an apparent timing issue.  When the last (rightmost) 
+        <code>TdhTabPage</code> was removed/closed via the <code>ContextMenu</code>, 
+        its TabRect was drawn being drawn again after the removal.
+    </li>
+    </ul> 
+</li>
+
+<li>2008 August 8: <code>TdhTabCtl</code> ver 1.0.010 - 1.0.012:
+    <br> 
+    Enabled the <code>TdhTabCtl</code> control to contain and handle both 
+    <code>TdhTabPage</code> and <code>.Forms.TabPage</code> controls.
+    <ul> 
+    <li>Renamed the overridden <code>TdhTabCtl.TabPages</code> property 
+        (i.e. the accessor for the 
+        <code>TDHControls.TDHTabCtl.TdhTabPageCollection</code> 
+        class instance) to <code>TdhTabCtl.TdhTabPages</code>.  
+    </li>
+    <li>
+        Thus the <code>.TabControl.TabPages</code> property for the 
+        <code>TdhTabCtl</code> instance returns <code>base.TabPages</code>.
+    </li>
+    </ul> 
+
+    Added following properties and methods to class 
+    <code>TDHControls.TDHTabCtl.TdhTabCtl</code>: 
+    <ul class="property"> 
+    <li><code>public bool TabsBase_AllowClose</code>
+    </li>
+    <li><code>public bool TabsBase_ConfirmOnClose</code>
+    </li>
+    <li><code>public bool TabsBase_ContextMenuAllowOpen</code>
+    </li>
+    </ul> 
+    <ul class="method"> 
+    <li><code>TabPages_Remove(bool overridePermission, TDHTabCtl.TdhTabPage theTabPage)</code>
+    <li><code>TabPages_Remove(bool overridePermission, System.Windows.Forms.TabPage theTabPage)</code>
+    <li><code>public bool TabPages_RemoveAt(bool overridePermission, int index)</code>
+    <li><code>public bool TabPages_RemoveRange(bool overridePermission, int indexStart, int indexEnd)</code>
+    </li>
+    </ul> 
+
+    Added following properties and methods to class 
+    <code>TDHControls.TDHTabCtl.TdhTabPageCollection</code> 
+    (class instance is accessed via the <code>TdhTabCtl.TdhTabPages</code> 
+    property):
+    <ul class="property"> 
+    <li><code>public System.Windows.Forms.TabPage this[bool alwaysAsBase, int index]</code> - The bool value '<code>alwaysAsBase</code>' is not used in the code; it's there only to differentiate the signature.
+    </li>
+    <li><code>public TDHTabCtl.TdhTabPage this[string text]</code>
+    </li>
+    <li><code>public System.Windows.Forms.TabPage this[bool alwaysAsBase, string text]</code> 
+    </li>
+    </ul> 
+    <ul class="method"> 
+    <li><code>public bool IsTdhTabPage(int index)</code>
+    </li>
+    <li><code>public new bool Contains(System.Windows.Forms.TabPage theTabPage)</code>
+    </li>
+    <li><code>public new void Add(System.Windows.Forms.TabPage theTabPage)</code>
+    </li>
+    <li><code>public new void AddRange(params System.Windows.Forms.TabPage[] theTabPages)</code>
+    </li>
+    <li><code>public void Insert(int index, System.Windows.Forms.TabPage theTabPage)</code>
+    </li>
+    <li><code>public void InsertRange(int index, params System.Windows.Forms.TabPage[] theTabPages)</code>
+    </li>
+    <li><code>public bool RemoveRange(int indexStart, int indexEnd)</code>
+    </li>
+    </ul> 
+</li>
+
+<li>2008 August 9: <code>TdhTabCtl</code> ver 1.0.021 - 1.0.021: 
+    <br> 
+    Resolved the issue that the design-time <code>ContextMenu</code> for the <code>TDHTabCtl.TdhTabCtl</code> class was unaware of the <code>TDHTabCtl.TdhTabPage</code> class (thus, the "Add Tab" MenuItem added standard <code>System.Windows.Forms.TabPage</code> controls).  These changes don't modify the interface of the <code>TDHTabCtl.TdhTabCtl</code> class.
+</li>
+
+<li>2008 August 10: Submission of <code>TdhTabCtl</code> ver 1.0.021 to The Code Project.
+</li>
+</ul>
+
+
+<!-------------------------------    That's it!   --------------------------->
+</body>
+</html>

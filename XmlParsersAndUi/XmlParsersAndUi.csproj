@@ -1,0 +1,723 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="3.5" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{AD250399-6753-41B2-8B73-573F466EDBE6}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>XmlParsersAndUi</RootNamespace>
+    <AssemblyName>Maintenance-Reduction</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <ApplicationIcon>main.ico</ApplicationIcon>
+    <TargetFrameworkSubset>Full</TargetFrameworkSubset>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <SignManifests>true</SignManifests>
+    <SignAssembly>false</SignAssembly>
+    <AssemblyOriginatorKeyFile>
+    </AssemblyOriginatorKeyFile>
+    <ManifestCertificateThumbprint>352DB3E4333080B8073E4EECF539175493FA2A1F</ManifestCertificateThumbprint>
+    <ManifestKeyFile>XmlParsersAndUi_TemporaryKey.pfx</ManifestKeyFile>
+    <GenerateManifests>true</GenerateManifests>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>1</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+    <SourceAnalysisOverrideSettingsFile>C:\Documents and Settings\mkabbani\Application Data\ICSharpCode/SharpDevelop4\Settings.SourceAnalysis</SourceAnalysisOverrideSettingsFile>
+    <AllowUnsafeBlocks>False</AllowUnsafeBlocks>
+    <NoStdLib>False</NoStdLib>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <RunCodeAnalysis>False</RunCodeAnalysis>
+    <RunSourceAnalysis>False</RunSourceAnalysis>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <Optimize>false</Optimize>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <Optimize>true</Optimize>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x86\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>Full</DebugType>
+    <ErrorReport>prompt</ErrorReport>
+    <Optimize>False</Optimize>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <OutputPath>bin\x86\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <DebugType>pdbonly</DebugType>
+    <ErrorReport>prompt</ErrorReport>
+    <Optimize>true</Optimize>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <CheckForOverflowUnderflow>False</CheckForOverflowUnderflow>
+    <StartAction>Project</StartAction>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Platform)' == 'x86' ">
+    <RegisterForComInterop>False</RegisterForComInterop>
+    <GenerateSerializationAssemblies>Auto</GenerateSerializationAssemblies>
+    <BaseAddress>4194304</BaseAddress>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="mscorlib" />
+    <Reference Include="ftplib, Version=1.0.1.2, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>.\ftplib.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Office.Interop.Excel, Version=10.0.4504.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>D:\DOwnloads\interopDlls\Microsoft.Office.Interop.Excel.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="System">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.configuration">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.SqlServerCe, Version=3.5.1.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Design" />
+    <Reference Include="System.Web.Extensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Deployment">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Drawing">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Windows.Forms">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Xml">
+      <Private>False</Private>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Forms\BulkCustomsForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\BulkCustomsForm.Designer.cs">
+      <DependentUpon>BulkCustomsForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\BulkMacroSplitterForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\BulkMacroSplitterForm.Designer.cs">
+      <DependentUpon>BulkMacroSplitterForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Classes\checkboxItems.cs" />
+    <Compile Include="Forms\EnvironmentCleanupForm.cs" />
+    <Compile Include="Forms\EnvironmentCleanupForm.Designer.cs">
+      <DependentUpon>EnvironmentCleanupForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\EnvironmentComparisonForm.cs" />
+    <Compile Include="Forms\EnvironmentComparisonForm.Designer.cs">
+      <DependentUpon>EnvironmentComparisonForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\SimpleCleanupForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\SimpleCleanupForm.Designer.cs">
+      <DependentUpon>SimpleCleanupForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\ConfigBuilder.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\ConfigBuilder.Designer.cs">
+      <DependentUpon>ConfigBuilder.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\DatabaseViewer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\DatabaseViewer.Designer.cs">
+      <DependentUpon>DatabaseViewer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Classes\DtdElement.cs" />
+    <Compile Include="Forms\FindXpathForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FindXpathForm.Designer.cs">
+      <DependentUpon>FindXpathForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Form2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Form2.Designer.cs">
+      <DependentUpon>Form2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Classes\ListViewItem.cs" />
+    <Compile Include="Classes\MacroEvent.cs" />
+    <Compile Include="MainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainForm.Designer.cs">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Controls\AppControl.resx">
+      <DependentUpon>AppControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\CustomizedReplacement.resx">
+      <DependentUpon>CustomizedReplacement.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\StarRatingControl.resx">
+      <DependentUpon>StarRatingControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\AdvancedReplacementsForm.resx">
+      <DependentUpon>AdvancedReplacementsForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ApplicationPreferencesForm.resx">
+      <DependentUpon>ApplicationPreferencesForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\BulkCustomsForm.resx">
+      <DependentUpon>BulkCustomsForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\BulkMacroSplitterForm.resx">
+      <DependentUpon>BulkMacroSplitterForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ConvertToEnumForm.resx">
+      <DependentUpon>ConvertToEnumForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\EnvironmentCleanupForm.resx">
+      <DependentUpon>EnvironmentCleanupForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\EnvironmentComparisonForm.resx">
+      <DependentUpon>EnvironmentComparisonForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FindForm.resx">
+      <DependentUpon>FindForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FTPDownloaderForm.resx">
+      <DependentUpon>FTPDownloaderForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\PackageGenerator.resx">
+      <DependentUpon>PackageGenerator.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\PushAutomationJobForm.resx">
+      <DependentUpon>PushAutomationJobForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\RenameStepForm.resx">
+      <DependentUpon>RenameStepForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\SecondLevelCleanupForm.resx">
+      <DependentUpon>SecondLevelCleanupForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ShowSearchDetailsForm.resx">
+      <DependentUpon>ShowSearchDetailsForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\SimpleCleanupForm.resx">
+      <DependentUpon>SimpleCleanupForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ConfigBuilder.resx">
+      <DependentUpon>ConfigBuilder.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ConfigureFolderNamesForm.resx">
+      <DependentUpon>ConfigureFolderNamesForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\DatabaseViewer.resx">
+      <DependentUpon>DatabaseViewer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\EditFolderNameForm.resx">
+      <DependentUpon>EditFolderNameForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FindXpathForm.resx">
+      <DependentUpon>FindXpathForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Form2.resx">
+      <DependentUpon>Form2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\OracleUpdaterForm.resx">
+      <DependentUpon>OracleUpdaterForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\RemoteServer.resx">
+      <DependentUpon>RemoteServer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\SelectFolderNameForm.resx">
+      <DependentUpon>SelectFolderNameForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\TestingTabs.resx">
+      <DependentUpon>TestingTabs.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\testReplacements.resx">
+      <DependentUpon>testReplacements.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\UsersStatus.resx">
+      <DependentUpon>UsersStatus.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainForm.resx">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Results.resx">
+      <DependentUpon>Results.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\RftReplacementForm.resx">
+      <DependentUpon>RftReplacementForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\SessionKeyAndTitleForm.resx">
+      <DependentUpon>SessionKeyAndTitleForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\SetupAdvancedRecForm.resx">
+      <DependentUpon>SetupAdvancedRecForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\SetupSimpleRecForm.resx">
+      <DependentUpon>SetupSimpleRecForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\SlashAdderToEventsFiles.resx">
+      <DependentUpon>SlashAdderToEventsFiles.cs</DependentUpon>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Forms\Results.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\SessionKeyAndTitleForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\SessionKeyAndTitleForm.Designer.cs">
+      <DependentUpon>SessionKeyAndTitleForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\SetupAdvancedRecForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\SetupAdvancedRecForm.Designer.cs">
+      <DependentUpon>SetupAdvancedRecForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\SetupSimpleRecForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\SetupSimpleRecForm.Designer.cs">
+      <DependentUpon>SetupSimpleRecForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\SlashAdderToEventsFiles.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\SlashAdderToEventsFiles.Designer.cs">
+      <DependentUpon>SlashAdderToEventsFiles.cs</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MainBackground.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="ProfilingSessions\Session20120926_170438.sdps" />
+    <Content Include="ProfilingSessions\Session20120926_180520.sdps" />
+    <Content Include="Resources\pharmaceutical-automation.jpg" />
+    <Content Include="XmlParsersAndUi.cd" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Appl.config" />
+    <None Include="Resources\comparison.sh">
+    </None>
+    <Content Include="Resources\791891-blender.gif" />
+    <Compile Include="Classes\ApplicationIdleTimer.cs" />
+    <Compile Include="Classes\BackGroundWorkerObject.cs" />
+    <Compile Include="Classes\BulkMacroTreeNode.cs" />
+    <Compile Include="Classes\CustomizationFunction.cs" />
+    <Compile Include="Classes\EnvComparatorWorker.cs" />
+    <Compile Include="Classes\EventsGroupNameAndID.cs" />
+    <Compile Include="Classes\ExportDatagridWorkerObject.cs" />
+    <Compile Include="Classes\FastExportingMethod.cs" />
+    <Compile Include="Classes\InstallerPropertyObject.cs" />
+    <Compile Include="Classes\MainAppVariables.cs" />
+    <Compile Include="Classes\NodeAndAttributeCouple.cs" />
+    <Compile Include="Classes\SuperListView.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\AppControl.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\CustomizedReplacement.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\CustomizedReplacement.Designer.cs">
+      <DependentUpon>CustomizedReplacement.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\StarRatingControl.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\Tab Control\ChangeLog.cs" />
+    <None Include="Controls\Tab Control\Dotnetrix_TabControl.cs">
+      <SubType>Component</SubType>
+    </None>
+    <Compile Include="Controls\Tab Control\TdhEditBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\Tab Control\TdhTabCtl.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\Tab Control\TdhTabCtl_Designer.cs" />
+    <Compile Include="Controls\Tab Control\TdhTabCtl_EventArgs.cs" />
+    <Compile Include="Controls\Tab Control\TdhTabPage.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\Tab Control\TdhTabPageCollection.cs" />
+    <Compile Include="Controls\Tab Control\TdhTabPageCollectionEditor.cs" />
+    <None Include="Controls\Tab Control\TdhTabPageControls.cs" />
+    <Compile Include="Controls\Tab Control\TdhTabReorder.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\AddEnvComparisonCategoryForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\AddEnvComparisonCategoryForm.Designer.cs">
+      <DependentUpon>AddEnvComparisonCategoryForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\AddPropertyForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\AddPropertyForm.Designer.cs">
+      <DependentUpon>AddPropertyForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\AdvancedReplacementsForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\AdvancedReplacementsForm.Designer.cs">
+      <DependentUpon>AdvancedReplacementsForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\ApplicationPreferencesForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\ApplicationPreferencesForm.Designer.cs">
+      <DependentUpon>ApplicationPreferencesForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\BulkFolderNamesInsertion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\BulkFolderNamesInsertion.Designer.cs">
+      <DependentUpon>BulkFolderNamesInsertion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\BulkMacroBuildXmlForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\BulkMacroBuildXmlForm.Designer.cs">
+      <DependentUpon>BulkMacroBuildXmlForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\ConfigureFolderNamesForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\ConfigureFolderNamesForm.Designer.cs">
+      <DependentUpon>ConfigureFolderNamesForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\ConvertToEnumForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\ConvertToEnumForm.Designer.cs">
+      <DependentUpon>ConvertToEnumForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\BulkMacroSplitterTreeForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\BulkMacroSplitterTreeForm.Designer.cs">
+      <DependentUpon>BulkMacroSplitterTreeForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\EditFolderNameForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\EditFolderNameForm.Designer.cs">
+      <DependentUpon>EditFolderNameForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FindForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FindForm.Designer.cs">
+      <DependentUpon>FindForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FTPDownloaderForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FTPDownloaderForm.Designer.cs">
+      <DependentUpon>FTPDownloaderForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\MacroConverterConfForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\MacroConverterConfForm.Designer.cs">
+      <DependentUpon>MacroConverterConfForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Multi-TestCaseForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Multi-TestCaseForm.Designer.cs">
+      <DependentUpon>Multi-TestCaseForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\SDDGeneratorForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\SDDGeneratorForm.Designer.cs">
+      <DependentUpon>SDDGeneratorForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\OracleUpdaterForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\OracleUpdaterForm.Designer.cs">
+      <DependentUpon>OracleUpdaterForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\PackageGenerator.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\PackageGenerator.Designer.cs">
+      <DependentUpon>PackageGenerator.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\PushAutomationJobForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\PushAutomationJobForm.Designer.cs">
+      <DependentUpon>PushAutomationJobForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\RemoteServer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\RemoteServer.Designer.cs">
+      <DependentUpon>RemoteServer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\RenameStepForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\RenameStepForm.Designer.cs">
+      <DependentUpon>RenameStepForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\RftReplacementForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\RftReplacementForm.Designer.cs">
+      <DependentUpon>RftReplacementForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Classes\Win32.cs" />
+    <Compile Include="Forms\SecondLevelCleanupForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\SecondLevelCleanupForm.Designer.cs">
+      <DependentUpon>SecondLevelCleanupForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\SelectFolderNameForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\SelectFolderNameForm.Designer.cs">
+      <DependentUpon>SelectFolderNameForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\ShowSearchDetailsForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\ShowSearchDetailsForm.Designer.cs">
+      <DependentUpon>ShowSearchDetailsForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\TestingTabs.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\TestingTabs.Designer.cs">
+      <DependentUpon>TestingTabs.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\testReplacements.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\testReplacements.Designer.cs">
+      <DependentUpon>testReplacements.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\UsersStatus.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\UsersStatus.Designer.cs">
+      <DependentUpon>UsersStatus.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SshStream.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Controls\Tab Control\Images\Check16.ico" />
+    <Content Include="Controls\Tab Control\Images\Cross16.ico" />
+    <EmbeddedResource Include="Controls\Tab Control\TdhTabCtl.bmp" />
+    <EmbeddedResource Include="Controls\Tab Control\TdhTabReorder.resx">
+      <DependentUpon>TdhTabReorder.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\AddEnvComparisonCategoryForm.resx">
+      <DependentUpon>AddEnvComparisonCategoryForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\AddPropertyForm.resx">
+      <DependentUpon>AddPropertyForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\BulkFolderNamesInsertion.resx">
+      <DependentUpon>BulkFolderNamesInsertion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\BulkMacroBuildXmlForm.resx">
+      <DependentUpon>BulkMacroBuildXmlForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\BulkMacroSplitterTreeForm.resx">
+      <DependentUpon>BulkMacroSplitterTreeForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\MacroConverterConfForm.resx">
+      <DependentUpon>MacroConverterConfForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Multi-TestCaseForm.resx">
+      <DependentUpon>Multi-TestCaseForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\SDDGeneratorForm.resx">
+      <DependentUpon>SDDGeneratorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <Content Include="main.ico" />
+    <Content Include="Resources\Button-Blank-Green-icon.png" />
+    <Content Include="Database.sdf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\Record-Normal-Red-icon.png" />
+    <Content Include="Resources\Sad robot SH.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\ProgressCircle\ProgressCircle\ProgressCircle.csproj">
+      <Project>{279C7A4A-F932-4D73-8A4E-E3D7E2E50357}</Project>
+      <Name>ProgressCircle</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\SearchableControls\SearchableControls.csproj">
+      <Project>{45A3F930-1A71-4B5D-905A-2CD1DD700EF6}</Project>
+      <Name>SearchableControls</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\SharpSSHLibrary\SharpSSH\SharpSSHLib.csproj">
+      <Project>{C95B2656-9801-44E6-937E-8AFA20FB0F05}</Project>
+      <Name>SharpSSHLib</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\TextDiff\DifferenceEngine\DifferenceEngine.csproj">
+      <Project>{8AE4897A-EA74-49B1-BA55-D892C27AF9C9}</Project>
+      <Name>DifferenceEngine</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Automation.Backend\Automation.Backend.csproj">
+      <Project>{6350A836-106C-4C78-A6B2-A7C14D560D90}</Project>
+      <Name>Automation.Backend</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Automation.Common\Automation.Common.csproj">
+      <Project>{F2CA3F3F-B7AE-4378-B4B6-B0BA9903C67D}</Project>
+      <Name>Automation.Common</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.2.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 2.0 %28x86%29</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.0 %28x86%29</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.SQL.Server.Compact.3.5">
+      <Visible>False</Visible>
+      <ProductName>SQL Server Compact 3.5</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Sql.Server.Express.10.0">
+      <Visible>False</Visible>
+      <ProductName>SQL Server 2008 Express Edition</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.4.5">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 4.5</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="Microsoft.Office.Core">
+      <Guid>{2DF8D04C-5BFA-101B-BDE5-00AA0044DE52}</Guid>
+      <VersionMajor>2</VersionMajor>
+      <VersionMinor>5</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+    </COMReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

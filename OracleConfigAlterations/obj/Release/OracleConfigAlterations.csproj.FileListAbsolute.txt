@@ -1,0 +1,9 @@
+C:\Documents and Settings\mkabbani\My Documents\Visual Studio 2008\Projects\RFT-Replaces\OracleConfigAlterations\bin\Release\OracleConfigAlterations.exe
+C:\Documents and Settings\mkabbani\My Documents\Visual Studio 2008\Projects\RFT-Replaces\OracleConfigAlterations\bin\Release\OracleConfigAlterations.pdb
+C:\Documents and Settings\mkabbani\My Documents\Visual Studio 2008\Projects\RFT-Replaces\OracleConfigAlterations\obj\Release\ResolveAssemblyReference.cache
+C:\Documents and Settings\mkabbani\My Documents\Visual Studio 2008\Projects\RFT-Replaces\OracleConfigAlterations\obj\Release\OracleConfigAlterations.FeederDumpReplacements.resources
+C:\Documents and Settings\mkabbani\My Documents\Visual Studio 2008\Projects\RFT-Replaces\OracleConfigAlterations\obj\Release\OracleConfigAlterations.MainForm.resources
+C:\Documents and Settings\mkabbani\My Documents\Visual Studio 2008\Projects\RFT-Replaces\OracleConfigAlterations\obj\Release\OracleConfigAlterations.Properties.Resources.resources
+C:\Documents and Settings\mkabbani\My Documents\Visual Studio 2008\Projects\RFT-Replaces\OracleConfigAlterations\obj\Release\OracleConfigAlterations.csproj.GenerateResource.Cache
+C:\Documents and Settings\mkabbani\My Documents\Visual Studio 2008\Projects\RFT-Replaces\OracleConfigAlterations\obj\Release\OracleConfigAlterations.exe
+C:\Documents and Settings\mkabbani\My Documents\Visual Studio 2008\Projects\RFT-Replaces\OracleConfigAlterations\obj\Release\OracleConfigAlterations.pdb

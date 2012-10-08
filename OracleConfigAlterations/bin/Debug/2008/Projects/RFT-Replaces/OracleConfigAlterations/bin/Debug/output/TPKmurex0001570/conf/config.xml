@@ -1,0 +1,586 @@
+<?xml version="1.0"?><!DOCTYPE AvailableTests SYSTEM "http://globalqa/svn/PAR/TPK/0000000/trunk/doc/config.dtd"><AvailableTests>
+	<AvailableTest>
+		<NickName>DEFAULT_CONFIG</NickName>
+		<Customize>
+			<Svn>
+				<Apps>
+					<Path dest=".">tpk/apps</Path>
+				</Apps>
+				<Start>
+					<Path dest=".">tpk/start</Path>
+				</Start>
+				<NtClient>
+					<Path dest=".">tpk/ntclient</Path>
+				</NtClient>
+			</Svn>
+			<AdditionalPackages>
+				<AdditionalPackage>
+					<Id>PAR.ENV.0000446</Id>
+					<Branch>${job.branch}</Branch>
+					<Revision>-1</Revision>
+					<NickName>LCH_ORA_GOM_TPK</NickName>
+				</AdditionalPackage>
+			</AdditionalPackages>
+			<AdditionalOperations append="after">
+				<File>addopp_tpk.xml</File>
+				<Target>config</Target>
+			</AdditionalOperations>
+			<TestParameters append="after">-Dprepare.before.maintenance=true -Dskip.traces.link=true</TestParameters>
+			<JvmOptions>-Djava.util.prefs.userRoot=. -Djava.util.prefs.systemRoot=. -Djava.util.prefs.syncInterval=600000</JvmOptions>
+		</Customize>
+	</AvailableTest>
+	<AvailableTest>
+		<NickName>DEFAULT_ORAGOM</NickName>
+		<Customize>
+			<Svn>
+				<Apps>
+					<Path dest=".">tpk/apps</Path>
+				</Apps>
+				<Start>
+					<Path dest=".">tpk/start</Path>
+				</Start>
+				<NtClient>
+					<Path dest=".">tpk/ntclient</Path>
+				</NtClient>
+			</Svn>
+			<AdditionalPackages>
+				<AdditionalPackage>
+					<Id>PAR.ENV.0000446</Id>
+					<Branch>${job.branch}</Branch>
+					<Revision>116</Revision>
+					<NickName>LCH_ORA_GOM</NickName>
+				</AdditionalPackage>
+			</AdditionalPackages>
+			<AdditionalOperations append="after">
+				<File>addopp_tpk.xml</File>
+				<Target>config</Target>
+			</AdditionalOperations>
+			<TestParameters append="after">-Dprepare.before.maintenance=true -Dskip.traces.link=true</TestParameters>
+			<JvmOptions>-Djava.util.prefs.userRoot=. -Djava.util.prefs.systemRoot=. -Djava.util.prefs.syncInterval=600000</JvmOptions>
+		</Customize>
+	</AvailableTest>
+	<AvailableTest>
+		<NickName>DEFAULT_505</NickName>
+		<Customize>
+			<Svn>
+				<Apps>
+					<Path dest=".">tpk/apps</Path>
+				</Apps>
+				<Start>
+					<Path dest=".">tpk/start</Path>
+				</Start>
+				<NtClient>
+					<Path dest=".">tpk/ntclient</Path>
+				</NtClient>
+			</Svn>
+			<AdditionalPackages>
+				<AdditionalPackage>
+					<Id>PAR.ENV.0000505</Id>
+					<Branch>${job.branch}</Branch>
+					<Revision>-1</Revision>
+					<NickName>LCH_ORA_GOM</NickName>
+				</AdditionalPackage>
+			</AdditionalPackages>
+			<AdditionalOperations append="after">
+				<File>addopp_tpk.xml</File>
+				<Target>config</Target>
+			</AdditionalOperations>
+			<Databases append="after">
+				<Database Include="Financial_dump">
+					<Bcps>
+		             	<Bcp table="MARGIN_RUN1_REF" type="resource">PAR.OBJR.0066144</Bcp>
+		            	<Bcp table="MARGIN_RUN1_STATUS_REF" type="resource">PAR.OBJR.0064746</Bcp>
+		            	<Bcp table="MARGIN_RUN1_SCOPE_REF" type="resource">PAR.OBJR.0075330</Bcp>
+		            	<Bcp table="LIABILITY1_REF" type="resource">PAR.OBJR.0064751</Bcp>
+		            	<Bcp table="LIABILITY1_STATUS_REF" type="resource">PAR.OBJR.0064753</Bcp>
+		            	<Bcp table="LIABILITY1_COMPONENTS_REF" type="resource">PAR.OBJR.0080764</Bcp>
+		            	<Bcp table="MARGIN_ACCOUNTS1_REF" type="resource">PAR.OBJR.0064758</Bcp>
+		            	<Bcp table="MARGIN_COMPONENTS1_REF" type="resource">PAR.OBJR.0080765</Bcp>
+		            	<Bcp table="INDEX_MARGINS1_REF" type="resource">PAR.OBJR.0064763</Bcp>
+		            	<Bcp table="MARGIN_WCS1_REF" type="resource">PAR.OBJR.0064766</Bcp>
+						<Bcp table="MARGIN_RUN12_2_REF" type="resource">PAR.OBJR.0078678</Bcp>
+						<Bcp table="MARGIN_RUN12_2_STATUS_REF" type="resource">PAR.OBJR.0078679</Bcp>
+						<Bcp table="MARGIN_RUN12_2_SCOPE_REF" type="resource">PAR.OBJR.0081809</Bcp>
+						<Bcp table="LIABILITY12_2_REF" type="resource">PAR.OBJR.0078681</Bcp>
+						<Bcp table="LIABILITY12_2_STATUS_REF" type="resource">PAR.OBJR.0078682</Bcp>
+						<Bcp table="LIABILITY12_2_COMPONENTS_REF" type="resource">PAR.OBJR.0078683</Bcp>
+						<Bcp table="MARGIN_ACCOUNTS12_2_REF" type="resource">PAR.OBJR.0078684</Bcp>
+						<Bcp table="MARGIN_COMPONENTS12_2_REF" type="resource">PAR.OBJR.0078685</Bcp>
+						<Bcp table="INDEX_MARGINS12_2_REF" type="resource">PAR.OBJR.0064790</Bcp>
+						<Bcp table="MARGIN_WCS12_2_REF" type="resource">PAR.OBJR.0078686</Bcp>
+		            	<Bcp table="MARGIN_RUN17_REF" type="resource">PAR.OBJR.0070448</Bcp>
+						<Bcp table="MARGIN_RUN17_STATUS_REF" type="resource">PAR.OBJR.0070449</Bcp>
+						<Bcp table="MARGIN_RUN17_SCOPE_REF" type="resource">PAR.OBJR.0070450</Bcp>
+						<Bcp table="LIABILITY17_REF" type="resource">PAR.OBJR.0070451</Bcp>
+						<Bcp table="LIABILITY17_STATUS_REF" type="resource">PAR.OBJR.0070452</Bcp>
+						<Bcp table="LIABILITY17_COMPONENTS_REF" type="resource">PAR.OBJR.0070453</Bcp>
+						<Bcp table="MARGIN_ACCOUNTS17_REF" type="resource">PAR.OBJR.0070454</Bcp>
+						<Bcp table="MARGIN_COMPONENTS17_REF" type="resource">PAR.OBJR.0070455</Bcp>
+						<Bcp table="INDEX_MARGINS17_REF" type="resource">PAR.OBJR.0070456</Bcp>
+						<Bcp table="MARGIN_WCS17_REF" type="resource">PAR.OBJR.0070457</Bcp>
+						<Bcp table="MARGIN_RUN12_REF" type="resource">PAR.OBJR.0078666</Bcp>
+						<Bcp table="MARGIN_RUN12_STATUS_REF" type="resource">PAR.OBJR.0078667</Bcp>
+						<Bcp table="LIABILITY12_REF" type="resource">PAR.OBJR.0078668</Bcp>
+						<Bcp table="LIABILITY12_STATUS_REF" type="resource">PAR.OBJR.0078669</Bcp>
+						<Bcp table="LIABILITY12_COMPONENTS_REF" type="resource">PAR.OBJR.0078670</Bcp>
+						<Bcp table="MARGIN_ACCOUNTS12_REF" type="resource">PAR.OBJR.0078671</Bcp>
+						<Bcp table="MARGIN_COMPONENTS12_REF" type="resource">PAR.OBJR.0078672</Bcp>
+						<Bcp table="INDEX_MARGINS12_REF" type="resource">PAR.OBJR.0078638</Bcp>
+						<Bcp table="MARGIN_WCS12_REF" type="resource">PAR.OBJR.0078673</Bcp>
+						<Bcp table="FHS_1_REF" type="resource">PAR.OBJR.0080766</Bcp>
+						<Bcp table="SNS_1_REF" type="resource">PAR.OBJR.0080767</Bcp>
+						<Bcp table="TDG_1_REF" type="resource">PAR.OBJR.0080768</Bcp>
+						<Bcp table="MARGIN_RUN12_SCOPE_REF" type="resource">PAR.OBJR.0081550</Bcp>
+					</Bcps>
+				</Database>
+				<Database Include="Reporting_dump">
+					<Bcps>
+						<Bcp table="FHS_17_REF" type="resource">PAR.OBJR.0070458</Bcp>
+						<Bcp table="MR_IDX_17_REF" type="resource">PAR.OBJR.0070459</Bcp>
+						<Bcp table="SNS_17_REF" type="resource">PAR.OBJR.0070460</Bcp>
+						<Bcp table="TDG_17_REF" type="resource">PAR.OBJR.0070461</Bcp>
+		            	<Bcp table="FHS_1_REF" type="resource">PAR.OBJR.0080989</Bcp>
+		            	<Bcp table="MR_IDX_1_REF" type="resource">PAR.OBJR.0065070</Bcp>
+		            	<Bcp table="SNS_1_REF" type="resource">PAR.OBJR.0080990</Bcp>
+		            	<Bcp table="TDG_1_REF" type="resource">PAR.OBJR.0080991</Bcp>
+						<Bcp table="FHS_12_REF" type="resource">PAR.OBJR.0078674</Bcp>
+						<Bcp table="MR_IDX_12_REF" type="resource">PAR.OBJR.0078675</Bcp>
+						<Bcp table="SNS_12_REF" type="resource">PAR.OBJR.0078676</Bcp>
+						<Bcp table="TDG_12_REF" type="resource">PAR.OBJR.0078677</Bcp>
+						<Bcp table="FHS_12_2_REF" type="resource">PAR.OBJR.0078687</Bcp>
+						<Bcp table="SNS_12_2_REF" type="resource">PAR.OBJR.0078688</Bcp>
+						<Bcp table="TDG_12_2_REF" type="resource">PAR.OBJR.0078689</Bcp>
+		            </Bcps>
+				</Database>
+			</Databases>
+			<TestParameters append="after">-Dprepare.before.maintenance=true -Dskip.traces.link=true</TestParameters>
+			<JvmOptions>-Djava.util.prefs.userRoot=. -Djava.util.prefs.systemRoot=. -Djava.util.prefs.syncInterval=600000</JvmOptions>
+		</Customize>
+	</AvailableTest>
+	<AvailableTest>
+		<NickName>ENV505_LCH_IRD</NickName>
+		<Customize>
+			<Svn>
+				<Apps>
+					<Path dest=".">tpk/apps</Path>
+				</Apps>
+				<Start>
+					<Path dest=".">tpk/start</Path>
+				</Start>
+				<NtClient>
+					<Path dest=".">tpk/ntclient</Path>
+				</NtClient>
+			</Svn>
+			<AdditionalPackages>
+				<AdditionalPackage>
+					<Id>PAR.ENV.0000505</Id>
+					<Branch>${job.branch}</Branch>
+					<Revision>-1</Revision>
+					<NickName>LCH_IRD</NickName>
+				</AdditionalPackage>
+			</AdditionalPackages>
+			<AdditionalOperations append="after">
+				<File>addopp_tpk.xml</File>
+				<Target>config</Target>
+			</AdditionalOperations>
+			<Databases append="after">
+				<Database Include="Reporting_dump">
+						<Bcps>
+					 	    							<Bcp table="CS_ALLPF#TOTAL_REF" type="resource">PAR.OBJR.0095751</Bcp>
+							<Bcp table="CS_ALLPF#BUCKETED_REF" type="resource">PAR.OBJR.0095753</Bcp>
+							<Bcp table="DS_ALLPF#TOTAL_REF" type="resource">PAR.OBJR.0095754</Bcp>
+							<Bcp table="DS_ALLPF#BUCKETED_REF" type="resource">PAR.OBJR.0095755</Bcp>
+							<Bcp table="CS_SDUS2#TOTAL1_REF" type="resource">PAR.OBJR.0095756</Bcp>
+							<Bcp table="CS_SDUS2#BUCKETED1_REF" type="resource">PAR.OBJR.0083815</Bcp>
+							<Bcp table="DS_SDUS2#TOTAL1_REF" type="resource">PAR.OBJR.0095757</Bcp>
+							<Bcp table="DS_SDUS2#BUCKETED1_REF" type="resource">PAR.OBJR.0083817</Bcp>
+							<Bcp table="CS_SDUS2#TOTAL2_REF" type="resource">PAR.OBJR.0095758</Bcp>
+							<Bcp table="CS_SDUS2#BUCKETED2_REF" type="resource">PAR.OBJR.0083819</Bcp>
+							<Bcp table="DS_SDUS2#TOTAL2_REF" type="resource">PAR.OBJR.0095759</Bcp>
+							<Bcp table="DS_SDUS2#BUCKETED2_REF" type="resource">PAR.OBJR.0083821</Bcp>
+							<Bcp table="CS_SDUS2#TOTAL3_REF" type="resource">PAR.OBJR.0095760</Bcp>
+							<Bcp table="CS_SDUS2#BUCKETED3_REF" type="resource">PAR.OBJR.0083823</Bcp>
+							<Bcp table="DS_SDUS2#TOTAL3_REF" type="resource">PAR.OBJR.0095761</Bcp>
+							<Bcp table="DS_SDUS2#BUCKETED3_REF" type="resource">PAR.OBJR.0083825</Bcp>
+							<Bcp table="CS_SDUS2#TOTAL4_REF" type="resource">PAR.OBJR.0095762</Bcp>
+							<Bcp table="CS_SDUS2#BUCKETED4_REF" type="resource">PAR.OBJR.0083827</Bcp>
+							<Bcp table="DS_SDUS2#TOTAL4_REF" type="resource">PAR.OBJR.0095763</Bcp>
+							<Bcp table="DS_SDUS2#BUCKETED4_REF" type="resource">PAR.OBJR.0083829</Bcp>
+							<Bcp table="CS_SDUS2#TOTAL5_REF" type="resource">PAR.OBJR.0095764</Bcp>
+							<Bcp table="CS_SDUS2#BUCKETED5_REF" type="resource">PAR.OBJR.0083831</Bcp>
+							<Bcp table="DS_SDUS2#TOTAL5_REF" type="resource">PAR.OBJR.0095765</Bcp>
+							<Bcp table="DS_SDUS2#BUCKETED5_REF" type="resource">PAR.OBJR.0083833</Bcp>
+							<Bcp table="CS_SDUS2#TOTAL6_REF" type="resource">PAR.OBJR.0095766</Bcp>
+							<Bcp table="CS_SDUS2#BUCKETED6_REF" type="resource">PAR.OBJR.0083835</Bcp>
+							<Bcp table="DS_SDUS2#TOTAL6_REF" type="resource">PAR.OBJR.0095767</Bcp>
+							<Bcp table="DS_SDUS2#BUCKETED6_REF" type="resource">PAR.OBJR.0083837</Bcp>
+						</Bcps>
+				</Database>
+			</Databases>
+			<TestParameters append="after">-Dprepare.before.maintenance=true -Dskip.traces.link=true</TestParameters>
+			<JvmOptions>-Djava.util.prefs.userRoot=. -Djava.util.prefs.systemRoot=. -Djava.util.prefs.syncInterval=600000</JvmOptions>
+		</Customize>
+	</AvailableTest>
+	<AvailableTest>
+		<NickName>Reporting_Datamart_505</NickName>
+		<Customize>
+			<Svn>
+				<Apps>
+					<Path dest=".">tpk/apps</Path>
+				</Apps>
+				<Start>
+					<Path dest=".">tpk/start</Path>
+				</Start>
+				<NtClient>
+					<Path dest=".">tpk/ntclient</Path>
+				</NtClient>
+			</Svn>
+			<AdditionalPackages>
+				<AdditionalPackage>
+					<Id>PAR.ENV.0000505</Id>
+					<Branch>${job.branch}</Branch>
+					<Revision>-1</Revision>
+					<NickName>Reporting_Datamart</NickName>
+				</AdditionalPackage>
+			</AdditionalPackages>
+			<AdditionalOperations append="after">
+				<File>addopp_tpk.xml</File>
+				<Target>config</Target>
+			</AdditionalOperations>
+			<Databases append="after">
+				<Database Include="Financial_dump">	   	
+					<Bcps>
+						<Bcp table="STPDOC_ENTRY_TABLE_REF" type="resource">PAR.OBJR.0095569</Bcp>
+					</Bcps>
+				</Database>
+				<Database Include="Reporting_dump">
+						<Bcps>
+		             	<Bcp table="CASH_FLOW_REP_REF" type="resource">PAR.OBJR.0073543</Bcp>
+		            	<Bcp table="PORTFOLIO_UDF_REP_REF" type="resource">PAR.OBJR.0079345</Bcp>
+		            	<Bcp table="PARTIES_REP_REF" type="resource">PAR.OBJR.0079347</Bcp>
+		            	<Bcp table="RT_UDF_REP_REF" type="resource">PAR.OBJR.0066910</Bcp>
+		            	<Bcp table="HIST_INDX_RATES_REP_REF" type="resource">PAR.OBJR.0066911</Bcp>
+		            	<Bcp table="MR_REP_REF" type="resource">PAR.OBJR.0079348</Bcp>
+		            	<Bcp table="MR_WCL_REP_REF" type="resource">PAR.OBJR.0079350</Bcp>
+		            	<Bcp table="MR_SCENARIO_PL_REP_REF" type="resource">PAR.OBJR.0067592</Bcp>
+		            	<Bcp table="MR_SENSITIVITY_REP_REF" type="resource">PAR.OBJR.0079353</Bcp>
+		            	<Bcp table="TP_ALL_REP_REF" type="resource">PAR.OBJR.0073549</Bcp>
+		            	<Bcp table="TP_RT_REP_REF" type="resource">PAR.OBJR.0093501</Bcp>
+		            	<Bcp table="CALENDAR_REP_REF" type="resource">PAR.OBJR.0066918</Bcp>
+		            	<Bcp table="SCENARIOS_REP_REF" type="resource">PAR.OBJR.0066919</Bcp>
+		            	<Bcp table="CURRENCY_REP_REF" type="resource">PAR.OBJR.0066920</Bcp>
+		            	<Bcp table="PAI_RATE_REP_REF" type="resource">PAR.OBJR.0066921</Bcp>
+		            	<Bcp table="RATE_INDEX_REP_REF" type="resource">PAR.OBJR.0066922</Bcp>
+		            	<Bcp table="NPV_CS_BY_INDEX_REP_REF" type="resource">PAR.OBJR.0066923</Bcp>
+		            	<Bcp table="STP_TABLE_REP_REF" type="resource">PAR.OBJR.0066924</Bcp>
+		            	<Bcp table="SETTLEMENT_REP_REF" type="resource">PAR.OBJR.0073551</Bcp>
+		            	<Bcp table="COMP_FLOW_REP_REF" type="resource">PAR.OBJR.0085850</Bcp>
+		            	<Bcp table="PORTFOLIO_REP_REF" type="resource">PAR.OBJR.0079354</Bcp>
+		            	<Bcp table="STP_STATUS_REP_REF" type="resource">PAR.OBJR.0066928</Bcp>
+		            	<Bcp table="VM_DETAIL_SENSI_REP_REF" type="resource">PAR.OBJR.0093502</Bcp>
+		            	<Bcp table="MD_IM_ZEROCURVES_REP_REF" type="resource">PAR.OBJR.0079356</Bcp>
+		            	<Bcp table="MD_IM_PARCURVES_REP_REF" type="resource">PAR.OBJR.0079363</Bcp>
+		            	<Bcp table="MD_VM_CURVES_REP_REF" type="resource">PAR.OBJR.0093744</Bcp>
+		            	<Bcp table="VM_CONSO_SENSI_REP_REF" type="resource">PAR.OBJR.0093504</Bcp>
+		            	<Bcp table="BUS_DAYS_REP_REF" type="resource">PAR.OBJR.0066934</Bcp>
+		            	<Bcp table="MR_IMBT_REP_REF" type="resource">PAR.OBJR.0066935</Bcp>
+		            	<Bcp table="VM_SENSITIVITY_REP_REF" type="resource">PAR.OBJR.0093505</Bcp>
+		            </Bcps>
+				</Database>
+			</Databases>
+			<TestParameters append="after">-Dprepare.before.maintenance=true -Dskip.traces.link=true</TestParameters>
+			<JvmOptions>-Djava.util.prefs.userRoot=. -Djava.util.prefs.systemRoot=. -Djava.util.prefs.syncInterval=600000</JvmOptions>
+		</Customize>
+	</AvailableTest>	
+	
+	<AvailableTest>
+		<NickName>PMS</NickName>
+		<Customize>
+			<Svn>
+				<Apps>
+					<Path dest=".">tpk/apps</Path>
+				</Apps>
+				<Start>
+					<Path dest=".">tpk/start</Path>
+				</Start>
+				<NtClient>
+					<Path dest=".">tpk/ntclient</Path>
+				</NtClient>
+			</Svn>
+			<AdditionalOperations append="after">
+				<File>addopp_tpk.xml</File>
+				<Target>config</Target>
+			</AdditionalOperations>
+			<AdditionalPackages>
+				<AdditionalPackage>
+					<Id>PAR.ENV.0000505</Id>
+					<Branch>${job.branch}</Branch>
+					<Revision>-1</Revision>
+					<NickName>PMS</NickName>
+				</AdditionalPackage>
+			</AdditionalPackages>
+			<TestParameters append="after">-Dprepare.before.maintenance=true -Dskip.traces.link=true</TestParameters>
+			<JvmOptions>-Djava.util.prefs.userRoot=. -Djava.util.prefs.systemRoot=. -Djava.util.prefs.syncInterval=600000</JvmOptions>
+		</Customize>
+	</AvailableTest>
+	
+	<AvailableTest>
+		<NickName>DEFAULT_Pairs</NickName>
+		<Customize>
+			<Svn>
+				<Apps>
+					<Path dest=".">tpk/apps</Path>
+				</Apps>
+				<Start>
+					<Path dest=".">tpk/start</Path>
+				</Start>
+				<NtClient>
+					<Path dest=".">tpk/ntclient</Path>
+				</NtClient>
+			</Svn>
+			<AdditionalOperations append="after">
+				<File>addopp_tpk.xml</File>
+				<Target>config</Target>
+			</AdditionalOperations>
+			<AdditionalPackages>
+				<AdditionalPackage>
+					<Id>PAR.ENV.0000446</Id>
+					<Branch>${job.branch}</Branch>
+					<Revision>-1</Revision>
+					<NickName>LCH_ORA_GOM_TPK</NickName>
+				</AdditionalPackage>
+			</AdditionalPackages>
+			<TestParameters append="after">-Dprepare.before.maintenance=true -Dskip.traces.link=true</TestParameters>
+			<JvmOptions>-Djava.util.prefs.userRoot=. -Djava.util.prefs.systemRoot=. -Djava.util.prefs.syncInterval=600000</JvmOptions>
+		</Customize>
+	</AvailableTest>
+	<AvailableTest>
+		<NickName>Benchmark</NickName>
+		<Customize>
+			<Svn>
+				<Apps>
+					<Path dest=".">tpk/apps</Path>
+				</Apps>
+				<Start>
+					<Path dest=".">tpk/start</Path>
+				</Start>
+				<NtClient>
+					<Path dest=".">tpk/ntclient</Path>
+				</NtClient>
+			</Svn>
+			<Version>v3.1.build</Version>
+			<Queue>QAF.QL2-4.ORA-RMAN.SUNOS-X86</Queue>
+			<AdditionalOperations append="after">
+				<File>addopp_tpk.xml</File>
+				<Target>config</Target>
+			</AdditionalOperations>
+			<AdditionalPackages>
+				<AdditionalPackage>
+					<Id>PAR.ENV.0000505</Id>
+					<Branch>${job.branch}</Branch>
+					<Revision>-1</Revision>
+					<NickName>LCH_Benchmark</NickName>
+				</AdditionalPackage>
+			</AdditionalPackages>
+					<Databases append="after">
+				<Database Include="Financial_dump">
+					<Bcps>
+					<Bcp table="MARGIN_RUNB3_REF" type="resource">PAR.OBJR.0107492</Bcp>
+		                  <Bcp table="MARGIN_RUNB3_STATUS_REF" type="resource">PAR.OBJR.0093551</Bcp>
+		                  <Bcp table="MARGIN_RUNB3_SCOPE_REF" type="resource">PAR.OBJR.0083760</Bcp>
+		            	<Bcp table="LIABILITYB3_REF" type="resource">PAR.OBJR.0093552</Bcp>
+		            	<Bcp table="LIABILITYB3_STATUS_REF" type="resource">PAR.OBJR.0083762</Bcp>
+		            	<Bcp table="LIABILITYB3_COMPONENTS_REF" type="resource">PAR.OBJR.0111107</Bcp>
+		            	<Bcp table="MARGIN_ACCOUNTSB3_REF" type="resource">PAR.OBJR.0093553</Bcp>
+		            	<Bcp table="MARGIN_COMPONENTSB3_REF" type="resource">PAR.OBJR.0111108</Bcp>
+		            	<Bcp table="INDEX_MARGINSB3_REF" type="resource">PAR.OBJR.0083766</Bcp>
+		            	<Bcp table="MARGIN_WCSB3_REF" type="resource">PAR.OBJR.0093555</Bcp>
+		            	
+		            	
+		            	<Bcp table="MARGIN_COMP_ITD_1_REF" type="resource">PAR.OBJR.0111103</Bcp>
+				      <Bcp table="LIAB_COMP_ITD_1_REF" type="resource">PAR.OBJR.0111104</Bcp>
+					<Bcp table="MARGIN_COMP_EOD_2_REF" type="resource">PAR.OBJR.0111105</Bcp>
+					<Bcp table="LIAB_COMP_EOD_2_REF" type="resource">PAR.OBJR.0111106</Bcp>
+					<Bcp table="MARGIN_COMP_ITD_3_REF" type="resource">PAR.OBJR.0111109</Bcp>
+					<Bcp table="LIAB_COMP_ITD_3_REF" type="resource">PAR.OBJR.0111110</Bcp>
+					<Bcp table="MARGIN_COMP_EOD_4_REF" type="resource">PAR.OBJR.0111111</Bcp>
+					<Bcp table="LIAB_COMP_EOD_4_REF" type="resource">PAR.OBJR.0111112</Bcp>
+						
+					</Bcps>
+				</Database>
+				<Database Include="Reporting_dump">
+					<Bcps>		             	
+			            <Bcp table="FHS_B3_REF" type="resource">PAR.OBJR.0093216</Bcp>
+						<Bcp table="MR_IDX_B3_REF" type="resource">PAR.OBJR.0083875</Bcp>
+		            	<Bcp table="SNS_B3_REF" type="resource">PAR.OBJR.0093217</Bcp>
+		            	<Bcp table="TDG_B3_REF" type="resource">PAR.OBJR.0095441</Bcp>
+						
+						<Bcp table="MR_1_TDG_REF" type="resource">PAR.OBJR.0095439</Bcp>
+						<Bcp table="MR_1_FHS_REF" type="resource">PAR.OBJR.0093557</Bcp>
+						<Bcp table="MR_2_TDG_REF" type="resource">PAR.OBJR.0095440</Bcp>
+						<Bcp table="MR_2_FHS_REF" type="resource">PAR.OBJR.0093559</Bcp>
+						<Bcp table="MR_3_TDG_REF" type="resource">PAR.OBJR.0095442</Bcp>
+						<Bcp table="MR_3_FHS_REF" type="resource">PAR.OBJR.0093561</Bcp>
+						<Bcp table="MR_4_TDG_REF" type="resource">PAR.OBJR.0095443</Bcp>
+						<Bcp table="MR_4_FHS_REF" type="resource">PAR.OBJR.0093563</Bcp>
+					</Bcps>
+				</Database>
+			</Databases>
+
+			<TestParameters append="after">-Dprepare.before.maintenance=true -Dskip.traces.link=true</TestParameters>
+			<JvmOptions>-Djava.util.prefs.userRoot=. -Djava.util.prefs.systemRoot=. -Djava.util.prefs.syncInterval=600000</JvmOptions>
+		</Customize>
+	</AvailableTest>
+	<AvailableTest>
+		<NickName>Benchmark_ORA11</NickName>
+		<Customize>
+			<Svn>
+				<Apps>
+					<Path dest=".">tpk/apps</Path>
+				</Apps>
+				<Start>
+					<Path dest=".">tpk/start</Path>
+				</Start>
+				<NtClient>
+					<Path dest=".">tpk/ntclient</Path>
+				</NtClient>
+			</Svn>
+			<Version>v3.1.build</Version>
+			<Queue>QAF.QL2-4.ORA-RMAN.SUNOS-X86</Queue>
+			<AdditionalOperations append="after">
+				<File>addopp_tpk.xml</File>
+				<Target>config</Target>
+			</AdditionalOperations>
+			<AdditionalPackages>
+				<AdditionalPackage>
+					<Id>PAR.ENV.0000505</Id>
+					<Branch>${job.branch}</Branch>
+					<Revision>-1</Revision>
+					<NickName>LCH_Benchmark_ORA11</NickName>
+				</AdditionalPackage>
+			</AdditionalPackages>
+					<Databases append="after">
+				<Database Include="Financial_dump">
+					<Bcps>
+					<Bcp table="MARGIN_RUNB3_REF" type="resource">PAR.OBJR.0107492</Bcp>
+		                  <Bcp table="MARGIN_RUNB3_STATUS_REF" type="resource">PAR.OBJR.0093551</Bcp>
+		                  <Bcp table="MARGIN_RUNB3_SCOPE_REF" type="resource">PAR.OBJR.0083760</Bcp>
+		            	<Bcp table="LIABILITYB3_REF" type="resource">PAR.OBJR.0093552</Bcp>
+		            	<Bcp table="LIABILITYB3_STATUS_REF" type="resource">PAR.OBJR.0083762</Bcp>
+		            	<Bcp table="LIABILITYB3_COMPONENTS_REF" type="resource">PAR.OBJR.0111107</Bcp>
+		            	<Bcp table="MARGIN_ACCOUNTSB3_REF" type="resource">PAR.OBJR.0093553</Bcp>
+		            	<Bcp table="MARGIN_COMPONENTSB3_REF" type="resource">PAR.OBJR.0111108</Bcp>
+		            	<Bcp table="INDEX_MARGINSB3_REF" type="resource">PAR.OBJR.0083766</Bcp>
+		            	<Bcp table="MARGIN_WCSB3_REF" type="resource">PAR.OBJR.0093555</Bcp>
+		            	
+		            	
+		            	<Bcp table="MARGIN_COMP_ITD_1_REF" type="resource">PAR.OBJR.0111103</Bcp>
+				      <Bcp table="LIAB_COMP_ITD_1_REF" type="resource">PAR.OBJR.0111104</Bcp>
+					<Bcp table="MARGIN_COMP_EOD_2_REF" type="resource">PAR.OBJR.0111105</Bcp>
+					<Bcp table="LIAB_COMP_EOD_2_REF" type="resource">PAR.OBJR.0111106</Bcp>
+					<Bcp table="MARGIN_COMP_ITD_3_REF" type="resource">PAR.OBJR.0111109</Bcp>
+					<Bcp table="LIAB_COMP_ITD_3_REF" type="resource">PAR.OBJR.0111110</Bcp>
+					<Bcp table="MARGIN_COMP_EOD_4_REF" type="resource">PAR.OBJR.0111111</Bcp>
+					<Bcp table="LIAB_COMP_EOD_4_REF" type="resource">PAR.OBJR.0111112</Bcp>
+						
+					</Bcps>
+				</Database>
+				<Database Include="Reporting_dump">
+					<Bcps>		             	
+			            <Bcp table="FHS_B3_REF" type="resource">PAR.OBJR.0093216</Bcp>
+						<Bcp table="MR_IDX_B3_REF" type="resource">PAR.OBJR.0083875</Bcp>
+		            	<Bcp table="SNS_B3_REF" type="resource">PAR.OBJR.0093217</Bcp>
+		            	<Bcp table="TDG_B3_REF" type="resource">PAR.OBJR.0095441</Bcp>
+						
+						<Bcp table="MR_1_TDG_REF" type="resource">PAR.OBJR.0095439</Bcp>
+						<Bcp table="MR_1_FHS_REF" type="resource">PAR.OBJR.0093557</Bcp>
+						<Bcp table="MR_2_TDG_REF" type="resource">PAR.OBJR.0095440</Bcp>
+						<Bcp table="MR_2_FHS_REF" type="resource">PAR.OBJR.0093559</Bcp>
+						<Bcp table="MR_3_TDG_REF" type="resource">PAR.OBJR.0095442</Bcp>
+						<Bcp table="MR_3_FHS_REF" type="resource">PAR.OBJR.0093561</Bcp>
+						<Bcp table="MR_4_TDG_REF" type="resource">PAR.OBJR.0095443</Bcp>
+						<Bcp table="MR_4_FHS_REF" type="resource">PAR.OBJR.0093563</Bcp>
+					</Bcps>
+				</Database>
+			</Databases>
+
+			<TestParameters append="after">-Dprepare.before.maintenance=true -Dskip.traces.link=true</TestParameters>
+			<JvmOptions>-Djava.util.prefs.userRoot=. -Djava.util.prefs.systemRoot=. -Djava.util.prefs.syncInterval=600000</JvmOptions>
+		</Customize>
+	</AvailableTest>
+			<AvailableTest>
+		<NickName>Benchmark_TTS</NickName>
+		<Customize>
+			<Svn>
+				<Apps>
+					<Path dest=".">tpk/apps</Path>
+				</Apps>
+				<Start>
+					<Path dest=".">tpk/start</Path>
+				</Start>
+				<NtClient>
+					<Path dest=".">tpk/ntclient</Path>
+				</NtClient>
+			</Svn>
+			<AdditionalOperations append="after">
+				<File>addopp_tpk.xml</File>
+				<Target>config</Target>
+			</AdditionalOperations>
+			<AdditionalPackages>
+				<AdditionalPackage>
+					<Id>PAR.ENV.0000505</Id>
+					<Branch>${job.branch}</Branch>
+					<Revision>-1</Revision>
+					<NickName>LCH_Benchmark_TTS</NickName>
+				</AdditionalPackage>
+			</AdditionalPackages>
+					<Databases append="after">
+				<Database Include="Financial_dump">
+					<Bcps>
+					<Bcp table="MARGIN_RUNB3_REF" type="resource">PAR.OBJR.0093550</Bcp>
+		                  <Bcp table="MARGIN_RUNB3_STATUS_REF" type="resource">PAR.OBJR.0093551</Bcp>
+		                  <Bcp table="MARGIN_RUNB3_SCOPE_REF" type="resource">PAR.OBJR.0083760</Bcp>
+		            	<Bcp table="LIABILITYB3_REF" type="resource">PAR.OBJR.0093552</Bcp>
+		            	<Bcp table="LIABILITYB3_STATUS_REF" type="resource">PAR.OBJR.0083762</Bcp>
+		            	<Bcp table="LIABILITYB3_COMPONENTS_REF" type="resource">PAR.OBJR.0093214</Bcp>
+		            	<Bcp table="MARGIN_ACCOUNTSB3_REF" type="resource">PAR.OBJR.0093553</Bcp>
+		            	<Bcp table="MARGIN_COMPONENTSB3_REF" type="resource">PAR.OBJR.0093554</Bcp>
+		            	<Bcp table="INDEX_MARGINSB3_REF" type="resource">PAR.OBJR.0083766</Bcp>
+		            	<Bcp table="MARGIN_WCSB3_REF" type="resource">PAR.OBJR.0093555</Bcp>
+		            	
+		            	
+		            	<Bcp table="MARGIN_COMP_ITD_1_REF" type="resource">PAR.OBJR.0093205</Bcp>
+				      <Bcp table="LIAB_COMP_ITD_1_REF" type="resource">PAR.OBJR.0093206</Bcp>
+					<Bcp table="MARGIN_COMP_EOD_2_REF" type="resource">PAR.OBJR.0093209</Bcp>
+					<Bcp table="LIAB_COMP_EOD_2_REF" type="resource">PAR.OBJR.0093210</Bcp>
+					<Bcp table="MARGIN_COMP_ITD_3_REF" type="resource">PAR.OBJR.0093219</Bcp>
+					<Bcp table="LIAB_COMP_ITD_3_REF" type="resource">PAR.OBJR.0093220</Bcp>
+					<Bcp table="MARGIN_COMP_EOD_4_REF" type="resource">PAR.OBJR.0093223</Bcp>
+					<Bcp table="LIAB_COMP_EOD_4_REF" type="resource">PAR.OBJR.0093224</Bcp>
+						
+					</Bcps>
+				</Database>
+				<Database Include="Reporting_dump">
+					<Bcps>		             	
+			            <Bcp table="FHS_B3_REF" type="resource">PAR.OBJR.0093216</Bcp>
+						<Bcp table="MR_IDX_B3_REF" type="resource">PAR.OBJR.0083875</Bcp>
+		            	<Bcp table="SNS_B3_REF" type="resource">PAR.OBJR.0093217</Bcp>
+		            	<Bcp table="TDG_B3_REF" type="resource">PAR.OBJR.0093218</Bcp>
+						
+						<Bcp table="MR_1_TDG_REF" type="resource">PAR.OBJR.0093556</Bcp>
+						<Bcp table="MR_1_FHS_REF" type="resource">PAR.OBJR.0093557</Bcp>
+						<Bcp table="MR_2_TDG_REF" type="resource">PAR.OBJR.0093558</Bcp>
+						<Bcp table="MR_2_FHS_REF" type="resource">PAR.OBJR.0093559</Bcp>
+						<Bcp table="MR_3_TDG_REF" type="resource">PAR.OBJR.0093560</Bcp>
+						<Bcp table="MR_3_FHS_REF" type="resource">PAR.OBJR.0093561</Bcp>
+						<Bcp table="MR_4_TDG_REF" type="resource">PAR.OBJR.0093562</Bcp>
+						<Bcp table="MR_4_FHS_REF" type="resource">PAR.OBJR.0093563</Bcp>
+					</Bcps>
+				</Database>
+			</Databases>
+
+			<TestParameters append="after">-Dprepare.before.maintenance=true -Dskip.traces.link=true</TestParameters>
+			<JvmOptions>-Djava.util.prefs.userRoot=. -Djava.util.prefs.systemRoot=. -Djava.util.prefs.syncInterval=600000</JvmOptions>
+		</Customize>
+	</AvailableTest>
+</AvailableTests>

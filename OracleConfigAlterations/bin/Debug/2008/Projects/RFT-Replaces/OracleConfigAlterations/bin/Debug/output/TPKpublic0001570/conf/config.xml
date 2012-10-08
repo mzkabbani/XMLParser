@@ -1,0 +1,303 @@
+<?xml version='1.0' ?>
+<!DOCTYPE AvailableTests SYSTEM "http://globalqa/svn/PAR/TPK/0000000/trunk/doc/config.dtd">
+<AvailableTests>
+	<AvailableTest>
+		<NickName>Processing_NoFixingEvent_IRD</NickName>
+		<Import>
+			<Code>AUTOMATION</Code>
+			<RefNickName>DEFAULT_CONFIG</RefNickName>
+		</Import>
+		<Customize>
+			<Include Anchor="doc/description.xml#TitleDEFAULT"/>
+			<Target>testNoFixingIRD</Target>
+		</Customize>
+	</AvailableTest>
+	<AvailableTest>
+		<NickName>FrontOffice_CalibrationHedgeCurve</NickName>
+		<Import>
+			<Code>AUTOMATION</Code>
+			<RefNickName>DEFAULT_CONFIG</RefNickName>
+		</Import>
+		<Customize>
+			<Include Anchor="doc/description.xml#TitleDEFAULT"/>
+			<Target>testCalibrationHedgeCurve</Target>
+		</Customize>
+	</AvailableTest>
+	<AvailableTest>
+		<NickName>Reporting_OSPDatamartViewer</NickName>
+		<Import>
+			<Code>AUTOMATION</Code>
+			<RefNickName>DEFAULT_CONFIG</RefNickName>
+		</Import>
+		<Customize>
+			<Include Anchor="doc/description.xml#TitleDEFAULT"/>
+			<Target>testDatamartExtraction</Target>
+		</Customize>
+	</AvailableTest>
+	<AvailableTest>
+		<NickName>FrontOffice_HedgeBasket</NickName>
+		<Import>
+			<Code>AUTOMATION</Code>
+			<RefNickName>DEFAULT_CONFIG</RefNickName>
+		</Import>
+		<Customize>
+			<Include Anchor="doc/description.xml#TitleDEFAULT"/>
+			<Target>testHedgeBasket</Target>
+			<TestParameters append="after">-Dglobal.tolerance=1E-5</TestParameters>
+			
+		</Customize>
+	</AvailableTest>
+	<AvailableTest>
+		<NickName>Processing_ParallelFixing</NickName>
+		<Import>
+			<Code>AUTOMATION</Code>
+			<RefNickName>DEFAULT_CONFIG</RefNickName>
+		</Import>
+		<Customize>
+			<Include Anchor="doc/description.xml#TitleDEFAULT"/>
+			<Target>testProcessing_ParallelFixing</Target>
+		</Customize>
+	</AvailableTest>
+	<AvailableTest>
+		<NickName>Processing_PortfolioTransfer</NickName>
+		<Import>
+			<Code>AUTOMATION</Code>
+			<RefNickName>DEFAULT_CONFIG</RefNickName>
+		</Import>
+		<Customize>
+			<Include Anchor="doc/description.xml#TitleDEFAULT"/>
+			<Target>testProcessing_PortfolioTransfer</Target>
+		</Customize>
+	</AvailableTest>
+	<AvailableTest>
+		<NickName>Processing_FourEyesModifyFixing</NickName>
+		<Import>
+			<Code>AUTOMATION</Code>
+			<RefNickName>DEFAULT_CONFIG</RefNickName>
+		</Import>
+		<Customize>
+			<Include Anchor="doc/description.xml#TitleDEFAULT"/>
+			<Target>testProcessing_FourEyesModifyFixing</Target>
+			<TestParameters>-Dexpected.log.check=3</TestParameters>
+		</Customize>
+	</AvailableTest>
+	<AvailableTest>
+		<NickName>Processing_OSPSnapshots</NickName>
+		<Import>
+			<Code>AUTOMATION</Code>
+			<RefNickName>DEFAULT_CONFIG</RefNickName>
+		</Import>
+		<Customize>
+			<Include Anchor="doc/description.xml#TitleDEFAULT"/>
+			<Target>testProcessing_OSPSnapshots</Target>
+			<TestParameters>-Dexpected.log.check=3</TestParameters>
+		</Customize>
+	</AvailableTest>
+	<AvailableTest>
+		<NickName>Margin_Run</NickName>
+		<Import>
+			<Code>AUTOMATION</Code>
+			<RefNickName>DEFAULT_505</RefNickName>
+		</Import>
+		<Customize>
+			<Include Anchor="doc/description.xml#TitleDEFAULT"/>
+			<Target>testMargin_Run</Target>
+			<OperatingSystem>SunOS-x86-5.10</OperatingSystem>
+			<TestParameters append="after">-Dexpected.log.check=2 -Ddo.launch.tasks=true -Dskip.traces.link=true -DTC.range=1,3-10,13,15,16,12,2</TestParameters>
+		</Customize>
+	</AvailableTest>
+	<AvailableTest>
+		<NickName>Margin_Run2</NickName>
+		<Import>
+			<Code>AUTOMATION</Code>
+			<RefNickName>DEFAULT_505</RefNickName>
+		</Import>
+		<Customize>
+			<Include Anchor="doc/description.xml#TitleDEFAULT"/>
+			<Target>testMargin_Run2</Target>
+			<OperatingSystem>SunOS-x86-5.10</OperatingSystem>
+			<TestParameters append="after">-Ddo.launch.tasks=true -Dskip.traces.link=true -DTC.range=17-31</TestParameters>
+		</Customize>
+	</AvailableTest>
+		<AvailableTest>
+		<NickName>FrontOffice_PLandRisk</NickName>
+		<Import>
+			<Code>AUTOMATION</Code>
+			<RefNickName>ENV505_LCH_IRD</RefNickName>
+		</Import>
+		<Customize>
+			<Include Anchor="doc/description.xml#TitleDEFAULT"/>
+			<Target>testFrontOffice_PLandRisk</Target>
+			<TestParameters append="after">-Dglobal.tolerance=1E-2</TestParameters>
+			<OperatingSystem>SunOS-x86-5.10</OperatingSystem>
+			<Providers>
+				<Provider>
+					<Site>PAR</Site>
+					<Repository>PAR/ATCOM</Repository>
+					<Path>${job.branch}/atcom/apps/fs/quality/public/automation/tests/warehouse</Path>
+					<Revision>-1</Revision>
+					<Destination>fs/quality/public/automation/tests/warehouse</Destination>
+				</Provider>
+				<Provider>
+					<Site>PAR</Site>
+					<Repository>PAR/ATCOM</Repository>
+					<Path>${job.branch}/atcom/apps/fs/quality/public/automation/tests/common</Path>
+					<Revision>-1</Revision>
+					<Destination>fs/quality/public/automation/tests/common</Destination>
+					<KeepSvn>false</KeepSvn>				
+				</Provider>
+			</Providers>	
+		</Customize>
+	</AvailableTest>
+	<AvailableTest>
+		<NickName>Reporting_Datamart</NickName>
+		<Import>
+			<Code>AUTOMATION</Code>
+			<RefNickName>Reporting_Datamart_505</RefNickName>
+		</Import>
+		<Customize>
+			<Include Anchor="doc/description.xml#TitleDEFAULT"/>
+			<Target>testReporting_Datamart</Target>
+			<OperatingSystem>SunOS-x86-5.10</OperatingSystem>
+			<TestParameters append="after">-Dskip.traces.link=true -Dglobal.tolerance=10E-6</TestParameters>
+			<Providers>
+				<Provider>
+					<Site>PAR</Site>
+					<Repository>PAR/ATCOM</Repository>
+					<Path>${job.branch}/atcom/apps/fs/quality/public/automation/tests/warehouse</Path>
+					<Revision>-1</Revision>
+					<Destination>fs/quality/public/automation/tests/warehouse</Destination>
+				</Provider>
+				<Provider>
+					<Site>PAR</Site>
+					<Repository>PAR/ATCOM</Repository>
+					<Path>${job.branch}/atcom/apps/fs/quality/public/automation/tests/common</Path>
+					<Revision>-1</Revision>
+					<Destination>fs/quality/public/automation/tests/common</Destination>
+					<KeepSvn>false</KeepSvn>				
+				</Provider>
+			</Providers>	
+		</Customize>
+	</AvailableTest>
+		<AvailableTest>
+		<NickName>FrontOffice_RCAP</NickName>
+		<Import>
+			<Code>AUTOMATION</Code>
+			<RefNickName>ENV505_LCH_IRD</RefNickName>
+		</Import>
+		<Customize>
+			<Include Anchor="doc/description.xml#TitleDEFAULT"/>
+			<Target>testFrontOffice_RCAP</Target>
+			<OperatingSystem>SunOS-x86-5.10</OperatingSystem>
+		</Customize>
+	</AvailableTest>
+		<AvailableTest>
+		<NickName>Processing_Pretrade</NickName>
+		<Import>
+			<Code>AUTOMATION</Code>
+			<RefNickName>Reporting_Datamart_505</RefNickName>
+		</Import>
+		<Customize>
+			<Include Anchor="doc/description.xml#TitleDEFAULT"/>
+			<Target>testProcessing_Pretrade</Target>
+			<OperatingSystem>SunOS-x86-5.10</OperatingSystem>
+			<TestParameters>-Dexpected.log.check=3</TestParameters>
+		</Customize>
+	</AvailableTest>
+	<AvailableTest>
+		<NickName>Margin_Run_UDF</NickName>
+		<Import>
+			<Code>AUTOMATION</Code>
+			<RefNickName>DEFAULT_505</RefNickName>
+		</Import>
+		<Customize>
+			<Include Anchor="doc/description.xml#TitleDEFAULT"/>
+			<Target>testMargin_Run_UDF</Target>
+			<OperatingSystem>SunOS-x86-5.10</OperatingSystem>
+			<TestParameters append="after">-Ddo.launch.tasks=true -Dskip.traces.link=true -DTC.range=32-35</TestParameters>
+		</Customize>
+	</AvailableTest>
+	<AvailableTest>
+		<NickName>Pairs</NickName>
+		<Import>
+			<Code>AUTOMATION</Code>
+			<RefNickName>DEFAULT_Pairs</RefNickName>
+		</Import>
+		<Customize>
+			<Include Anchor="doc/description.xml#TitleDEFAULT"/>
+			<Target>testPairs</Target>
+		</Customize>
+	</AvailableTest>
+	
+	<AvailableTest>
+		<NickName>PMS</NickName>
+		<Import>
+			<Code>AUTOMATION</Code>
+			<RefNickName>PMS</RefNickName>
+		</Import>
+		<Customize>
+			<Include Anchor="doc/description.xml#TitleDEFAULT"/>
+			<Target>testPMS</Target>
+		</Customize>
+	</AvailableTest>
+		<AvailableTest>
+		<NickName>StressBacktesting</NickName>
+		<Import>
+			<Code>AUTOMATION</Code>
+			<RefNickName>PMS</RefNickName>
+		</Import>
+		<Customize>
+			<Include Anchor="doc/description.xml#TitleDEFAULT"/>
+			<Target>testStressBack</Target>
+			<TestParameters append="after">-Dtraces.expected.count=1</TestParameters>
+		</Customize>
+	</AvailableTest>	
+	<AvailableTest>
+		<NickName>Benchmark</NickName>
+		<Import>
+			<Code>AUTOMATION</Code>
+			<RefNickName>Benchmark</RefNickName>
+		</Import>
+		<Customize>
+			<Include Anchor="doc/description.xml#TitleDEFAULT"/>
+			<Target>testBenchmark</Target>
+			<TestParameters append="after">-Dtraces.expected.count=1 -Dexpected.log.check=3</TestParameters>
+		</Customize>
+	</AvailableTest>
+		<AvailableTest>
+		<NickName>Benchmark_ORA11</NickName>
+		<Import>
+			<Code>AUTOMATION</Code>
+			<RefNickName>Benchmark_ORA11</RefNickName>
+		</Import>
+		<Customize>
+			<Include Anchor="doc/description.xml#TitleDEFAULT"/>
+			<Target>testBenchmark</Target>
+			<TestParameters append="after">-Dtraces.expected.count=1 -Dexpected.log.check=3</TestParameters>
+		</Customize>
+	</AvailableTest>
+		<AvailableTest>
+		<NickName>Benchmark_ORA11_MIG</NickName>
+		<Import>
+			<Code>AUTOMATION</Code>
+			<RefNickName>Benchmark</RefNickName>
+		</Import>
+		<Customize>
+			<Include Anchor="doc/description.xml#TitleDEFAULT"/>
+			<Target>testBenchmark</Target>
+			<TestParameters append="after">-Dtraces.expected.count=1 -Dexpected.log.check=3</TestParameters>
+		</Customize>
+	</AvailableTest>
+		<AvailableTest>
+		<NickName>Benchmark_TTS</NickName>
+		<Import>
+			<Code>AUTOMATION</Code>
+			<RefNickName>Benchmark_TTS</RefNickName>
+		</Import>
+		<Customize>
+			<Include Anchor="doc/description.xml#TitleDEFAULT"/>
+			<Target>testBenchmark</Target>
+			<TestParameters append="after">-Dtraces.expected.count=1 -Dexpected.log.check=3</TestParameters>
+		</Customize>
+	</AvailableTest>	
+</AvailableTests>

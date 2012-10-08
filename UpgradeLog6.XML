@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type='text/xsl' href='_UpgradeReport_Files/UpgradeReport.xslt'?><UpgradeLog>
+<Properties><Property Name="Solution" Value="Misc">
+</Property><Property Name="Solution File" Value="C:\Documents and Settings\mkabbani\My Documents\Visual Studio 2008\Projects\RFT-Replaces\Misc.sln">
+</Property><Property Name="Date" Value="Wednesday, February 22, 2012">
+</Property><Property Name="Time" Value="9:52:16 AM">
+</Property><Property Name="Log Number" Value="6">
+</Property></Properties><Event ErrorLevel="1" Project="DiffCalc" Source="..\TextDiff\DiffCalc\DiffCalc.csproj" Description="MSB2014: The project-to-project reference with GUID {8AE4897A-EA74-49B1-BA55-D892C27AF9C9} cannot be converted because it is not listed in the file 'C:\Documents and Settings\mkabbani\My Documents\Visual Studio 2008\Projects\RFT-Replaces\Misc.sln'.">
+</Event><Event ErrorLevel="0" Project="DiffCalc" Source="..\TextDiff\DiffCalc\DiffCalc.csproj" Description="Project file successfully backed up as C:\Documents and Settings\mkabbani\My Documents\Visual Studio 2008\Projects\RFT-Replaces\Backup5\DiffCalc.csproj">
+</Event><Event ErrorLevel="0" Project="DiffCalc" Source="..\TextDiff\DiffCalc\DiffCalc.csproj.user" Description="Project user file successfully backed up as C:\Documents and Settings\mkabbani\My Documents\Visual Studio 2008\Projects\RFT-Replaces\Backup5\DiffCalc.csproj.user">
+</Event><Event ErrorLevel="0" Project="DiffCalc" Source="..\TextDiff\DiffCalc\AssemblyInfo.cs" Description="File successfully backed up as C:\Documents and Settings\mkabbani\My Documents\Visual Studio 2008\Projects\RFT-Replaces\Backup5\AssemblyInfo.cs">
+</Event><Event ErrorLevel="0" Project="DiffCalc" Source="..\TextDiff\DiffCalc\BinaryResults.cs" Description="File successfully backed up as C:\Documents and Settings\mkabbani\My Documents\Visual Studio 2008\Projects\RFT-Replaces\Backup5\BinaryResults.cs">
+</Event><Event ErrorLevel="0" Project="DiffCalc" Source="..\TextDiff\DiffCalc\Main.cs" Description="File successfully backed up as C:\Documents and Settings\mkabbani\My Documents\Visual Studio 2008\Projects\RFT-Replaces\Backup5\Main.cs">
+</Event><Event ErrorLevel="0" Project="DiffCalc" Source="..\TextDiff\DiffCalc\Results.cs" Description="File successfully backed up as C:\Documents and Settings\mkabbani\My Documents\Visual Studio 2008\Projects\RFT-Replaces\Backup5\Results.cs">
+</Event><Event ErrorLevel="0" Project="DiffCalc" Source="..\TextDiff\DiffCalc\App.ico" Description="File successfully backed up as C:\Documents and Settings\mkabbani\My Documents\Visual Studio 2008\Projects\RFT-Replaces\Backup5\App.ico">
+</Event><Event ErrorLevel="0" Project="DiffCalc" Source="..\TextDiff\DiffCalc\BinaryResults.resx" Description="File successfully backed up as C:\Documents and Settings\mkabbani\My Documents\Visual Studio 2008\Projects\RFT-Replaces\Backup5\BinaryResults.resx">
+</Event><Event ErrorLevel="0" Project="DiffCalc" Source="..\TextDiff\DiffCalc\Main.resx" Description="File successfully backed up as C:\Documents and Settings\mkabbani\My Documents\Visual Studio 2008\Projects\RFT-Replaces\Backup5\Main.resx">
+</Event><Event ErrorLevel="0" Project="DiffCalc" Source="..\TextDiff\DiffCalc\Results.resx" Description="File successfully backed up as C:\Documents and Settings\mkabbani\My Documents\Visual Studio 2008\Projects\RFT-Replaces\Backup5\Results.resx">
+</Event><Event ErrorLevel="0" Project="DiffCalc" Source="..\TextDiff\DiffCalc\DiffCalc.csproj" Description="Project converted successfully">
+</Event><Event ErrorLevel="3" Project="DiffCalc" Source="..\TextDiff\DiffCalc\DiffCalc.csproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="DiffCalc" Source="..\TextDiff\DiffCalc\DiffCalc.csproj" Description="Scan complete: Upgrade not required for project files.">
+</Event></UpgradeLog>

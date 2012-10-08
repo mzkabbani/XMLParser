@@ -1,0 +1,30 @@
+<ciConfig> 
+	<!--compilers> 
+		<compiler> 
+			<id>default</id> 
+			<compilerReference> 
+				<classPath>compile</classPath> 
+				<className>murex.sample.compile.Compiler</className> 
+			</compilerReference> 
+		</compiler> 
+	</compilers> -->
+
+	<mxpack> 
+		<package> 
+			<id>MigrationPackage</id> 
+			<name>Migration</name> 
+			<description>Migration Package for customizations</description> 
+			<packagerRef> 
+				<classPath>package</classPath> 
+				<className>murex.Migration.Packager</className> 
+			</packagerRef> 
+			<wizardRef> 
+				<classPath>package</classPath> 
+				<className>murex.Migration.Installer</className> 
+			</wizardRef> 
+			<filename>8888</filename>
+		</package> 
+	</mxpack> 
+
+</ciConfig> 
+

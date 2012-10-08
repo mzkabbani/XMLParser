@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type='text/xsl' href='_UpgradeReport_Files/UpgradeReport.xslt'?><UpgradeLog>
+<Properties><Property Name="Solution" Value="Misc">
+</Property><Property Name="Solution File" Value="C:\Documents and Settings\mkabbani\My Documents\Visual Studio 2008\Projects\RFT-Replaces\Misc.sln">
+</Property><Property Name="Date" Value="Friday, December 23, 2011">
+</Property><Property Name="Time" Value="10:17:22 AM">
+</Property><Property Name="Log Number" Value="2">
+</Property></Properties><Event ErrorLevel="0" Project="ScheduleTimer" Source="..\Timer\ScheduleTimer\ScheduleTimer.csproj" Description="Project file successfully backed up as C:\Documents and Settings\mkabbani\My Documents\Visual Studio 2008\Projects\RFT-Replaces\Backup1\ScheduleTimer.csproj">
+</Event><Event ErrorLevel="0" Project="ScheduleTimer" Source="..\Timer\ScheduleTimer\AssemblyInfo.cs" Description="File successfully backed up as C:\Documents and Settings\mkabbani\My Documents\Visual Studio 2008\Projects\RFT-Replaces\Backup1\AssemblyInfo.cs">
+</Event><Event ErrorLevel="0" Project="ScheduleTimer" Source="..\Timer\ScheduleTimer\EventStorage.cs" Description="File successfully backed up as C:\Documents and Settings\mkabbani\My Documents\Visual Studio 2008\Projects\RFT-Replaces\Backup1\EventStorage.cs">
+</Event><Event ErrorLevel="0" Project="ScheduleTimer" Source="..\Timer\ScheduleTimer\IScheduledItem.cs" Description="File successfully backed up as C:\Documents and Settings\mkabbani\My Documents\Visual Studio 2008\Projects\RFT-Replaces\Backup1\IScheduledItem.cs">
+</Event><Event ErrorLevel="0" Project="ScheduleTimer" Source="..\Timer\ScheduleTimer\MethodCall.cs" Description="File successfully backed up as C:\Documents and Settings\mkabbani\My Documents\Visual Studio 2008\Projects\RFT-Replaces\Backup1\MethodCall.cs">
+</Event><Event ErrorLevel="0" Project="ScheduleTimer" Source="..\Timer\ScheduleTimer\ReportTimer.cs" Description="File successfully backed up as C:\Documents and Settings\mkabbani\My Documents\Visual Studio 2008\Projects\RFT-Replaces\Backup1\ReportTimer.cs">
+</Event><Event ErrorLevel="0" Project="ScheduleTimer" Source="..\Timer\ScheduleTimer\ScheduledItems\BlockWrapper.cs" Description="File successfully backed up as C:\Documents and Settings\mkabbani\My Documents\Visual Studio 2008\Projects\RFT-Replaces\Backup1\ScheduledItems\BlockWrapper.cs">
+</Event><Event ErrorLevel="0" Project="ScheduleTimer" Source="..\Timer\ScheduleTimer\ScheduledItems\EventInstance.cs" Description="File successfully backed up as C:\Documents and Settings\mkabbani\My Documents\Visual Studio 2008\Projects\RFT-Replaces\Backup1\ScheduledItems\EventInstance.cs">
+</Event><Event ErrorLevel="0" Project="ScheduleTimer" Source="..\Timer\ScheduleTimer\ScheduledItems\EventQueue.cs" Description="File successfully backed up as C:\Documents and Settings\mkabbani\My Documents\Visual Studio 2008\Projects\RFT-Replaces\Backup1\ScheduledItems\EventQueue.cs">
+</Event><Event ErrorLevel="0" Project="ScheduleTimer" Source="..\Timer\ScheduleTimer\ScheduledItems\ScheduledTime.cs" Description="File successfully backed up as C:\Documents and Settings\mkabbani\My Documents\Visual Studio 2008\Projects\RFT-Replaces\Backup1\ScheduledItems\ScheduledTime.cs">
+</Event><Event ErrorLevel="0" Project="ScheduleTimer" Source="..\Timer\ScheduleTimer\ScheduledItems\SimpleInterval.cs" Description="File successfully backed up as C:\Documents and Settings\mkabbani\My Documents\Visual Studio 2008\Projects\RFT-Replaces\Backup1\ScheduledItems\SimpleInterval.cs">
+</Event><Event ErrorLevel="0" Project="ScheduleTimer" Source="..\Timer\ScheduleTimer\ScheduledItems\SingleEvent.cs" Description="File successfully backed up as C:\Documents and Settings\mkabbani\My Documents\Visual Studio 2008\Projects\RFT-Replaces\Backup1\ScheduledItems\SingleEvent.cs">
+</Event><Event ErrorLevel="0" Project="ScheduleTimer" Source="..\Timer\ScheduleTimer\ScheduleFilter.cs" Description="File successfully backed up as C:\Documents and Settings\mkabbani\My Documents\Visual Studio 2008\Projects\RFT-Replaces\Backup1\ScheduleFilter.cs">
+</Event><Event ErrorLevel="0" Project="ScheduleTimer" Source="..\Timer\ScheduleTimer\ScheduleTimer.cs" Description="File successfully backed up as C:\Documents and Settings\mkabbani\My Documents\Visual Studio 2008\Projects\RFT-Replaces\Backup1\ScheduleTimer.cs">
+</Event><Event ErrorLevel="0" Project="ScheduleTimer" Source="..\Timer\ScheduleTimer\TimerJob.cs" Description="File successfully backed up as C:\Documents and Settings\mkabbani\My Documents\Visual Studio 2008\Projects\RFT-Replaces\Backup1\TimerJob.cs">
+</Event><Event ErrorLevel="0" Project="ScheduleTimer" Source="..\Timer\ScheduleTimer\ScheduleTimer.csproj" Description="Project converted successfully">
+</Event><Event ErrorLevel="3" Project="ScheduleTimer" Source="..\Timer\ScheduleTimer\ScheduleTimer.csproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="ScheduleTimer" Source="..\Timer\ScheduleTimer\ScheduleTimer.csproj" Description="Scan complete: Upgrade not required for project files.">
+</Event></UpgradeLog>
