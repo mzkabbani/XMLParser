@@ -34,7 +34,15 @@
         	this.tcComparisonTabs = new System.Windows.Forms.TabControl();
         	this.tpCleanup = new System.Windows.Forms.TabPage();
         	this.groupBox9 = new System.Windows.Forms.GroupBox();
+        	this.btnStartCleanup = new System.Windows.Forms.Button();
         	this.groupBox5 = new System.Windows.Forms.GroupBox();
+        	this.txtHostForCleanup = new System.Windows.Forms.TextBox();
+        	this.label10 = new System.Windows.Forms.Label();
+        	this.btnGetEnvInfo = new System.Windows.Forms.Button();
+        	this.txtInputEnvForCleanup = new System.Windows.Forms.TextBox();
+        	this.groupBox10 = new System.Windows.Forms.GroupBox();
+        	this.lblEnvironmentInfo = new System.Windows.Forms.Label();
+        	this.label7 = new System.Windows.Forms.Label();
         	this.groupBox1 = new System.Windows.Forms.GroupBox();
         	this.clbAvailableCleanupFilters = new System.Windows.Forms.CheckedListBox();
         	this.tabPage1 = new System.Windows.Forms.TabPage();
@@ -116,16 +124,11 @@
         	this.undoLastDeleteToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
         	this.bgDoServerWork = new System.ComponentModel.BackgroundWorker();
         	this.bgwExportToExcel = new System.ComponentModel.BackgroundWorker();
-        	this.label7 = new System.Windows.Forms.Label();
-        	this.groupBox10 = new System.Windows.Forms.GroupBox();
-        	this.txtInputEnvForCleanup = new System.Windows.Forms.TextBox();
-        	this.btnGetEnvInfo = new System.Windows.Forms.Button();
-        	this.lblEnvironmentInfo = new System.Windows.Forms.Label();
-        	this.button1 = new System.Windows.Forms.Button();
         	this.tcComparisonTabs.SuspendLayout();
         	this.tpCleanup.SuspendLayout();
         	this.groupBox9.SuspendLayout();
         	this.groupBox5.SuspendLayout();
+        	this.groupBox10.SuspendLayout();
         	this.groupBox1.SuspendLayout();
         	this.tabPage1.SuspendLayout();
         	this.groupBox2.SuspendLayout();
@@ -142,7 +145,6 @@
         	this.groupBox3.SuspendLayout();
         	this.groupBox4.SuspendLayout();
         	this.dgvContextMenu.SuspendLayout();
-        	this.groupBox10.SuspendLayout();
         	this.SuspendLayout();
         	// 
         	// tcComparisonTabs
@@ -173,7 +175,7 @@
         	// 
         	// groupBox9
         	// 
-        	this.groupBox9.Controls.Add(this.button1);
+        	this.groupBox9.Controls.Add(this.btnStartCleanup);
         	this.groupBox9.Location = new System.Drawing.Point(268, 222);
         	this.groupBox9.Name = "groupBox9";
         	this.groupBox9.Size = new System.Drawing.Size(557, 363);
@@ -181,8 +183,20 @@
         	this.groupBox9.TabStop = false;
         	this.groupBox9.Text = "Operation";
         	// 
+        	// btnStartCleanup
+        	// 
+        	this.btnStartCleanup.Location = new System.Drawing.Point(194, 19);
+        	this.btnStartCleanup.Name = "btnStartCleanup";
+        	this.btnStartCleanup.Size = new System.Drawing.Size(169, 23);
+        	this.btnStartCleanup.TabIndex = 4;
+        	this.btnStartCleanup.Text = "Start Cleanup";
+        	this.btnStartCleanup.UseVisualStyleBackColor = true;
+        	this.btnStartCleanup.Click += new System.EventHandler(this.BtnStartCleanupClick);
+        	// 
         	// groupBox5
         	// 
+        	this.groupBox5.Controls.Add(this.txtHostForCleanup);
+        	this.groupBox5.Controls.Add(this.label10);
         	this.groupBox5.Controls.Add(this.btnGetEnvInfo);
         	this.groupBox5.Controls.Add(this.txtInputEnvForCleanup);
         	this.groupBox5.Controls.Add(this.groupBox10);
@@ -193,6 +207,63 @@
         	this.groupBox5.TabIndex = 1;
         	this.groupBox5.TabStop = false;
         	this.groupBox5.Text = "Input";
+        	// 
+        	// txtHostForCleanup
+        	// 
+        	this.txtHostForCleanup.Location = new System.Drawing.Point(73, 45);
+        	this.txtHostForCleanup.Name = "txtHostForCleanup";
+        	this.txtHostForCleanup.Size = new System.Drawing.Size(70, 20);
+        	this.txtHostForCleanup.TabIndex = 5;
+        	// 
+        	// label10
+        	// 
+        	this.label10.Location = new System.Drawing.Point(6, 48);
+        	this.label10.Name = "label10";
+        	this.label10.Size = new System.Drawing.Size(61, 23);
+        	this.label10.TabIndex = 4;
+        	this.label10.Text = "Host:";
+        	// 
+        	// btnGetEnvInfo
+        	// 
+        	this.btnGetEnvInfo.Location = new System.Drawing.Point(476, 17);
+        	this.btnGetEnvInfo.Name = "btnGetEnvInfo";
+        	this.btnGetEnvInfo.Size = new System.Drawing.Size(75, 23);
+        	this.btnGetEnvInfo.TabIndex = 3;
+        	this.btnGetEnvInfo.Text = "Get Info";
+        	this.btnGetEnvInfo.UseVisualStyleBackColor = true;
+        	// 
+        	// txtInputEnvForCleanup
+        	// 
+        	this.txtInputEnvForCleanup.Location = new System.Drawing.Point(73, 19);
+        	this.txtInputEnvForCleanup.Name = "txtInputEnvForCleanup";
+        	this.txtInputEnvForCleanup.Size = new System.Drawing.Size(397, 20);
+        	this.txtInputEnvForCleanup.TabIndex = 2;
+        	this.txtInputEnvForCleanup.TextChanged += new System.EventHandler(this.TxtInputEnvForCleanupTextChanged);
+        	// 
+        	// groupBox10
+        	// 
+        	this.groupBox10.Controls.Add(this.lblEnvironmentInfo);
+        	this.groupBox10.Location = new System.Drawing.Point(6, 67);
+        	this.groupBox10.Name = "groupBox10";
+        	this.groupBox10.Size = new System.Drawing.Size(545, 140);
+        	this.groupBox10.TabIndex = 1;
+        	this.groupBox10.TabStop = false;
+        	this.groupBox10.Text = "Environment Information";
+        	// 
+        	// lblEnvironmentInfo
+        	// 
+        	this.lblEnvironmentInfo.Location = new System.Drawing.Point(7, 20);
+        	this.lblEnvironmentInfo.Name = "lblEnvironmentInfo";
+        	this.lblEnvironmentInfo.Size = new System.Drawing.Size(532, 136);
+        	this.lblEnvironmentInfo.TabIndex = 0;
+        	// 
+        	// label7
+        	// 
+        	this.label7.Location = new System.Drawing.Point(6, 22);
+        	this.label7.Name = "label7";
+        	this.label7.Size = new System.Drawing.Size(61, 23);
+        	this.label7.TabIndex = 0;
+        	this.label7.Text = "Input Env:";
         	// 
         	// groupBox1
         	// 
@@ -1103,56 +1174,6 @@
         	this.bgwExportToExcel.DoWork += new System.ComponentModel.DoWorkEventHandler(this.bgwExportToExcel_DoWork);
         	this.bgwExportToExcel.RunWorkerCompleted += new System.ComponentModel.RunWorkerCompletedEventHandler(this.bgwExportToExcel_RunWorkerCompleted);
         	// 
-        	// label7
-        	// 
-        	this.label7.Location = new System.Drawing.Point(6, 22);
-        	this.label7.Name = "label7";
-        	this.label7.Size = new System.Drawing.Size(61, 23);
-        	this.label7.TabIndex = 0;
-        	this.label7.Text = "Input Env:";
-        	// 
-        	// groupBox10
-        	// 
-        	this.groupBox10.Controls.Add(this.lblEnvironmentInfo);
-        	this.groupBox10.Location = new System.Drawing.Point(6, 48);
-        	this.groupBox10.Name = "groupBox10";
-        	this.groupBox10.Size = new System.Drawing.Size(545, 159);
-        	this.groupBox10.TabIndex = 1;
-        	this.groupBox10.TabStop = false;
-        	this.groupBox10.Text = "Environment Information";
-        	// 
-        	// txtInputEnvForCleanup
-        	// 
-        	this.txtInputEnvForCleanup.Location = new System.Drawing.Point(73, 19);
-        	this.txtInputEnvForCleanup.Name = "txtInputEnvForCleanup";
-        	this.txtInputEnvForCleanup.Size = new System.Drawing.Size(397, 20);
-        	this.txtInputEnvForCleanup.TabIndex = 2;
-        	// 
-        	// btnGetEnvInfo
-        	// 
-        	this.btnGetEnvInfo.Location = new System.Drawing.Point(476, 17);
-        	this.btnGetEnvInfo.Name = "btnGetEnvInfo";
-        	this.btnGetEnvInfo.Size = new System.Drawing.Size(75, 23);
-        	this.btnGetEnvInfo.TabIndex = 3;
-        	this.btnGetEnvInfo.Text = "Get Info";
-        	this.btnGetEnvInfo.UseVisualStyleBackColor = true;
-        	// 
-        	// lblEnvironmentInfo
-        	// 
-        	this.lblEnvironmentInfo.Location = new System.Drawing.Point(7, 20);
-        	this.lblEnvironmentInfo.Name = "lblEnvironmentInfo";
-        	this.lblEnvironmentInfo.Size = new System.Drawing.Size(532, 136);
-        	this.lblEnvironmentInfo.TabIndex = 0;
-        	// 
-        	// button1
-        	// 
-        	this.button1.Location = new System.Drawing.Point(194, 19);
-        	this.button1.Name = "button1";
-        	this.button1.Size = new System.Drawing.Size(169, 23);
-        	this.button1.TabIndex = 4;
-        	this.button1.Text = "Start Cleanup";
-        	this.button1.UseVisualStyleBackColor = true;
-        	// 
         	// EnvironmentComparisonForm
         	// 
         	this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -1169,6 +1190,7 @@
         	this.groupBox9.ResumeLayout(false);
         	this.groupBox5.ResumeLayout(false);
         	this.groupBox5.PerformLayout();
+        	this.groupBox10.ResumeLayout(false);
         	this.groupBox1.ResumeLayout(false);
         	this.tabPage1.ResumeLayout(false);
         	this.groupBox2.ResumeLayout(false);
@@ -1191,10 +1213,11 @@
         	this.groupBox4.ResumeLayout(false);
         	this.groupBox4.PerformLayout();
         	this.dgvContextMenu.ResumeLayout(false);
-        	this.groupBox10.ResumeLayout(false);
         	this.ResumeLayout(false);
         }
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.TextBox txtHostForCleanup;
+        private System.Windows.Forms.Button btnStartCleanup;
         private System.Windows.Forms.Label lblEnvironmentInfo;
         private System.Windows.Forms.Button btnGetEnvInfo;
         private System.Windows.Forms.Label label7;

@@ -1274,7 +1274,7 @@ namespace XmlParsersAndUi.Forms {
             cboFilterType.SelectedIndex = selectedFilter.FilterType;
             if (selectedFilter.FilterType == (int)EnvComparisonFilter.ComparisonFilterType.Deletion) {
                 cboRemoveFileOrFolder.SelectedIndex = selectedFilter.IsFolderDeletion ? 1 : 0;
-                txtGeneratedScript.Text = GetGeneratedScript(selectedFilter.FilterPattern,selectedFilter.IsFolderDeletion);
+                txtGeneratedScript.Text = string.IsNullOrEmpty(selectedFilter.FilterScript) ? GetGeneratedScript(selectedFilter.FilterPattern,selectedFilter.IsFolderDeletion) : selectedFilter.FilterScript;
                 txtExclusionList.Text = selectedFilter.ExclusionList;
             }
         }
@@ -1879,6 +1879,65 @@ namespace XmlParsersAndUi.Forms {
             }
         }
 
-
+        private void RunScriptsOnServer(List<EnvComparisonFilter> selectedFilters){
+        	string scriptToRun = "file #pattern# | grep directory | egrep -v \"#exclusionList#\" | cut -d\":\" -f1 | xargs rm ";
+         //CopyComparisonScript(refHost, refEnv);
+                SshStream ssh = new SshStream(txtHostForCleanup.Text, "autoengine", "");
+                //Set the end of response matcher character
+                string response = string.Empty;
+                try {
+                    ssh.Prompt = "\\$";
+                    //Remove terminal emulation characters
+                    ssh.RemoveTerminalEmulationCharacters = true;
+                    //Writing to the SSH channel
+                    //tmReturn.Start();
+                    //Remove terminal emulation characters
+                    ssh.RemoveTerminalEmulationCharacters = true;
+                    //Writing to the SSH channel
+                    ssh.Write("cd " + txtInputEnvForCleanup.Text);
+                    //Reading from the SSH channel
+                    response = ssh.ReadResponse();
+                    //file * | grep directory | egrep -v "exclusion|list" | cut -d":" -f1 | xargs rm-Rf
+                    foreach (EnvComparisonFilter cleanupFilter in selectedFilters) {
+                    	ssh.Write(scriptToRun.Replace("#pattern#",cleanupFilter.FilterPattern).Replace("#exclusionList#", cleanupFilter.ExclusionList.Replace(",","|")) + (cleanupFilter.IsFolderDeletion ? "" : "-Rf"));
+                    }
+                    
+                    
+                } catch (Exception ex) {
+                    FrontendUtils.LogError(ex.Message, ex);
+                }
+        }
+        
+        void BtnStartCleanupClick(object sender, EventArgs e)
+        {
+		  try {
+        		List<EnvComparisonFilter> selectedFilters = new List<EnvComparisonFilter>();
+        		
+        		for (int i = 0; i < clbAvailableCleanupFilters.CheckedItems.Count; i++) {
+        			selectedFilters.Add(clbAvailableCleanupFilters.CheckedItems[i] as EnvComparisonFilter);
+        		}
+								
+        		RunScriptsOnServer(selectedFilters);
+        		
+        	} catch (Exception ex) {
+        		FrontendUtils.ShowError(ex.Message,ex);
+		  }        	
+        }
+        
+        void TxtInputEnvForCleanupTextChanged(object sender, EventArgs e)
+        {
+        	 try {
+                string remoteLocation = txtInputEnvForCleanup.Text.Trim();
+                if (string.IsNullOrEmpty(remoteLocation)) {
+                    return;
+                }
+                string[] splitter = new string[] { @"/" };
+                string[] remoteLocationSplit = remoteLocation.Split(splitter, StringSplitOptions.RemoveEmptyEntries);
+                remoteLocation = Regex.Match(remoteLocationSplit[0], @"[a-zA-Z]+[0-9]+[a-zA-Z]+|[a-zA-Z]+", RegexOptions.Compiled).Value;
+                txtHostForCleanup.Text = remoteLocation;
+            } catch (Exception ex) {
+                FrontendUtils.ShowError(ex.Message, ex);
+            }
+        }
     }
 }
